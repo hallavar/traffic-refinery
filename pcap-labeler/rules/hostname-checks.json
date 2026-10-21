@@ -1,0 +1,412 @@
+[
+  {
+    "hostname": "WWW.YouTube.COM.",
+    "expected": "YouTube",
+    "expected_traffic_category": "unknown",
+    "expected_role_hints": [
+      "browsing_or_api"
+    ]
+  },
+  {
+    "hostname": "rr1---sn-example.googlevideo.com",
+    "expected": "ambiguous",
+    "expected_traffic_category": "unknown",
+    "expected_role_hints": [
+      "media_delivery_candidate"
+    ]
+  },
+  {
+    "hostname": "i.ytimg.com",
+    "expected": "YouTube",
+    "expected_traffic_category": "unknown",
+    "expected_role_hints": [
+      "static_assets"
+    ]
+  },
+  {
+    "hostname": "youtubei.googleapis.com",
+    "expected": "YouTube",
+    "expected_traffic_category": "unknown",
+    "expected_role_hints": [
+      "browsing_or_api"
+    ]
+  },
+  {
+    "hostname": "youtube.googleapis.com",
+    "expected": "YouTube",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "youtubeembeddedplayer.googleapis.com",
+    "expected": "YouTube",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "youtubei-att.googleapis.com",
+    "expected": "YouTube",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.youtube-nocookie.com",
+    "expected": "YouTube",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.youtubeeducation.com",
+    "expected": "YouTube",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "notyoutube.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "youtube.com.evil.example",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "foo.youtubei.googleapis.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "photos.googleusercontent.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "accounts.google.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.netflix.com",
+    "expected": "Netflix",
+    "expected_traffic_category": "unknown",
+    "expected_role_hints": [
+      "unknown"
+    ]
+  },
+  {
+    "hostname": "netflix.net",
+    "expected": "Netflix",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "api.nflxsearch.net",
+    "expected": "Netflix",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "occ.a.nflxso.net",
+    "expected": "Netflix",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "ipv4-example.oca.nflxvideo.net",
+    "expected": "Netflix",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "netflix.com.edgesuite.net",
+    "expected": "Netflix",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "fast.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "netflixtechblog.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.primevideo.com",
+    "expected": "Amazon Prime",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "api.eu-west-1.aiv-delivery.net",
+    "expected": "Amazon Prime",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "cf-timedtext.aux.pv-cdn.net",
+    "expected": "Amazon Prime",
+    "expected_traffic_category": "unknown",
+    "expected_role_hints": [
+      "unknown"
+    ]
+  },
+  {
+    "hostname": "atv-ext.amazon.com",
+    "expected": "Amazon Prime",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "dmqdd6hw24ucf.cloudfront.net",
+    "expected": "Amazon Prime",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.amazon.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "images-na.ssl-images-amazon.com",
+    "expected": "ambiguous",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "unrelated.cloudfront.net",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "amazon-shopping.akamaihd.net",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.hulu.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.hulu.com",
+    "include_optional": true,
+    "expected": "Hulu",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "cdn.hulustream.com",
+    "include_optional": true,
+    "expected": "Hulu",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "hulu.playback.edge.bamgrid.com",
+    "include_optional": true,
+    "expected": "ambiguous",
+    "expected_traffic_category": "unknown",
+    "expected_role_hints": [
+      "unknown"
+    ]
+  },
+  {
+    "hostname": "assetshuluimcom-a.akamaihd.net",
+    "include_optional": true,
+    "expected": "Hulu",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "hulu.conviva.com",
+    "include_optional": true,
+    "expected": "Hulu",
+    "expected_traffic_category": "unknown",
+    "expected_role_hints": [
+      "telemetry"
+    ]
+  },
+  {
+    "hostname": "pulse.conviva.com",
+    "include_optional": true,
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "hulustream.not-hulu.example",
+    "include_optional": true,
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "huluqa.com",
+    "include_optional": true,
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "disney.api.edge.bamgrid.com",
+    "include_optional": true,
+    "expected": "ambiguous",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "gql.twitch.tv",
+    "include_optional": true,
+    "expected": "Twitch",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "static-cdn.jtvnw.net",
+    "include_optional": true,
+    "expected": "Twitch",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "supervisor.ext-twitch.tv",
+    "include_optional": true,
+    "expected": "Twitch",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "player.live-video.net",
+    "include_optional": true,
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "zoom.us",
+    "expected": "Zoom",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.zoom.com",
+    "expected": "Zoom",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "university.zoom.us",
+    "expected": "Zoom",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "googletagmanager.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "teams.microsoft.com",
+    "expected": "Microsoft Teams",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "teams.cloud.microsoft",
+    "expected": "Microsoft Teams",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "events.teams.cloud.microsoft",
+    "expected": "Microsoft Teams",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "login.microsoftonline.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "tenant.sharepoint.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "myteams.microsoft.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "meet.google.com",
+    "expected": "Google Meet",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "stream.meet.google.com",
+    "expected": "Google Meet",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "meetings.googleapis.com",
+    "expected": "Google Meet",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "meet.turns.goog",
+    "expected": "Google Meet",
+    "expected_traffic_category": "unknown",
+    "expected_role_hints": [
+      "media_delivery_candidate"
+    ]
+  },
+  {
+    "hostname": "workspace.turns.goog",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "docs.google.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "company.webex.com",
+    "expected": "Webex",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "api.webexapis.com",
+    "expected": "Webex",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "hydra.wbx2.com",
+    "expected": "Webex",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "files.webexcontent.com",
+    "expected": "Webex",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.cisco.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "safebrowsing.googleapis.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "https://www.youtube.com/watch",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.youtube.com:443",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.youtube.com..",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": ".youtube.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "142.250.82.1",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "2001:4860:4864:5::1",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  }
+]

@@ -1,0 +1,2091 @@
+{
+  "status": "research_draft_not_pcap_validated",
+  "reviewed_on": "2026-10-21",
+  "label_policy": {
+    "unmatched_label": "unknown",
+    "retain_unknown_flows": true,
+    "conflict_label": "ambiguous",
+    "first_match_wins": false
+  },
+  "activity_policy": {
+    "application_and_activity_are_independent": true,
+    "inventory_category_is_flow_label": false,
+    "hostname_only_traffic_category": "unknown",
+    "browsing": "Search, comments, page navigation and other identified non-media web activity are browsing, even on a video service.",
+    "video": "Reserve video for identified video media payload. Application membership, API traffic, thumbnails, manifests, subtitles, telemetry and transport overhead do not by themselves qualify.",
+    "role_hints_are_labels": false,
+    "role_hints": "DNS/SNI rules can suggest browsing_or_api, static_assets, telemetry, media_delivery_candidate or unknown. Hints are provisional and must not silently become traffic categories.",
+    "uncertainty": "An application can be known while its traffic category remains unknown. Keep those records and their evidence.",
+    "mixed_connections": "If a connection carries multiple activities, retain mixed or uncertain activity rather than marking all bytes video. Do not inherit video from another connection in the same session.",
+    "byte_accounting": "Whole-flow byte totals are not video payload byte totals. Keep video_payload_bytes unset when encrypted or mixed traffic prevents reliable separation; never substitute total flow bytes.",
+    "implementation_status": "Policy and rule hints only. There is no packet, request, stream or payload activity classifier yet."
+  },
+  "matching_contract": {
+    "input": "DNS question/original service hostname or TLS SNI; retain the evidence type in output.",
+    "normalization": "ASCII DNS hostnames, case-insensitive, remove one optional terminal dot; reject URLs, IP literals, ports and malformed labels. Convert IDNs to ASCII before matching.",
+    "domain_suffix": "host == domain or host.endswith(\".\" + domain)",
+    "exact_hostname": "host == value; no automatic subdomain matching",
+    "ip_prefixes": "No IP-prefix attribution in this pack; old ranges are not carried forward.",
+    "dns_correlation": "A future flow labeler must scope DNS associations by client, answer chain, TTL and capture time, handle shared IPs, and avoid transferring one service label to unrelated flows sharing an IP.",
+    "integration": "Load both existing-applications.json and additional-applications.json through scripts/hostname_rules.py, including shared_rules. This is not a drop-in Traffic Refinery config. A hostname match identifies a contacted-service candidate, not necessarily the originating application or an activity. Shared guards override apparently unique matches."
+  },
+  "schema_version": 3,
+  "coverage": "Additional target inventory services plus optional GitHub Copilot. Some entries are deliberately limited, shared-only or deferred.",
+  "sources": {
+    "add-dlc-amazon": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/amazon",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/amazon",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-anthropic": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/anthropic",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/anthropic",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-apple": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/apple",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/apple",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-apple-music": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/apple-music",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/apple-music",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-apple-tvplus": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/apple-tvplus",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/apple-tvplus",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-bamtech": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/bamtech",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/bamtech",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-discord": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/discord",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/discord",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-disney": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/disney",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/disney",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-epicgames": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/epicgames",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/epicgames",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-facebook": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/facebook",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/facebook",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-facebook-dev": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/facebook-dev",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/facebook-dev",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-github-copilot": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/github-copilot",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/github-copilot",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-google-deepmind": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/google-deepmind",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/google-deepmind",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-google-gemini": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/google-gemini",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/google-gemini",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-instagram": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/instagram",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/instagram",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-messenger": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/messenger",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/messenger",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-nvidia": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/nvidia",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/nvidia",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-openai": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/openai",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/openai",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-playstation": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/playstation",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/playstation",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-plex": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/plex",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/plex",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-plutotv": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/plutotv",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/plutotv",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-roku": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/roku",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/roku",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-samsung": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/samsung",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/samsung",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-snap": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/snap",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/snap",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-spotify": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/spotify",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/spotify",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-steam": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/steam",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/steam",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-tencent": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/tencent",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/tencent",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-tencent-games": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/tencent-games",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/tencent-games",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-tiktok": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/tiktok",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/tiktok",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-tubi": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/tubi",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/tubi",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-twitter": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/twitter",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/twitter",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-whatsapp": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/whatsapp",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/whatsapp",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-dlc-xbox": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/xbox",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21-additional/v2fly/xbox",
+      "license": "MIT; see research/evidence/2026-10-21-additional/v2fly/LICENSE"
+    },
+    "add-apple-network": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://support.apple.com/en-us/101555",
+      "notes": "Siri/dictation and shared Apple infrastructure; no single Apple-wide application inference.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-apple-music-api": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://developer.apple.com/documentation/applemusicapi/handling-requests-and-responses",
+      "notes": "Apple Music API root host.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-facetime-web": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://support.apple.com/en-gb/guide/iphone/iphfc9b58aaa/26/ios/26",
+      "notes": "FaceTime web links exist; not a complete call-media endpoint list.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-smartthings-api": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://developer.smartthings.com/docs/service-integrations/api-overview",
+      "notes": "SmartThings API root host.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-hue-discovery": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://developers.meethue.com/develop/get-started-2/",
+      "notes": "Hue broker discovery host; local bridge traffic may have no public DNS/SNI.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-bixby-studio": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://corp.bixbydevelopers.com/dev/docs/dev-guide/developers/ide",
+      "notes": "Documented developer tooling endpoints, not proof of consumer assistant runtime traffic.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-alexa-events": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://www.developer.amazon.com/docs/alexaplus/smarthome/send-events",
+      "notes": "Regional amazonalexa.com event endpoints; devices, skills and integrations may contact them.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-alexa-sdk": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://alexa.github.io/avs-device-sdk/namespacealexa_client_s_d_k_1_1capability_agents_1_1api_gateway_1_1test.html",
+      "notes": "Legacy vendor SDK gateway example; current endpoint coverage is unvalidated.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-amazon-music-v1": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://developer.amazon.com/ja/docs/music/API_web_overview.html",
+      "notes": "Preview V1 base URL api.music.amazon.dev.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-amazon-music-v2": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://d332qao9bxuj3h.cloudfront.net/docs/music/API_web_overview_v2.html",
+      "notes": "Vendor developer documentation preview V2 base URL api.music.amazon.com.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-amazon-music-playback": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://www.developer.amazon.com/docs/music/API_playback_sessions.html",
+      "notes": "Music web URL and example playback distribution; a manifest is not audio payload.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-nvidia-gfn": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://www.nvidia.com/en-gb/geforce-now/system-reqs/",
+      "notes": "Concrete cloud-gaming service; domain membership does not establish gameplay.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-tencent-start": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://start.qq.com/",
+      "notes": "Tencent START selected as a concrete candidate, not all Tencent services; the site redirects to /webgame/home.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-playstation-now": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://www.playstation.com/en-us/ps-plus/getting-started/jcr%3Acontent/",
+      "notes": "Vendor FAQ states PlayStation Now merged into PlayStation Plus.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-playstation-cloud": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://www.playstation.com/ps5-game-cloud-streaming",
+      "notes": "Current PlayStation Plus Premium cloud streaming description; no exclusive hostname list established.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-ms-copilot": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-copilot-requirements",
+      "notes": "Microsoft Copilot scope selected by user; exclude shared Office/Graph endpoints.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-github-copilot": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://docs.github.com/en/copilot/reference/copilot-allowlist-reference",
+      "notes": "Specific suggestion API and telemetry hosts; GitHub itself is shared.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-openai-api": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://developers.openai.com/api/reference/overview",
+      "notes": "Official API host; identifies contacted endpoint, not the client application or exact API operation.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-chatgpt-official": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://learn.chatgpt.com/docs/overview",
+      "notes": "Official ChatGPT service link; not a comprehensive network allowlist.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-google-gemini-api": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://ai.google.dev/api",
+      "notes": "Generative Language API; the model and calling client remain unobserved.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-google-gemini-web": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://support.google.com/gemini/answer/14886647",
+      "notes": "Gemini web app hostname.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-claude-network": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://support.claude.com/en/articles/13198485-enforce-network-level-access-control-with-tenant-restrictions",
+      "notes": "Claude web and Anthropic API hostnames.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-meta-instagram": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://www.postman.com/meta/instagram/documentation/6yqw8pt/instagram-api",
+      "notes": "Meta-published API collection also uses graph.facebook.com.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-meta-messenger": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://www.postman.com/meta/messenger-platform-api/documentation/iyp204x/messenger-platform-api",
+      "notes": "Meta-published Messenger collection uses graph.facebook.com.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-google-maps-hosts": {
+      "kind": "vendor_documentation_or_product_site",
+      "url": "https://developers.google.com/maps/domains",
+      "notes": "Example of other Google services using shared ggpht/googleusercontent namespaces.",
+      "reviewed_on": "2026-10-21"
+    },
+    "add-ndpi": {
+      "kind": "upstream_classifier",
+      "url": "https://github.com/ntop/nDPI/blob/2b8c2989f8c36f94a639057aeebd4fc71d841928/src/lib/ndpi_content_match.c.inc",
+      "revision": "2b8c2989f8c36f94a639057aeebd4fc71d841928",
+      "path": "research/evidence/2026-10-21-additional/ndpi-additional-domain-evidence.json"
+    },
+    "add-live": {
+      "kind": "anonymous_public_http_and_local_dns_probe",
+      "path": "research/evidence/2026-10-21-additional/live-additional-probes.json",
+      "notes": "Landing pages, static HTML references and DNS only. No login, stream, game or inference session."
+    },
+    "add-user-scope": {
+      "kind": "user_instruction",
+      "date": "2026-10-21",
+      "notes": "Microsoft Copilot intended; GitHub Copilot also belongs to AI family. Tencent product unspecified; seek interactive cloud-gaming services. Shared hosts must not force unique application labels."
+    },
+    "dlc-youtube": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/youtube",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21/v2fly/youtube",
+      "license": "MIT; see research/evidence/2026-10-21/v2fly/LICENSE"
+    }
+  },
+  "applications": [
+    {
+      "id": "disneyplus",
+      "label": "Disney+",
+      "inventory_name": "Disney+",
+      "inventory_category": "Video streaming",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "Service endpoint identity; does not identify the content brand or prove video playback.",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-disney-core",
+          "match": "domain_suffix",
+          "values": [
+            "disneyplus.com",
+            "disney-plus.net",
+            "disneyplus.net",
+            "disney-plus.com",
+            "dssott.com"
+          ],
+          "sources": [
+            "add-dlc-disney",
+            "add-ndpi",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "Disney+ endpoint family only. No generic disney.com, go.com, theme-park or corporate-domain import. Catalogs and embedded brands may overlap.",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "facebook",
+      "label": "Facebook",
+      "inventory_name": "Facebook",
+      "inventory_category": "Social media",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "Meta Graph, SDK, messaging and shared asset endpoints are separately guarded.",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-facebook-web",
+          "match": "exact_hostname",
+          "values": [
+            "facebook.com",
+            "www.facebook.com",
+            "m.facebook.com",
+            "mbasic.facebook.com"
+          ],
+          "sources": [
+            "add-dlc-facebook",
+            "add-ndpi",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "Only named web hosts; all facebook.com subdomains are not assumed Facebook-exclusive.",
+          "traffic_role_hint": "browsing_or_api"
+        },
+        {
+          "id": "add-facebook-links",
+          "match": "domain_suffix",
+          "values": [
+            "fb.com",
+            "fb.gg",
+            "fbwat.ch"
+          ],
+          "sources": [
+            "add-dlc-facebook",
+            "add-ndpi"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "browsing_or_api"
+        }
+      ]
+    },
+    {
+      "id": "instagram",
+      "label": "Instagram",
+      "inventory_name": "Instagram",
+      "inventory_category": "Social media",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-instagram-core",
+          "match": "domain_suffix",
+          "values": [
+            "instagram.com",
+            "ig.me"
+          ],
+          "sources": [
+            "add-dlc-instagram",
+            "add-ndpi",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        },
+        {
+          "id": "add-instagram-assets",
+          "match": "domain_suffix",
+          "values": [
+            "cdninstagram.com",
+            "igcdn.com"
+          ],
+          "sources": [
+            "add-dlc-instagram",
+            "add-ndpi"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "static_assets"
+        }
+      ]
+    },
+    {
+      "id": "tiktok",
+      "label": "TikTok",
+      "inventory_name": "TikTok",
+      "inventory_category": "Social media",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "Do not treat all ByteDance, ibyteimg.com or myqcloud.com as TikTok.",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-tiktok-core",
+          "match": "domain_suffix",
+          "values": [
+            "tiktok.com",
+            "tiktokv.com",
+            "tiktokv.us",
+            "tiktokv.eu",
+            "tiktokd.net",
+            "tiktokd.org",
+            "tik-tokapi.com"
+          ],
+          "sources": [
+            "add-dlc-tiktok",
+            "add-ndpi",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        },
+        {
+          "id": "add-tiktok-cdn",
+          "match": "domain_suffix",
+          "values": [
+            "tiktokcdn.com",
+            "tiktokcdn-us.com",
+            "tiktokcdn-eu.com",
+            "tiktokeu-cdn.com",
+            "tiktokrow-cdn.com"
+          ],
+          "sources": [
+            "add-dlc-tiktok",
+            "add-ndpi"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "Media, images and other resources may share a CDN; no automatic video activity.",
+          "traffic_role_hint": "unknown"
+        },
+        {
+          "id": "add-tiktok-named-cdn",
+          "match": "exact_hostname",
+          "values": [
+            "p16-tiktokcdn-com.akamaized.net",
+            "p16-tiktok-va-h2.ibyteimg.com",
+            "tiktokcdn.liveplay.myqcloud.com"
+          ],
+          "sources": [
+            "add-dlc-tiktok",
+            "add-ndpi"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "snapchat",
+      "label": "Snapchat",
+      "inventory_name": "Snapchat",
+      "inventory_category": "Social media",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "Snap developer/advertising SDK domains are held separately; an embedded SDK is not the Snapchat client.",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-snapchat-core",
+          "match": "domain_suffix",
+          "values": [
+            "snapchat.com",
+            "sc-cdn.net",
+            "sc-gw.com",
+            "sc-static.net"
+          ],
+          "sources": [
+            "add-dlc-snap",
+            "add-ndpi",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "x",
+      "label": "X",
+      "inventory_name": "X",
+      "inventory_category": "Social media",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-x-core",
+          "match": "domain_suffix",
+          "values": [
+            "x.com",
+            "twitter.com",
+            "t.co",
+            "twttr.com",
+            "twimg.com"
+          ],
+          "sources": [
+            "add-dlc-twitter",
+            "add-ndpi",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "xbox",
+      "label": "Xbox Live",
+      "inventory_name": "Xbox Live",
+      "inventory_category": "Gaming / distribution",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "Xbox endpoint family includes store, accounts, updates and potential cloud gaming; it does not prove gameplay.",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-xbox-core",
+          "match": "domain_suffix",
+          "values": [
+            "xbox.com",
+            "xboxlive.com",
+            "xboxservices.com"
+          ],
+          "sources": [
+            "add-dlc-xbox",
+            "add-ndpi",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "steam",
+      "label": "Steam",
+      "inventory_name": "Steam",
+      "inventory_category": "Gaming / distribution",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "Store browsing, downloads, community and media activity remain distinct from playing a game.",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-steam-core",
+          "match": "domain_suffix",
+          "values": [
+            "steampowered.com",
+            "steamcommunity.com",
+            "steamcontent.com",
+            "steamstatic.com",
+            "steamserver.net",
+            "steamusercontent.com",
+            "steam-chat.com",
+            "s.team"
+          ],
+          "sources": [
+            "add-dlc-steam",
+            "add-ndpi",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        },
+        {
+          "id": "add-steam-named-cdn",
+          "match": "exact_hostname",
+          "values": [
+            "steamcommunity-a.akamaihd.net",
+            "steamcdn-a.akamaihd.net",
+            "steamstore-a.akamaihd.net",
+            "steamuserimages-a.akamaihd.net",
+            "steamusercontent-a.akamaihd.net",
+            "steampipe.akamaized.net"
+          ],
+          "sources": [
+            "add-dlc-steam",
+            "add-ndpi"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "playstation",
+      "label": "PlayStation",
+      "inventory_name": "PlayStation",
+      "inventory_category": "Gaming / distribution",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "General PlayStation service identity; cannot isolate PS Plus cloud streaming from store, downloads or multiplayer.",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-playstation-core",
+          "match": "domain_suffix",
+          "values": [
+            "playstation.com",
+            "playstation.net",
+            "playstationnetwork.com",
+            "sonyentertainmentnetwork.com"
+          ],
+          "sources": [
+            "add-dlc-playstation",
+            "add-ndpi",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "epicgames",
+      "label": "Epic Games",
+      "inventory_name": "Epic Games",
+      "inventory_category": "Gaming / distribution",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "No wholesale Unreal Engine, ArtStation, anti-cheat or unrelated corporate-property import.",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-epicgames-core",
+          "match": "domain_suffix",
+          "values": [
+            "epicgames.com",
+            "epicgames.net",
+            "epicgames.dev",
+            "epicgamescdn.com"
+          ],
+          "sources": [
+            "add-dlc-epicgames",
+            "add-ndpi",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "whatsapp",
+      "label": "WhatsApp",
+      "inventory_name": "WhatsApp",
+      "inventory_category": "Communication / messaging",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "Facebook-hosted encrypted messaging endpoints are treated as uncertain across Meta services.",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-whatsapp-core",
+          "match": "domain_suffix",
+          "values": [
+            "whatsapp.com",
+            "whatsapp.net",
+            "wa.me"
+          ],
+          "sources": [
+            "add-dlc-whatsapp",
+            "add-ndpi",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "messenger",
+      "label": "Messenger",
+      "inventory_name": "Messenger",
+      "inventory_category": "Communication / messaging",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "Facebook MQTT and Graph hosts are shared/uncertain; do not assign them uniquely to Messenger.",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-messenger-core",
+          "match": "domain_suffix",
+          "values": [
+            "messenger.com",
+            "fbmessenger.com",
+            "m.me"
+          ],
+          "sources": [
+            "add-dlc-messenger",
+            "add-ndpi",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "facetime",
+      "label": "FaceTime",
+      "inventory_name": "FaceTime",
+      "inventory_category": "Communication / messaging",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "FaceTime calls may use shared Apple services or direct peer media; hostname rules cannot cover all calls.",
+      "coverage_status": "limited_web_signal",
+      "rules": [
+        {
+          "id": "add-facetime-web",
+          "match": "exact_hostname",
+          "values": [
+            "facetime.apple.com"
+          ],
+          "sources": [
+            "add-facetime-web",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "Join-link/web hostname only; not complete signaling or peer-to-peer media coverage.",
+          "traffic_role_hint": "browsing_or_api"
+        }
+      ]
+    },
+    {
+      "id": "discord",
+      "label": "Discord",
+      "inventory_name": "Discord",
+      "inventory_category": "Communication / messaging",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "Chat, calls, assets, downloads and embedded activities remain activity-unknown.",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-discord-core",
+          "match": "domain_suffix",
+          "values": [
+            "discord.com",
+            "discord.gg",
+            "discordapp.com",
+            "discordapp.net",
+            "discord.media",
+            "discord-activities.com",
+            "discordactivities.com"
+          ],
+          "sources": [
+            "add-dlc-discord",
+            "add-ndpi",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "tubi",
+      "label": "Tubi",
+      "inventory_name": "Tubi",
+      "inventory_category": "Television / OTT",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-tubi-core",
+          "match": "domain_suffix",
+          "values": [
+            "tubi.tv",
+            "tubitv.com",
+            "tubi.video",
+            "tubi.io"
+          ],
+          "sources": [
+            "add-dlc-tubi",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "roku",
+      "label": "Roku",
+      "inventory_name": "Roku",
+      "inventory_category": "Television / OTT",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "Roku platform/account/update traffic is not necessarily Roku Channel video; other apps on Roku must retain their own service identity.",
+      "coverage_status": "device_ecosystem_signal",
+      "rules": [
+        {
+          "id": "add-roku-core",
+          "match": "domain_suffix",
+          "values": [
+            "roku.com",
+            "rokutime.com"
+          ],
+          "sources": [
+            "add-dlc-roku",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "appletvplus",
+      "label": "Apple TV+",
+      "inventory_name": "Apple TV+",
+      "inventory_category": "Television / OTT",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "Apple TV app/store/channels and Apple TV+ content cannot be distinguished by these hostnames. Shared guards prevent unique Apple TV+ attribution.",
+      "coverage_status": "shared_product_scope",
+      "rules": [
+        {
+          "id": "add-appletv-web",
+          "match": "domain_suffix",
+          "values": [
+            "tv.apple.com"
+          ],
+          "sources": [
+            "add-dlc-apple-tvplus",
+            "add-ndpi",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "browsing_or_api"
+        },
+        {
+          "id": "add-appletv-api",
+          "match": "exact_hostname",
+          "values": [
+            "uts-api.itunes.apple.com"
+          ],
+          "sources": [
+            "add-dlc-apple-tvplus"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "browsing_or_api"
+        }
+      ]
+    },
+    {
+      "id": "plutotv",
+      "label": "Pluto TV",
+      "inventory_name": "Pluto TV",
+      "inventory_category": "Television / OTT",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-pluto-core",
+          "match": "domain_suffix",
+          "values": [
+            "pluto.tv",
+            "plutotv.net"
+          ],
+          "sources": [
+            "add-dlc-plutotv",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "plex",
+      "label": "Plex",
+      "inventory_name": "Plex",
+      "inventory_category": "Television / OTT",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "Includes self-hosted server discovery/TLS names; audio, video, images and control traffic are not all video.",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-plex-core",
+          "match": "domain_suffix",
+          "values": [
+            "plex.tv",
+            "plexapp.com",
+            "plex.services",
+            "plex.direct"
+          ],
+          "sources": [
+            "add-dlc-plex",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "spotify",
+      "label": "Spotify",
+      "inventory_name": "Spotify",
+      "inventory_category": "Audio streaming",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "A Spotify endpoint match does not identify audio versus video, artwork, ads or metadata.",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-spotify-core",
+          "match": "domain_suffix",
+          "values": [
+            "spotify.com",
+            "scdn.co",
+            "pscdn.co",
+            "spotifycdn.com",
+            "spotifycdn.net",
+            "spotify.link",
+            "spoti.fi"
+          ],
+          "sources": [
+            "add-dlc-spotify",
+            "add-ndpi",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        },
+        {
+          "id": "add-spotify-cdn",
+          "match": "exact_hostname",
+          "values": [
+            "audio-ak-spotify-com.akamaized.net",
+            "audio4-ak-spotify-com.akamaized.net",
+            "spotify.com.edgesuite.net",
+            "spotify.map.fastly.net"
+          ],
+          "sources": [
+            "add-dlc-spotify",
+            "add-ndpi"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "applemusic",
+      "label": "Apple Music",
+      "inventory_name": "Apple Music",
+      "inventory_category": "Audio streaming",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "MusicKit can be called by other clients. Shared iTunes/mzstatic assets do not establish Apple Music use.",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-applemusic-web",
+          "match": "domain_suffix",
+          "values": [
+            "music.apple.com",
+            "applemusic.com",
+            "musickit.net"
+          ],
+          "sources": [
+            "add-dlc-apple-music",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        },
+        {
+          "id": "add-applemusic-api",
+          "match": "exact_hostname",
+          "values": [
+            "api.music.apple.com"
+          ],
+          "sources": [
+            "add-apple-music-api"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "browsing_or_api"
+        }
+      ]
+    },
+    {
+      "id": "amazonmusic",
+      "label": "Amazon Music",
+      "inventory_name": "Amazon Music",
+      "inventory_category": "Audio streaming",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "Do not assign generic Amazon shopping, image, authentication or CloudFront namespaces to Amazon Music.",
+      "coverage_status": "limited_regional_signal",
+      "rules": [
+        {
+          "id": "add-amazonmusic-web",
+          "match": "exact_hostname",
+          "values": [
+            "music.amazon.com",
+            "music.amazon.ca"
+          ],
+          "sources": [
+            "add-amazon-music-playback",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "Starter web hosts; regional hostname coverage is incomplete.",
+          "traffic_role_hint": "browsing_or_api"
+        },
+        {
+          "id": "add-amazonmusic-api",
+          "match": "exact_hostname",
+          "values": [
+            "api.music.amazon.dev",
+            "api.music.amazon.com"
+          ],
+          "sources": [
+            "add-amazon-music-v1",
+            "add-amazon-music-v2"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "Vendor documentation marks these APIs preview/closed beta. API metadata is not audio payload.",
+          "traffic_role_hint": "browsing_or_api"
+        }
+      ]
+    },
+    {
+      "id": "geforcenow",
+      "label": "GeForce NOW",
+      "inventory_name": "GeForce Now",
+      "inventory_category": "Cloud gaming",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "Concrete interactive cloud-gaming service candidate. Excludes general nvidia.com/geforce.com and shared driver/telemetry/store hosts. In-session media/control identification requires captures.",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-gfn-core",
+          "match": "domain_suffix",
+          "values": [
+            "geforcenow.com",
+            "nvidiagrid.net"
+          ],
+          "sources": [
+            "add-dlc-nvidia",
+            "add-ndpi",
+            "add-nvidia-gfn",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "playstation-cloud",
+      "label": "PlayStation Plus cloud streaming",
+      "inventory_name": "PlayStation Now",
+      "inventory_category": "Cloud gaming",
+      "legacy_names": [],
+      "enabled_by_default": false,
+      "scope": "User seeks cloud-gaming activity. PS Now merged into PS Plus; general PlayStation hostnames cannot distinguish streaming. No invented exclusive namespace.",
+      "coverage_status": "deferred_legacy_alias",
+      "rules": []
+    },
+    {
+      "id": "tencent-start",
+      "label": "Tencent START",
+      "inventory_name": "Tencent",
+      "inventory_category": "Cloud gaming",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "Tencent product was unspecified. START is an explicitly provisional concrete cloud-gaming candidate; actual streaming/control endpoints are not established.",
+      "coverage_status": "provisional_product_web_only",
+      "rules": [
+        {
+          "id": "add-tencent-start-web",
+          "match": "exact_hostname",
+          "values": [
+            "start.qq.com"
+          ],
+          "sources": [
+            "add-tencent-start",
+            "add-live",
+            "add-user-scope"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "Named product web endpoint only; no generic qq.com, tencent.com, myqcloud.com or Tencent Cloud import.",
+          "traffic_role_hint": "browsing_or_api"
+        }
+      ]
+    },
+    {
+      "id": "alexa",
+      "label": "Alexa",
+      "inventory_name": "Alexa",
+      "inventory_category": "IoT / assistants",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "An Alexa-triggered Spotify/Music request does not become an Alexa flow merely because it occurs in the same session.",
+      "coverage_status": "limited_legacy_and_api_signal",
+      "rules": [
+        {
+          "id": "add-alexa-events",
+          "match": "domain_suffix",
+          "values": [
+            "amazonalexa.com"
+          ],
+          "sources": [
+            "add-alexa-events",
+            "add-ndpi"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        },
+        {
+          "id": "add-alexa-ui",
+          "match": "exact_hostname",
+          "values": [
+            "alexa.amazon.com"
+          ],
+          "sources": [
+            "add-ndpi",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "browsing_or_api"
+        },
+        {
+          "id": "add-alexa-legacy-gateway",
+          "match": "exact_hostname",
+          "values": [
+            "avs-alexa-na.amazon.com",
+            "avs-alexa-1-na.amazon.com",
+            "avs-alexa-2-na.amazon.com",
+            "avs-alexa-3-na.amazon.com",
+            "avs-alexa-4-na.amazon.com",
+            "avs-alexa-5-na.amazon.com",
+            "avs-alexa-6-na.amazon.com",
+            "avs-alexa-7-na.amazon.com",
+            "avs-alexa-8-na.amazon.com",
+            "avs-alexa-9-na.amazon.com",
+            "avs-alexa-10-na.amazon.com",
+            "avs-alexa-11-na.amazon.com",
+            "avs-alexa-12-na.amazon.com",
+            "avs-alexa-13-na.amazon.com",
+            "avs-alexa-14-na.amazon.com",
+            "avs-alexa-15-na.amazon.com",
+            "avs-alexa-16-na.amazon.com",
+            "avs-alexa-17-na.amazon.com",
+            "avs-alexa-18-na.amazon.com",
+            "avs-alexa-19-na.amazon.com"
+          ],
+          "sources": [
+            "add-alexa-sdk",
+            "add-ndpi",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "Legacy gateway candidates; regional/runtime coverage remains incomplete.",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "siri",
+      "label": "Siri",
+      "inventory_name": "Siri",
+      "inventory_category": "IoT / assistants",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "No exclusive Siri request classifier established. Broader Apple search and Private Cloud Compute infrastructure are not Siri-only.",
+      "coverage_status": "shared_signal_only",
+      "rules": [
+        {
+          "id": "add-siri-dictation",
+          "match": "exact_hostname",
+          "values": [
+            "guzzoni.apple.com"
+          ],
+          "sources": [
+            "add-apple-network",
+            "add-ndpi"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "Apple documents Siri AND dictation here. Shared guard blocks exclusive Siri attribution.",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "bixby",
+      "label": "Bixby",
+      "inventory_name": "Bixby",
+      "inventory_category": "IoT / assistants",
+      "legacy_names": [],
+      "enabled_by_default": false,
+      "scope": "Documented developer endpoints are retained for review but disabled for the consumer Bixby target. Consumer runtime needs controlled captures or stronger sources.",
+      "coverage_status": "developer_only_disabled",
+      "rules": [
+        {
+          "id": "add-bixby-developer-only",
+          "match": "domain_suffix",
+          "values": [
+            "bixbydevelopers.com"
+          ],
+          "sources": [
+            "add-bixby-studio"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "Developer site/tooling scope, not consumer assistant runtime.",
+          "traffic_role_hint": "browsing_or_api"
+        },
+        {
+          "id": "add-bixby-studio-assets",
+          "match": "exact_hostname",
+          "values": [
+            "bixby-client.aibixby.com"
+          ],
+          "sources": [
+            "add-bixby-studio"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "Documented Bixby Studio client asset endpoint only.",
+          "traffic_role_hint": "static_assets"
+        }
+      ]
+    },
+    {
+      "id": "hue",
+      "label": "Philips Hue",
+      "inventory_name": "Philips Hue",
+      "inventory_category": "IoT / assistants",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "Public broker/developer/cloud namespace only; local IP/mDNS and third-party integrations need separate evidence.",
+      "coverage_status": "limited_cloud_signal",
+      "rules": [
+        {
+          "id": "add-hue-cloud",
+          "match": "domain_suffix",
+          "values": [
+            "meethue.com"
+          ],
+          "sources": [
+            "add-hue-discovery",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "smartthings",
+      "label": "SmartThings",
+      "inventory_name": "SmartThings",
+      "inventory_category": "IoT / assistants",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "Includes platform API and website. Does not prove which vendor device or client initiated an API request.",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-smartthings-core",
+          "match": "domain_suffix",
+          "values": [
+            "smartthings.com"
+          ],
+          "sources": [
+            "add-smartthings-api",
+            "add-dlc-samsung",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "chatgpt",
+      "label": "ChatGPT",
+      "inventory_name": "ChatGPT",
+      "inventory_category": "AI services",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "Contacted ChatGPT service namespace only. No entire openai.com, Sora or generic shared asset import.",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-chatgpt-web",
+          "match": "domain_suffix",
+          "values": [
+            "chatgpt.com"
+          ],
+          "sources": [
+            "add-chatgpt-official",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "openai-api",
+      "label": "OpenAI API",
+      "inventory_name": "OpenAI API",
+      "inventory_category": "AI services",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-openai-api-public",
+          "match": "exact_hostname",
+          "values": [
+            "api.openai.com"
+          ],
+          "sources": [
+            "add-openai-api",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "API endpoint identity does not reveal model, operation, inference activity or initiating app; arbitrary subdomains are not imported.",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "ms-copilot",
+      "label": "Microsoft Copilot",
+      "inventory_name": "Copilot",
+      "inventory_category": "AI services",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "Microsoft Copilot as clarified by user. Shared Bing, Graph, Office and Microsoft login remain unattributed.",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-ms-copilot-core",
+          "match": "exact_hostname",
+          "values": [
+            "copilot.microsoft.com",
+            "copilot.cloud.microsoft"
+          ],
+          "sources": [
+            "add-ms-copilot",
+            "add-live",
+            "add-user-scope"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "gemini",
+      "label": "Gemini",
+      "inventory_name": "Gemini",
+      "inventory_category": "AI services",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "Exclude NotebookLM, Jules, general DeepMind, Google Labs, Vertex AI and other products included in upstream umbrella lists.",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-gemini-web",
+          "match": "domain_suffix",
+          "values": [
+            "gemini.google.com"
+          ],
+          "sources": [
+            "add-google-gemini-web",
+            "add-dlc-google-deepmind",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "browsing_or_api"
+        },
+        {
+          "id": "add-gemini-api",
+          "match": "exact_hostname",
+          "values": [
+            "generativelanguage.googleapis.com"
+          ],
+          "sources": [
+            "add-google-gemini-api",
+            "add-dlc-google-deepmind"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "Google Generative Language endpoint, not proof of a specific model or Gemini client.",
+          "traffic_role_hint": "unknown"
+        },
+        {
+          "id": "add-gemini-web-backend",
+          "match": "exact_hostname",
+          "values": [
+            "geminiweb-pa.clients.google.com",
+            "geminiweb-pa.clients6.google.com",
+            "gemini.gstatic.com"
+          ],
+          "sources": [
+            "add-dlc-google-deepmind"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "label": "Claude",
+      "inventory_name": "Claude",
+      "inventory_category": "AI services",
+      "legacy_names": [],
+      "enabled_by_default": true,
+      "scope": "Claude service family including its API; exclude the general anthropic.com corporate namespace.",
+      "coverage_status": "candidate_service_namespaces",
+      "rules": [
+        {
+          "id": "add-claude-web",
+          "match": "domain_suffix",
+          "values": [
+            "claude.ai",
+            "claude.com"
+          ],
+          "sources": [
+            "add-claude-network",
+            "add-dlc-anthropic",
+            "add-live"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        },
+        {
+          "id": "add-claude-api",
+          "match": "exact_hostname",
+          "values": [
+            "api.anthropic.com"
+          ],
+          "sources": [
+            "add-claude-network"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "Anthropic API destination, not proof of which client called it or whether bytes represent inference.",
+          "traffic_role_hint": "unknown"
+        },
+        {
+          "id": "add-claude-artifacts",
+          "match": "domain_suffix",
+          "values": [
+            "claudeusercontent.com"
+          ],
+          "sources": [
+            "add-dlc-anthropic"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "Artifact/user content may be arbitrary; no automatic AI activity category.",
+          "traffic_role_hint": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "github-copilot",
+      "label": "GitHub Copilot",
+      "inventory_name": null,
+      "inventory_category": "AI services",
+      "legacy_names": [],
+      "enabled_by_default": false,
+      "scope": "Separate optional AI service discussed by user; historical Copilot inventory entry remains Microsoft Copilot. No generic github.com/api.github.com import.",
+      "coverage_status": "optional_user_discussed_service",
+      "rules": [
+        {
+          "id": "add-github-copilot-api",
+          "match": "domain_suffix",
+          "values": [
+            "githubcopilot.com"
+          ],
+          "sources": [
+            "add-github-copilot",
+            "add-dlc-github-copilot"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        },
+        {
+          "id": "add-github-copilot-proxy",
+          "match": "exact_hostname",
+          "values": [
+            "copilot-proxy.githubusercontent.com",
+            "origin-tracker.githubusercontent.com"
+          ],
+          "sources": [
+            "add-github-copilot"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        },
+        {
+          "id": "add-github-copilot-telemetry",
+          "match": "exact_hostname",
+          "values": [
+            "copilot-telemetry.githubusercontent.com"
+          ],
+          "sources": [
+            "add-github-copilot"
+          ],
+          "support": "reviewed_hostname_candidate_not_pcap_validated",
+          "notes": "",
+          "traffic_role_hint": "telemetry"
+        }
+      ]
+    }
+  ],
+  "shared_rules": [
+    {
+      "id": "shared-meta-assets",
+      "match": "domain_suffix",
+      "values": [
+        "fbcdn.net",
+        "fbsbx.com"
+      ],
+      "candidate_application_ids": [
+        "facebook",
+        "instagram",
+        "messenger",
+        "whatsapp"
+      ],
+      "other_candidates": [
+        "Other Meta integrations"
+      ],
+      "candidate_list_exhaustive": false,
+      "sources": [
+        "add-ndpi",
+        "add-dlc-facebook",
+        "add-dlc-instagram"
+      ],
+      "traffic_role_hint": "unknown",
+      "reason": "Do not equate a shared Meta asset host with a particular Meta client; candidate list is a conservative, non-exhaustive set."
+    },
+    {
+      "id": "shared-meta-sdk",
+      "match": "domain_suffix",
+      "values": [
+        "facebook.net"
+      ],
+      "candidate_application_ids": [
+        "facebook",
+        "instagram",
+        "messenger"
+      ],
+      "other_candidates": [
+        "Third-party sites embedding Meta SDKs"
+      ],
+      "candidate_list_exhaustive": false,
+      "sources": [
+        "add-ndpi",
+        "add-dlc-facebook"
+      ],
+      "traffic_role_hint": "unknown",
+      "reason": "SDK/authentication resources can be embedded by other apps or websites."
+    },
+    {
+      "id": "shared-meta-graph",
+      "match": "exact_hostname",
+      "values": [
+        "graph.facebook.com"
+      ],
+      "candidate_application_ids": [
+        "facebook",
+        "instagram",
+        "messenger",
+        "whatsapp"
+      ],
+      "other_candidates": [
+        "Other Graph API integrations"
+      ],
+      "candidate_list_exhaustive": false,
+      "sources": [
+        "add-meta-instagram",
+        "add-meta-messenger"
+      ],
+      "traffic_role_hint": "unknown",
+      "reason": "Multiple Meta APIs share the hostname; DNS/SNI cannot see distinguishing URL paths or callers."
+    },
+    {
+      "id": "shared-meta-messaging",
+      "match": "exact_hostname",
+      "values": [
+        "edge-mqtt.facebook.com",
+        "mqtt-mini.facebook.com",
+        "chat-e2ee-mini.facebook.com"
+      ],
+      "candidate_application_ids": [
+        "facebook",
+        "messenger",
+        "whatsapp"
+      ],
+      "other_candidates": [
+        "Other Meta messaging integrations"
+      ],
+      "candidate_list_exhaustive": false,
+      "sources": [
+        "add-ndpi"
+      ],
+      "traffic_role_hint": "unknown",
+      "reason": "Upstream assigns different Facebook subdomains to different products; retain candidates until capture/client evidence validates exclusive attribution."
+    },
+    {
+      "id": "shared-google-video",
+      "match": "domain_suffix",
+      "values": [
+        "googlevideo.com"
+      ],
+      "candidate_application_ids": [
+        "youtube"
+      ],
+      "other_candidates": [
+        "Other video clients and embedded-player integrations (not enumerated)"
+      ],
+      "candidate_list_exhaustive": false,
+      "sources": [
+        "add-user-scope",
+        "dlc-youtube"
+      ],
+      "traffic_role_hint": "media_delivery_candidate",
+      "reason": "Preserve the original media heuristic as a candidate, not exclusive application proof. Shared/embedded service use cannot identify the initiating app."
+    },
+    {
+      "id": "shared-disney-infrastructure",
+      "match": "domain_suffix",
+      "values": [
+        "bamgrid.com",
+        "bamgrid.net",
+        "bamtech.net",
+        "dmed.technology"
+      ],
+      "candidate_application_ids": [
+        "disneyplus",
+        "hulu"
+      ],
+      "other_candidates": [
+        "ESPN and other Disney streaming services"
+      ],
+      "candidate_list_exhaustive": false,
+      "sources": [
+        "add-dlc-bamtech",
+        "add-dlc-disney",
+        "add-live"
+      ],
+      "traffic_role_hint": "unknown",
+      "reason": "Upstream Disney umbrella includes Hulu and ESPN; whole BAMTech namespaces are not Disney+-exclusive."
+    },
+    {
+      "id": "shared-disney-accounts",
+      "match": "domain_suffix",
+      "values": [
+        "disneyaccount.com",
+        "go.com"
+      ],
+      "candidate_application_ids": [
+        "disneyplus",
+        "hulu"
+      ],
+      "other_candidates": [
+        "Other Disney brands"
+      ],
+      "candidate_list_exhaustive": false,
+      "sources": [
+        "add-dlc-disney",
+        "add-live"
+      ],
+      "traffic_role_hint": "unknown",
+      "reason": "Corporate login/shared brand infrastructure does not determine the streaming product."
+    },
+    {
+      "id": "shared-apple-tv-products",
+      "match": "domain_suffix",
+      "values": [
+        "tv.apple.com"
+      ],
+      "candidate_application_ids": [
+        "appletvplus"
+      ],
+      "other_candidates": [
+        "Apple TV purchases, rentals and other channels"
+      ],
+      "candidate_list_exhaustive": false,
+      "sources": [
+        "add-dlc-apple-tvplus",
+        "add-live"
+      ],
+      "traffic_role_hint": "unknown",
+      "reason": "The Apple TV frontend is broader than Apple TV+ subscription content."
+    },
+    {
+      "id": "shared-apple-tv-api",
+      "match": "exact_hostname",
+      "values": [
+        "uts-api.itunes.apple.com"
+      ],
+      "candidate_application_ids": [
+        "appletvplus"
+      ],
+      "other_candidates": [
+        "Other Apple TV store/channel content"
+      ],
+      "candidate_list_exhaustive": false,
+      "sources": [
+        "add-dlc-apple-tvplus"
+      ],
+      "traffic_role_hint": "unknown",
+      "reason": "No URL/content visibility to isolate Apple TV+ from Apple TV app catalog traffic."
+    },
+    {
+      "id": "shared-apple-content",
+      "match": "domain_suffix",
+      "values": [
+        "itunes.apple.com",
+        "mzstatic.com"
+      ],
+      "candidate_application_ids": [
+        "applemusic",
+        "appletvplus"
+      ],
+      "other_candidates": [
+        "App Store and other Apple content"
+      ],
+      "candidate_list_exhaustive": false,
+      "sources": [
+        "add-apple-network"
+      ],
+      "traffic_role_hint": "unknown",
+      "reason": "Apple documents these as shared app/book/music content infrastructure."
+    },
+    {
+      "id": "shared-apple-dictation",
+      "match": "exact_hostname",
+      "values": [
+        "guzzoni.apple.com"
+      ],
+      "candidate_application_ids": [
+        "siri"
+      ],
+      "other_candidates": [
+        "Apple dictation"
+      ],
+      "candidate_list_exhaustive": false,
+      "sources": [
+        "add-apple-network"
+      ],
+      "traffic_role_hint": "unknown",
+      "reason": "Apple explicitly documents Siri and dictation on this host; a unique Siri label would overclaim."
+    },
+    {
+      "id": "shared-apple-search",
+      "match": "domain_suffix",
+      "values": [
+        "smoot.apple.com"
+      ],
+      "candidate_application_ids": [
+        "siri",
+        "applemusic"
+      ],
+      "other_candidates": [
+        "Spotlight, Safari, News and other Apple search"
+      ],
+      "candidate_list_exhaustive": false,
+      "sources": [
+        "add-apple-network"
+      ],
+      "traffic_role_hint": "unknown",
+      "reason": "Apple explicitly lists multiple products sharing this search namespace."
+    },
+    {
+      "id": "shared-amazon-shared-assets",
+      "match": "exact_hostname",
+      "values": [
+        "m.media-amazon.com",
+        "images-na.ssl-images-amazon.com",
+        "images-eu.ssl-images-amazon.com",
+        "images-fe.ssl-images-amazon.com"
+      ],
+      "candidate_application_ids": [
+        "primevideo",
+        "amazonmusic",
+        "alexa"
+      ],
+      "other_candidates": [
+        "Amazon shopping and other Amazon services"
+      ],
+      "candidate_list_exhaustive": false,
+      "sources": [
+        "add-amazon-music-playback",
+        "add-live"
+      ],
+      "traffic_role_hint": "static_assets",
+      "reason": "Image/corporate namespaces may be referenced across Amazon products; generic CDN presence is not product proof."
+    },
+    {
+      "id": "shared-openai-shared-assets",
+      "match": "domain_suffix",
+      "values": [
+        "oaistatic.com",
+        "oaiusercontent.com"
+      ],
+      "candidate_application_ids": [
+        "chatgpt",
+        "openai-api"
+      ],
+      "other_candidates": [
+        "Sora, Codex and other OpenAI-hosted content/integrations"
+      ],
+      "candidate_list_exhaustive": false,
+      "sources": [
+        "add-dlc-openai",
+        "add-user-scope"
+      ],
+      "traffic_role_hint": "unknown",
+      "reason": "Potential shared product content; do not equate all OpenAI assets with ChatGPT. Candidate membership is provisional."
+    },
+    {
+      "id": "shared-copilot-shared-github",
+      "match": "exact_hostname",
+      "values": [
+        "api.github.com"
+      ],
+      "candidate_application_ids": [
+        "github-copilot"
+      ],
+      "other_candidates": [
+        "Other GitHub APIs and clients"
+      ],
+      "candidate_list_exhaustive": false,
+      "sources": [
+        "add-github-copilot"
+      ],
+      "traffic_role_hint": "unknown",
+      "reason": "Copilot-specific and unrelated API paths share the hostname. Optional app selection cannot make a shared API exclusive."
+    },
+    {
+      "id": "shared-microsoft-graph",
+      "match": "exact_hostname",
+      "values": [
+        "graph.microsoft.com"
+      ],
+      "candidate_application_ids": [
+        "teams",
+        "ms-copilot"
+      ],
+      "other_candidates": [
+        "Other Microsoft Graph clients"
+      ],
+      "candidate_list_exhaustive": false,
+      "sources": [
+        "add-ms-copilot"
+      ],
+      "traffic_role_hint": "unknown",
+      "reason": "General Graph endpoints are shared even if one target application is enabled."
+    }
+  ],
+  "attribution_policy": {
+    "scope": "contacted_service_candidate",
+    "initiating_application": "unknown",
+    "shared_match_requires_context": true,
+    "disabled_candidates_remain_ambiguous": true,
+    "no_first_match_or_longest_suffix_override": true,
+    "cooccurrence_is_not_proof": "Do not transfer application/activity from a nearby connection, a shared IP, a device platform, or an assistant session without independently validated linkage.",
+    "candidate_lists_are_not_exhaustive": true
+  }
+}

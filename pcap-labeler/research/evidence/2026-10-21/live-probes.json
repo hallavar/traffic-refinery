@@ -1,0 +1,1123 @@
+{
+  "started_from": "local execution host; not a university capture vantage point",
+  "recorded_at_utc": "2026-10-21T07:31:05.705236+00:00",
+  "method_limits": [
+    "No login or playback was performed.",
+    "Static HTML references are not observed subresource connections.",
+    "HTTP status or DNS resolution alone does not prove application exclusivity.",
+    "NXDOMAIN or no address at a root name does not disprove live subdomains."
+  ],
+  "http": [
+    {
+      "requested_url": "https://www.youtube.com/",
+      "method": "GET",
+      "tls_certificate_verification": true,
+      "status": 200,
+      "final_url": "https://www.youtube.com/",
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes_read": 899670,
+      "truncated": false,
+      "hostnames_referenced_in_static_html": [
+        "accountlinking-pa-clients6.youtube.com",
+        "accounts.google.com",
+        "apis.google.com",
+        "client-channel.google.com",
+        "clients4.google.com",
+        "consent.youtube.com",
+        "developers.google.com",
+        "families.google.com",
+        "i.ytimg.com",
+        "m.youtube.com",
+        "payments.youtube.com",
+        "policies.google.com",
+        "studio.youtube.com",
+        "support.google.com",
+        "www.gstatic.com",
+        "www.w3.org",
+        "www.youtube.com",
+        "youtubei-att.googleapis.com"
+      ]
+    },
+    {
+      "requested_url": "https://www.netflix.com/",
+      "method": "GET",
+      "tls_certificate_verification": true,
+      "status": 200,
+      "final_url": "https://www.netflix.com/es-en/",
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes_read": 2000001,
+      "truncated": true,
+      "hostnames_referenced_in_static_html": [
+        "assets.nflxext.com",
+        "example.com",
+        "fast.com",
+        "help.netflix.com",
+        "help.nflxext.com",
+        "ir.netflix.com",
+        "jobs.netflix.com",
+        "logs.netflix.com",
+        "media.netflix.com",
+        "netflix.com",
+        "occ-0-358-360.1.nflxso.net",
+        "occ.a.nflxso.net",
+        "www.netflix.com",
+        "www.w3.org"
+      ]
+    },
+    {
+      "requested_url": "https://www.primevideo.com/",
+      "method": "GET",
+      "tls_certificate_verification": true,
+      "status": 200,
+      "final_url": "https://www.primevideo.com/offers/nonprimehomepage?ref_=dv_web_force_root",
+      "content_type": "text/html;charset=UTF-8",
+      "response_bytes_read": 661088,
+      "truncated": false,
+      "hostnames_referenced_in_static_html": [
+        "atv-ps-eu.primevideo.com",
+        "images-eu.ssl-images-amazon.com",
+        "images-na.ssl-images-amazon.com",
+        "m.media-amazon.com",
+        "sourcemaps.web.pv.amazon.dev",
+        "unagi-eu.amazon.com",
+        "unagi-na.amazon.com",
+        "www.amazon.es",
+        "www.primevideo.com",
+        "www.w3.org"
+      ]
+    },
+    {
+      "requested_url": "https://www.hulu.com/",
+      "method": "GET",
+      "tls_certificate_verification": true,
+      "status": 200,
+      "final_url": "https://www.disneyplus.com/",
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes_read": 1871359,
+      "truncated": false,
+      "hostnames_referenced_in_static_html": [
+        "apis.bell.ca",
+        "authorization.go.com",
+        "b2b-token-service-userservices-bamtech-prod.us-east-1.bamgrid.net",
+        "cdn-qa.disneyaccount.com",
+        "cdn.cookielaw.org",
+        "cnbl-cdn-stage.bamgrid.com",
+        "cnbl-cdn.bamgrid.com",
+        "cnbl-preview-stage.bamgrid.com",
+        "cnbl-preview.bamgrid.com",
+        "cnbl.global.twdcgrid.net",
+        "content-api-prod.eu-west-1.bamgrid.net",
+        "content-api-prod.us-east-1.bamgrid.net",
+        "content-api-prod.us-west-2.bamgrid.net",
+        "default.any-amer.prd.api.discomax.com",
+        "disney-portal.my.onetrust.com",
+        "disney.api.edge.bamgrid.com",
+        "disney.content.edge.bamgrid.com",
+        "disney.images.edge.bamgrid.com",
+        "graph-service.b2b-edge-service-userservices-bamtech-prod.us-east-1.bamgrid.net",
+        "help.disneyplus.com",
+        "id.nfl.com",
+        "internal-edge.eu-west-1.bamgrid.net",
+        "internal-edge.us-east-1.bamgrid.net",
+        "internal-edge.us-west-2.bamgrid.net",
+        "perks.disneyplus.com",
+        "plasma.aor.prod.hulu.com",
+        "plasma.ava.prod.hulu.com",
+        "plasma.dub.prod.hulu.com",
+        "privacy.thewaltdisneycompany.com",
+        "prod-static.disney-plus.net",
+        "schema.org",
+        "secure.hulu.com",
+        "secure.web.plus.espn.com",
+        "signup.hulu.com",
+        "spaceball-preview-stage.us-east-1.twdcgrid.net",
+        "spaceball-preview.us-east-1.twdcgrid.net",
+        "spaceball-stage.global.twdcgrid.net",
+        "spaceball.global.twdcgrid.net",
+        "static-assets.bamgrid.com",
+        "thewaltdisneycompany.com",
+        "tving.com",
+        "venu.com",
+        "www.disneyplus.com",
+        "www.espn.com",
+        "www.facebook.com",
+        "www.hulu.com",
+        "www.instagram.com",
+        "www.max.com",
+        "www.starplus.com",
+        "www.tiktok.com",
+        "www.w3.org",
+        "www.youtube.com",
+        "x.com"
+      ]
+    },
+    {
+      "requested_url": "https://www.twitch.tv/",
+      "method": "GET",
+      "tls_certificate_verification": true,
+      "status": 200,
+      "final_url": "https://www.twitch.tv/",
+      "content_type": "text/html",
+      "response_bytes_read": 220593,
+      "truncated": false,
+      "hostnames_referenced_in_static_html": [
+        "assets.twitch.tv",
+        "en.wikipedia.org",
+        "gql.twitch.tv",
+        "hermes.twitch.tv",
+        "irc-ws.chat.twitch.tv",
+        "m.twitch.tv",
+        "passport.twitch.tv",
+        "schema.org",
+        "static-cdn.jtvnw.net",
+        "twitch.tv",
+        "twitter.com",
+        "usher.ttvnw.net",
+        "www.facebook.com",
+        "www.linkedin.com",
+        "www.twitch.tv"
+      ]
+    },
+    {
+      "requested_url": "https://netflix.net/",
+      "method": "GET",
+      "tls_certificate_verification": true,
+      "status": 200,
+      "final_url": "https://www.netflix.com/es-en/",
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes_read": 2000001,
+      "truncated": true,
+      "hostnames_referenced_in_static_html": [
+        "assets.nflxext.com",
+        "example.com",
+        "fast.com",
+        "help.netflix.com",
+        "help.nflxext.com",
+        "ir.netflix.com",
+        "jobs.netflix.com",
+        "logs.netflix.com",
+        "media.netflix.com",
+        "netflix.com",
+        "occ-0-358-360.1.nflxso.net",
+        "occ.a.nflxso.net",
+        "www.netflix.com",
+        "www.w3.org"
+      ]
+    },
+    {
+      "requested_url": "https://nflxsearch.net/",
+      "method": "GET",
+      "tls_certificate_verification": true,
+      "error": "URLError: <urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129)>"
+    },
+    {
+      "requested_url": "https://amazonvideo.com/",
+      "method": "GET",
+      "tls_certificate_verification": true,
+      "status": 200,
+      "final_url": "https://www.primevideo.com/offers/nonprimehomepage?ref_=dv_web_force_root",
+      "content_type": "text/html;charset=UTF-8",
+      "response_bytes_read": 661088,
+      "truncated": false,
+      "hostnames_referenced_in_static_html": [
+        "atv-ps-eu.primevideo.com",
+        "images-eu.ssl-images-amazon.com",
+        "images-na.ssl-images-amazon.com",
+        "m.media-amazon.com",
+        "sourcemaps.web.pv.amazon.dev",
+        "unagi-eu.amazon.com",
+        "unagi-na.amazon.com",
+        "www.amazon.es",
+        "www.primevideo.com",
+        "www.w3.org"
+      ]
+    }
+  ],
+  "dns": [
+    {
+      "hostname": "www.youtube.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "www.youtube.com.\t95\tIN\tA\t142.251.152.4",
+            "www.youtube.com.\t95\tIN\tA\t142.251.156.4",
+            "www.youtube.com.\t95\tIN\tA\t142.251.155.4",
+            "www.youtube.com.\t95\tIN\tA\t142.251.151.4",
+            "www.youtube.com.\t95\tIN\tA\t142.251.157.4",
+            "www.youtube.com.\t95\tIN\tA\t142.251.154.4",
+            "www.youtube.com.\t95\tIN\tA\t142.251.150.4",
+            "www.youtube.com.\t95\tIN\tA\t142.251.153.4"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "www.youtube.com.\t223\tIN\tAAAA\t2001:4860:482d:400::",
+            "www.youtube.com.\t223\tIN\tAAAA\t2001:4860:4828:400::",
+            "www.youtube.com.\t223\tIN\tAAAA\t2001:4860:482c:400::",
+            "www.youtube.com.\t223\tIN\tAAAA\t2001:4860:482b:400::",
+            "www.youtube.com.\t223\tIN\tAAAA\t2001:4860:4829:400::",
+            "www.youtube.com.\t223\tIN\tAAAA\t2001:4860:4826:400::",
+            "www.youtube.com.\t223\tIN\tAAAA\t2001:4860:4827:400::",
+            "www.youtube.com.\t223\tIN\tAAAA\t2001:4860:482a:400::"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "youtubei.googleapis.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "youtubei.googleapis.com. 108\tIN\tA\t172.217.119.4",
+            "youtubei.googleapis.com. 108\tIN\tA\t172.217.114.4",
+            "youtubei.googleapis.com. 108\tIN\tA\t172.217.112.4",
+            "youtubei.googleapis.com. 108\tIN\tA\t172.217.113.4",
+            "youtubei.googleapis.com. 108\tIN\tA\t172.217.117.4",
+            "youtubei.googleapis.com. 108\tIN\tA\t172.217.116.4",
+            "youtubei.googleapis.com. 108\tIN\tA\t172.217.118.4",
+            "youtubei.googleapis.com. 108\tIN\tA\t172.217.115.4"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "youtubei.googleapis.com. 30\tIN\tAAAA\t2001:4860:4845:400::",
+            "youtubei.googleapis.com. 30\tIN\tAAAA\t2001:4860:4840:400::",
+            "youtubei.googleapis.com. 30\tIN\tAAAA\t2001:4860:4841:400::",
+            "youtubei.googleapis.com. 30\tIN\tAAAA\t2001:4860:4842:400::",
+            "youtubei.googleapis.com. 30\tIN\tAAAA\t2001:4860:4843:400::",
+            "youtubei.googleapis.com. 30\tIN\tAAAA\t2001:4860:4846:400::",
+            "youtubei.googleapis.com. 30\tIN\tAAAA\t2001:4860:4847:400::",
+            "youtubei.googleapis.com. 30\tIN\tAAAA\t2001:4860:4844:400::"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "youtube.googleapis.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "youtube.googleapis.com.\t13\tIN\tA\t172.217.117.4",
+            "youtube.googleapis.com.\t13\tIN\tA\t172.217.116.4",
+            "youtube.googleapis.com.\t13\tIN\tA\t172.217.115.4",
+            "youtube.googleapis.com.\t13\tIN\tA\t172.217.118.4",
+            "youtube.googleapis.com.\t13\tIN\tA\t172.217.114.4",
+            "youtube.googleapis.com.\t13\tIN\tA\t172.217.113.4",
+            "youtube.googleapis.com.\t13\tIN\tA\t172.217.119.4",
+            "youtube.googleapis.com.\t13\tIN\tA\t172.217.112.4"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "youtube.googleapis.com.\t13\tIN\tAAAA\t2001:4860:4841:400::",
+            "youtube.googleapis.com.\t13\tIN\tAAAA\t2001:4860:4843:400::",
+            "youtube.googleapis.com.\t13\tIN\tAAAA\t2001:4860:4846:400::",
+            "youtube.googleapis.com.\t13\tIN\tAAAA\t2001:4860:4845:400::",
+            "youtube.googleapis.com.\t13\tIN\tAAAA\t2001:4860:4840:400::",
+            "youtube.googleapis.com.\t13\tIN\tAAAA\t2001:4860:4847:400::",
+            "youtube.googleapis.com.\t13\tIN\tAAAA\t2001:4860:4844:400::",
+            "youtube.googleapis.com.\t13\tIN\tAAAA\t2001:4860:4842:400::"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "youtubeembeddedplayer.googleapis.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "youtubeembeddedplayer.googleapis.com. 300 IN A\t172.217.115.4",
+            "youtubeembeddedplayer.googleapis.com. 300 IN A\t172.217.113.4",
+            "youtubeembeddedplayer.googleapis.com. 300 IN A\t172.217.116.4",
+            "youtubeembeddedplayer.googleapis.com. 300 IN A\t172.217.117.4",
+            "youtubeembeddedplayer.googleapis.com. 300 IN A\t172.217.114.4",
+            "youtubeembeddedplayer.googleapis.com. 300 IN A\t172.217.112.4",
+            "youtubeembeddedplayer.googleapis.com. 300 IN A\t172.217.119.4",
+            "youtubeembeddedplayer.googleapis.com. 300 IN A\t172.217.118.4"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "youtubeembeddedplayer.googleapis.com. 300 IN AAAA 2001:4860:4847:400::",
+            "youtubeembeddedplayer.googleapis.com. 300 IN AAAA 2001:4860:4845:400::",
+            "youtubeembeddedplayer.googleapis.com. 300 IN AAAA 2001:4860:4842:400::",
+            "youtubeembeddedplayer.googleapis.com. 300 IN AAAA 2001:4860:4844:400::",
+            "youtubeembeddedplayer.googleapis.com. 300 IN AAAA 2001:4860:4841:400::",
+            "youtubeembeddedplayer.googleapis.com. 300 IN AAAA 2001:4860:4843:400::",
+            "youtubeembeddedplayer.googleapis.com. 300 IN AAAA 2001:4860:4846:400::",
+            "youtubeembeddedplayer.googleapis.com. 300 IN AAAA 2001:4860:4840:400::"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "youtubeeducation.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "youtubeeducation.com.\t300\tIN\tA\t142.251.208.238"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "youtubeeducation.com.\t300\tIN\tAAAA\t2a00:1450:4006:818::200e"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "youtube-nocookie.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "youtube-nocookie.com.\t300\tIN\tA\t142.251.142.78"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "youtube-nocookie.com.\t300\tIN\tAAAA\t2a00:1450:4006:820::200e"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "youtu.be",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "youtu.be.\t\t30\tIN\tA\t142.251.208.142"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "youtu.be.\t\t30\tIN\tAAAA\t2a00:1450:4006:800::200e"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "i.ytimg.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "i.ytimg.com.\t\t223\tIN\tA\t142.251.144.6",
+            "i.ytimg.com.\t\t223\tIN\tA\t142.251.149.6",
+            "i.ytimg.com.\t\t223\tIN\tA\t142.251.146.6",
+            "i.ytimg.com.\t\t223\tIN\tA\t192.178.40.6",
+            "i.ytimg.com.\t\t223\tIN\tA\t192.178.41.6",
+            "i.ytimg.com.\t\t223\tIN\tA\t142.251.145.6",
+            "i.ytimg.com.\t\t223\tIN\tA\t142.251.148.6",
+            "i.ytimg.com.\t\t223\tIN\tA\t142.251.147.6"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "i.ytimg.com.\t\t145\tIN\tAAAA\t2001:4860:4822:600::",
+            "i.ytimg.com.\t\t145\tIN\tAAAA\t2001:4860:4830:600::",
+            "i.ytimg.com.\t\t145\tIN\tAAAA\t2001:4860:4821:600::",
+            "i.ytimg.com.\t\t145\tIN\tAAAA\t2001:4860:4825:600::",
+            "i.ytimg.com.\t\t145\tIN\tAAAA\t2001:4860:4823:600::",
+            "i.ytimg.com.\t\t145\tIN\tAAAA\t2001:4860:4831:600::",
+            "i.ytimg.com.\t\t145\tIN\tAAAA\t2001:4860:4820:600::",
+            "i.ytimg.com.\t\t145\tIN\tAAAA\t2001:4860:4824:600::"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "www.netflix.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "www.netflix.com.\t51\tIN\tA\t192.0.0.69"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NXDOMAIN",
+          "answers": [],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NXDOMAIN",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "netflix.net",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "netflix.net.\t\t21\tIN\tA\t107.20.175.192",
+            "netflix.net.\t\t21\tIN\tA\t34.252.74.1",
+            "netflix.net.\t\t21\tIN\tA\t50.17.247.9",
+            "netflix.net.\t\t21\tIN\tA\t44.226.113.145",
+            "netflix.net.\t\t21\tIN\tA\t52.31.48.193",
+            "netflix.net.\t\t21\tIN\tA\t18.236.7.30",
+            "netflix.net.\t\t21\tIN\tA\t204.236.236.127",
+            "netflix.net.\t\t21\tIN\tA\t34.218.19.240",
+            "netflix.net.\t\t21\tIN\tA\t46.137.171.215"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "netflix.net.\t\t30\tIN\tAAAA\t2a05:d018:76c:b685::de70",
+            "netflix.net.\t\t30\tIN\tAAAA\t2a05:d018:76c:b684::de70",
+            "netflix.net.\t\t30\tIN\tAAAA\t2600:1f14:62a:de80::de70",
+            "netflix.net.\t\t30\tIN\tAAAA\t2600:1f14:62a:de81::de70",
+            "netflix.net.\t\t30\tIN\tAAAA\t2600:1f18:631e:2f80::de70",
+            "netflix.net.\t\t30\tIN\tAAAA\t2a05:d018:76c:b680::de70",
+            "netflix.net.\t\t30\tIN\tAAAA\t2600:1f14:62a:de82::de70",
+            "netflix.net.\t\t30\tIN\tAAAA\t2600:1f18:631e:2f81::de70",
+            "netflix.net.\t\t30\tIN\tAAAA\t2600:1f18:631e:2f82::de70"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "nflxsearch.net",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "nflxsearch.net.\t\t291\tIN\tA\t204.236.236.127",
+            "nflxsearch.net.\t\t291\tIN\tA\t107.20.175.192",
+            "nflxsearch.net.\t\t291\tIN\tA\t52.31.48.193",
+            "nflxsearch.net.\t\t291\tIN\tA\t34.252.74.1",
+            "nflxsearch.net.\t\t291\tIN\tA\t46.137.171.215",
+            "nflxsearch.net.\t\t291\tIN\tA\t18.236.7.30",
+            "nflxsearch.net.\t\t291\tIN\tA\t44.226.113.145",
+            "nflxsearch.net.\t\t291\tIN\tA\t34.218.19.240",
+            "nflxsearch.net.\t\t291\tIN\tA\t50.17.247.9"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "nflxsearch.net.\t\t300\tIN\tAAAA\t2600:1f14:62a:de82::de70",
+            "nflxsearch.net.\t\t300\tIN\tAAAA\t2600:1f14:62a:de81::de70",
+            "nflxsearch.net.\t\t300\tIN\tAAAA\t2a05:d018:76c:b680::de70",
+            "nflxsearch.net.\t\t300\tIN\tAAAA\t2a05:d018:76c:b685::de70",
+            "nflxsearch.net.\t\t300\tIN\tAAAA\t2a05:d018:76c:b684::de70",
+            "nflxsearch.net.\t\t300\tIN\tAAAA\t2600:1f18:631e:2f81::de70",
+            "nflxsearch.net.\t\t300\tIN\tAAAA\t2600:1f18:631e:2f80::de70",
+            "nflxsearch.net.\t\t300\tIN\tAAAA\t2600:1f18:631e:2f82::de70",
+            "nflxsearch.net.\t\t300\tIN\tAAAA\t2600:1f14:62a:de80::de70"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "assets.nflxext.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "assets.nflxext.com.\t60\tIN\tA\t192.0.0.69"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NXDOMAIN",
+          "answers": [],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NXDOMAIN",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "occ.a.nflxso.net",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "occ.a.nflxso.net.\t60\tIN\tA\t192.0.0.69"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "unknown",
+          "answers": [],
+          "exit_code": 9
+        },
+        "CNAME": {
+          "status": "unknown",
+          "answers": [],
+          "exit_code": 9
+        }
+      }
+    },
+    {
+      "hostname": "www.primevideo.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "www.primevideo.com.\t51\tIN\tA\t198.18.2.14"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NXDOMAIN",
+          "answers": [],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "unknown",
+          "answers": [],
+          "exit_code": 9
+        }
+      }
+    },
+    {
+      "hostname": "amazonvideo.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "amazonvideo.com.\t51\tIN\tA\t3.175.86.96",
+            "amazonvideo.com.\t51\tIN\tA\t3.175.86.20",
+            "amazonvideo.com.\t51\tIN\tA\t3.175.86.97",
+            "amazonvideo.com.\t51\tIN\tA\t3.175.86.125"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "api.eu-west-1.aiv-delivery.net",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "api.eu-west-1.aiv-delivery.net.\t60 IN\tCNAME\tglobal.telemetry.insights.video.a2z.com.",
+            "global.telemetry.insights.video.a2z.com. 1381 IN CNAME wetfs.global-1.telemetry.insights.video.a2z.com.",
+            "wetfs.global-1.telemetry.insights.video.a2z.com. 541 IN\tCNAME eu-south-2-1.telemetry.insights.video.a2z.com.",
+            "eu-south-2-1.telemetry.insights.video.a2z.com. 19 IN A 89.60.49.186",
+            "eu-south-2-1.telemetry.insights.video.a2z.com. 19 IN A 35.43.25.106",
+            "eu-south-2-1.telemetry.insights.video.a2z.com. 19 IN A 35.43.158.251",
+            "eu-south-2-1.telemetry.insights.video.a2z.com. 19 IN A 51.48.80.204",
+            "eu-south-2-1.telemetry.insights.video.a2z.com. 19 IN A 35.42.204.160",
+            "eu-south-2-1.telemetry.insights.video.a2z.com. 19 IN A 35.43.234.214"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "api.eu-west-1.aiv-delivery.net.\t60 IN\tCNAME\tglobal.telemetry.insights.video.a2z.com.",
+            "global.telemetry.insights.video.a2z.com. 1381 IN CNAME wetfs.global-1.telemetry.insights.video.a2z.com.",
+            "wetfs.global-1.telemetry.insights.video.a2z.com. 541 IN\tCNAME eu-south-2-1.telemetry.insights.video.a2z.com.",
+            "eu-south-2-1.telemetry.insights.video.a2z.com. 1 IN AAAA 2a05:d011:43d:4b02:cf40:97a:17f2:4a38",
+            "eu-south-2-1.telemetry.insights.video.a2z.com. 1 IN AAAA 2a05:d011:43d:4b00:9908:c0b8:a704:2b95",
+            "eu-south-2-1.telemetry.insights.video.a2z.com. 1 IN AAAA 2a05:d011:43d:4b02:9c8e:3215:e414:d06e",
+            "eu-south-2-1.telemetry.insights.video.a2z.com. 1 IN AAAA 2a05:d011:43d:4b00:7138:13bf:7694:558e",
+            "eu-south-2-1.telemetry.insights.video.a2z.com. 1 IN AAAA 2a05:d011:43d:4b01:6d1e:e11b:8a27:7709",
+            "eu-south-2-1.telemetry.insights.video.a2z.com. 1 IN AAAA 2a05:d011:43d:4b01:17f1:5157:4b56:8a02"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "api.eu-west-1.aiv-delivery.net.\t60 IN\tCNAME\tglobal.telemetry.insights.video.a2z.com."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "atv-ext.amazon.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "atv-ext.amazon.com.\t900\tIN\tCNAME\tabax3rxrp2yp.na.api.amazonvideo.com.",
+            "abax3rxrp2yp.na.api.amazonvideo.com. 60\tIN CNAME d001.na.prod.t100.ter.int.amazonvideo.com.",
+            "d001.na.prod.t100.ter.int.amazonvideo.com. 60 IN CNAME t100-weighted.c001.cfna.prod.t100.ter.int.amazonvideo.com.",
+            "t100-weighted.c001.cfna.prod.t100.ter.int.amazonvideo.com. 60 IN CNAME t100-failover-l1-09.c001.cfna.prod.t100.ter.int.amazonvideo.com.",
+            "t100-failover-l1-09.c001.cfna.prod.t100.ter.int.amazonvideo.com. 60 IN CNAME d1xbb391k33bo5.cloudfront.net.",
+            "d1xbb391k33bo5.cloudfront.net. 60 IN\tA\t3.164.182.117",
+            "d1xbb391k33bo5.cloudfront.net. 60 IN\tA\t3.164.182.39",
+            "d1xbb391k33bo5.cloudfront.net. 60 IN\tA\t3.164.182.97",
+            "d1xbb391k33bo5.cloudfront.net. 60 IN\tA\t3.164.182.25"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "atv-ext.amazon.com.\t900\tIN\tCNAME\tabax3rxrp2yp.na.api.amazonvideo.com.",
+            "abax3rxrp2yp.na.api.amazonvideo.com. 60\tIN CNAME d001.na.prod.t100.ter.int.amazonvideo.com.",
+            "d001.na.prod.t100.ter.int.amazonvideo.com. 60 IN CNAME t100-weighted.c001.cfna.prod.t100.ter.int.amazonvideo.com.",
+            "t100-weighted.c001.cfna.prod.t100.ter.int.amazonvideo.com. 60 IN CNAME t100-failover-l1-09.c001.cfna.prod.t100.ter.int.amazonvideo.com.",
+            "t100-failover-l1-09.c001.cfna.prod.t100.ter.int.amazonvideo.com. 60 IN CNAME d1xbb391k33bo5.cloudfront.net.",
+            "d1xbb391k33bo5.cloudfront.net. 60 IN\tAAAA\t2600:9000:2792:a600:8:4c98:3540:93a1",
+            "d1xbb391k33bo5.cloudfront.net. 60 IN\tAAAA\t2600:9000:2792:9000:8:4c98:3540:93a1",
+            "d1xbb391k33bo5.cloudfront.net. 60 IN\tAAAA\t2600:9000:2792:6a00:8:4c98:3540:93a1",
+            "d1xbb391k33bo5.cloudfront.net. 60 IN\tAAAA\t2600:9000:2792:9400:8:4c98:3540:93a1",
+            "d1xbb391k33bo5.cloudfront.net. 60 IN\tAAAA\t2600:9000:2792:6e00:8:4c98:3540:93a1",
+            "d1xbb391k33bo5.cloudfront.net. 60 IN\tAAAA\t2600:9000:2792:be00:8:4c98:3540:93a1",
+            "d1xbb391k33bo5.cloudfront.net. 60 IN\tAAAA\t2600:9000:2792:ea00:8:4c98:3540:93a1",
+            "d1xbb391k33bo5.cloudfront.net. 60 IN\tAAAA\t2600:9000:2792:4800:8:4c98:3540:93a1"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "atv-ext.amazon.com.\t900\tIN\tCNAME\tabax3rxrp2yp.na.api.amazonvideo.com."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "cf-timedtext.aux.pv-cdn.net",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "cf-timedtext.aux.pv-cdn.net. 30\tIN\tCNAME\tdmqdd6hw24ucf.cloudfront.net.",
+            "dmqdd6hw24ucf.cloudfront.net. 30 IN\tA\t3.175.86.105",
+            "dmqdd6hw24ucf.cloudfront.net. 30 IN\tA\t3.175.86.8",
+            "dmqdd6hw24ucf.cloudfront.net. 30 IN\tA\t3.175.86.47",
+            "dmqdd6hw24ucf.cloudfront.net. 30 IN\tA\t3.175.86.76"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "cf-timedtext.aux.pv-cdn.net. 300 IN\tCNAME\tdmqdd6hw24ucf.cloudfront.net.",
+            "dmqdd6hw24ucf.cloudfront.net. 30 IN\tAAAA\t2600:9000:2921:3400:14:2c71:27c0:93a1",
+            "dmqdd6hw24ucf.cloudfront.net. 30 IN\tAAAA\t2600:9000:2921:4200:14:2c71:27c0:93a1",
+            "dmqdd6hw24ucf.cloudfront.net. 30 IN\tAAAA\t2600:9000:2921:a200:14:2c71:27c0:93a1",
+            "dmqdd6hw24ucf.cloudfront.net. 30 IN\tAAAA\t2600:9000:2921:6600:14:2c71:27c0:93a1",
+            "dmqdd6hw24ucf.cloudfront.net. 30 IN\tAAAA\t2600:9000:2921:f000:14:2c71:27c0:93a1",
+            "dmqdd6hw24ucf.cloudfront.net. 30 IN\tAAAA\t2600:9000:2921:1000:14:2c71:27c0:93a1",
+            "dmqdd6hw24ucf.cloudfront.net. 30 IN\tAAAA\t2600:9000:2921:c200:14:2c71:27c0:93a1",
+            "dmqdd6hw24ucf.cloudfront.net. 30 IN\tAAAA\t2600:9000:2921:7800:14:2c71:27c0:93a1"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "cf-timedtext.aux.pv-cdn.net. 300 IN\tCNAME\tdmqdd6hw24ucf.cloudfront.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "avodassets-a.akamaihd.net",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "avodassets-a.akamaihd.net. 300\tIN\tCNAME\tavodassets-a.akamaihd.net.edgesuite.net.",
+            "avodassets-a.akamaihd.net.edgesuite.net. 300 IN\tCNAME a1038.w10.akamai.net.",
+            "a1038.w10.akamai.net.\t20\tIN\tA\t23.203.61.41",
+            "a1038.w10.akamai.net.\t20\tIN\tA\t23.203.61.13"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "avodassets-a.akamaihd.net. 299\tIN\tCNAME\tavodassets-a.akamaihd.net.edgesuite.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "www.hulu.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "www.hulu.com.\t\t20\tIN\tCNAME\twildcard.hulu.com.edgekey.net.",
+            "wildcard.hulu.com.edgekey.net. 20 IN\tCNAME\te91869.a.akamaiedge.net.",
+            "e91869.a.akamaiedge.net. 10\tIN\tA\t88.221.213.57",
+            "e91869.a.akamaiedge.net. 10\tIN\tA\t88.221.213.58"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "www.hulu.com.\t\t289\tIN\tCNAME\twildcard.hulu.com.edgekey.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "www.huluim.com",
+      "records": {
+        "A": {
+          "status": "NXDOMAIN",
+          "answers": [],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NXDOMAIN",
+          "answers": [],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NXDOMAIN",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "hulustream.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "hulu.playback.edge.bamgrid.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "hulu.playback.edge.bamgrid.com.\t60 IN\tCNAME\td3jz27s94xupev.cloudfront.net.",
+            "d3jz27s94xupev.cloudfront.net. 60 IN\tA\t3.175.86.87",
+            "d3jz27s94xupev.cloudfront.net. 60 IN\tA\t3.175.86.12",
+            "d3jz27s94xupev.cloudfront.net. 60 IN\tA\t3.175.86.22",
+            "d3jz27s94xupev.cloudfront.net. 60 IN\tA\t3.175.86.20"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "unknown",
+          "answers": [],
+          "exit_code": 9
+        },
+        "CNAME": {
+          "status": "unknown",
+          "answers": [],
+          "exit_code": 9
+        }
+      }
+    },
+    {
+      "hostname": "hulu.conviva.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "hulu.conviva.com.\t300\tIN\tCNAME\tpulse.conviva.com.",
+            "pulse.conviva.com.\t300\tIN\tA\t199.127.194.136"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "hulu.conviva.com.\t299\tIN\tCNAME\tpulse.conviva.com."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "www.twitch.tv",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "www.twitch.tv.\t\t89\tIN\tCNAME\th2.twitch.map.fastly.net.",
+            "h2.twitch.map.fastly.net. 89\tIN\tA\t199.232.34.214"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "www.twitch.tv.\t\t89\tIN\tCNAME\th2.twitch.map.fastly.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "static-cdn.jtvnw.net",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "static-cdn.jtvnw.net.\t12361\tIN\tCNAME\tjtvnw.twitchcdn.net.",
+            "jtvnw.twitchcdn.net.\t286\tIN\tCNAME\th2-img.twitch.map.fastly.net.",
+            "h2-img.twitch.map.fastly.net. 2\tIN\tA\t199.232.34.214"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "static-cdn.jtvnw.net.\t12361\tIN\tCNAME\tjtvnw.twitchcdn.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "static.twitchcdn.net",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "static.twitchcdn.net.\t30\tIN\tA\t18.161.97.79",
+            "static.twitchcdn.net.\t30\tIN\tA\t18.161.97.25",
+            "static.twitchcdn.net.\t30\tIN\tA\t18.161.97.99",
+            "static.twitchcdn.net.\t30\tIN\tA\t18.161.97.118"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "static.twitchcdn.net.\t60\tIN\tAAAA\t2600:9000:2921:b200:2:1912:75c0:93a1",
+            "static.twitchcdn.net.\t60\tIN\tAAAA\t2600:9000:2921:4600:2:1912:75c0:93a1",
+            "static.twitchcdn.net.\t60\tIN\tAAAA\t2600:9000:2921:1400:2:1912:75c0:93a1",
+            "static.twitchcdn.net.\t60\tIN\tAAAA\t2600:9000:2921:1e00:2:1912:75c0:93a1",
+            "static.twitchcdn.net.\t60\tIN\tAAAA\t2600:9000:2921:cc00:2:1912:75c0:93a1",
+            "static.twitchcdn.net.\t60\tIN\tAAAA\t2600:9000:2921:5a00:2:1912:75c0:93a1",
+            "static.twitchcdn.net.\t60\tIN\tAAAA\t2600:9000:2921:6800:2:1912:75c0:93a1",
+            "static.twitchcdn.net.\t60\tIN\tAAAA\t2600:9000:2921:7e00:2:1912:75c0:93a1"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "usher.ttvnw.net",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "usher.ttvnw.net.\t8\tIN\tA\t18.161.97.49",
+            "usher.ttvnw.net.\t8\tIN\tA\t18.161.97.120",
+            "usher.ttvnw.net.\t8\tIN\tA\t18.161.97.87",
+            "usher.ttvnw.net.\t8\tIN\tA\t18.161.97.29"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "usher.ttvnw.net.\t30\tIN\tAAAA\t2600:9000:2921:f200:2:bc55:f840:93a1",
+            "usher.ttvnw.net.\t30\tIN\tAAAA\t2600:9000:2921:c000:2:bc55:f840:93a1",
+            "usher.ttvnw.net.\t30\tIN\tAAAA\t2600:9000:2921:3200:2:bc55:f840:93a1",
+            "usher.ttvnw.net.\t30\tIN\tAAAA\t2600:9000:2921:4400:2:bc55:f840:93a1",
+            "usher.ttvnw.net.\t30\tIN\tAAAA\t2600:9000:2921:1200:2:bc55:f840:93a1",
+            "usher.ttvnw.net.\t30\tIN\tAAAA\t2600:9000:2921:c800:2:bc55:f840:93a1",
+            "usher.ttvnw.net.\t30\tIN\tAAAA\t2600:9000:2921:b000:2:bc55:f840:93a1",
+            "usher.ttvnw.net.\t30\tIN\tAAAA\t2600:9000:2921:8a00:2:bc55:f840:93a1"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "ext-twitch.tv",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "twitchsvc.net",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    }
+  ]
+}

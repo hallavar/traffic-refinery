@@ -1,0 +1,114 @@
+{
+  "status": "proposed_candidates_from_slack_not_validated_domain_rules",
+  "source": "https://enslnetsys.slack.com/archives/D08P2HN03C5/p1789550180072529",
+  "source_date": "2026-09-16",
+  "notes": [
+    "Target percentages describe a proposed benchmark mix, not measured university traffic shares.",
+    "The AI row in the source also says etc.; only the five explicitly named candidates are transcribed.",
+    "Names are preserved from the historical proposal; final scope and domain mappings remain to be established."
+  ],
+  "categories": [
+    {
+      "name": "Video streaming",
+      "proposed_mix_percent": 35,
+      "applications": [
+        "YouTube",
+        "Netflix",
+        "Amazon Prime",
+        "Disney+"
+      ]
+    },
+    {
+      "name": "Social media",
+      "proposed_mix_percent": 20,
+      "applications": [
+        "Facebook",
+        "Instagram",
+        "TikTok",
+        "Snapchat",
+        "X"
+      ]
+    },
+    {
+      "name": "Gaming / distribution",
+      "proposed_mix_percent": 12,
+      "applications": [
+        "Xbox Live",
+        "Steam",
+        "PlayStation",
+        "Epic Games"
+      ]
+    },
+    {
+      "name": "Communication / messaging",
+      "proposed_mix_percent": 10,
+      "applications": [
+        "WhatsApp",
+        "Messenger",
+        "FaceTime",
+        "Discord"
+      ]
+    },
+    {
+      "name": "Television / OTT",
+      "proposed_mix_percent": 4,
+      "applications": [
+        "Tubi",
+        "Roku",
+        "Apple TV+",
+        "Pluto TV",
+        "Plex"
+      ]
+    },
+    {
+      "name": "Audio streaming",
+      "proposed_mix_percent": 5,
+      "applications": [
+        "Spotify",
+        "Apple Music",
+        "Amazon Music"
+      ]
+    },
+    {
+      "name": "Conferencing",
+      "proposed_mix_percent": 8,
+      "applications": [
+        "Microsoft Teams",
+        "Google Meet",
+        "Zoom",
+        "WebEx"
+      ]
+    },
+    {
+      "name": "Cloud gaming",
+      "proposed_mix_percent": 2,
+      "applications": [
+        "GeForce Now",
+        "PlayStation Now",
+        "Tencent"
+      ]
+    },
+    {
+      "name": "IoT / assistants",
+      "proposed_mix_percent": 2,
+      "applications": [
+        "Alexa",
+        "Siri",
+        "Bixby",
+        "Philips Hue",
+        "SmartThings"
+      ]
+    },
+    {
+      "name": "AI services",
+      "proposed_mix_percent": 2,
+      "applications": [
+        "ChatGPT",
+        "OpenAI API",
+        "Copilot",
+        "Gemini",
+        "Claude"
+      ]
+    }
+  ]
+}

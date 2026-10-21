@@ -1,0 +1,158 @@
+{
+  "retrieved_on": "2026-10-21",
+  "v2fly_revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+  "files": [
+    {
+      "path": "v2fly/LICENSE",
+      "sha256": "b9d84a22870d3f21c91a4c6e410c9cc51d00902f5233ad0c84011479244bf7d2"
+    },
+    {
+      "path": "v2fly/amazon",
+      "sha256": "f1b24bcc1d576f30a09731b10cf55ba50822fd433b8f35568c77bbb45bdd5f0b"
+    },
+    {
+      "path": "v2fly/anthropic",
+      "sha256": "48597d05d9206b7c841be6872c7ca954685a416d7e61c9316c017ed5f28c7053"
+    },
+    {
+      "path": "v2fly/apple",
+      "sha256": "d46d18afe2f2d51bd48ddd239c43f460a32a9d605b384baa2cd6c70ec29cf29f"
+    },
+    {
+      "path": "v2fly/apple-music",
+      "sha256": "47299c374b1082dd2d4b03d3963368e6d28547441824754f2883e01f9cc7c4cf"
+    },
+    {
+      "path": "v2fly/apple-tvplus",
+      "sha256": "2d622a3150818bf0d2931130c05fec1cac0d3856ca6f7dcc78a27f59dc25ebd1"
+    },
+    {
+      "path": "v2fly/bamtech",
+      "sha256": "2843f3fbb363384ccea3b181e5a83a42dcea0265e5ce83c926c7602dce249477"
+    },
+    {
+      "path": "v2fly/discord",
+      "sha256": "6e57668fe3c87895036e1b35ce7110ea1872c41850e1e92258dc20517e3d6dc5"
+    },
+    {
+      "path": "v2fly/disney",
+      "sha256": "692bd4cf2e28adc8128597bcd9fcd77eae2c6ac9420dc282703873a6d40a05b1"
+    },
+    {
+      "path": "v2fly/epicgames",
+      "sha256": "23c7018f09fff7a4c5521068255caeb66b2e13877c67ec4ae7c751bceb507ea4"
+    },
+    {
+      "path": "v2fly/facebook",
+      "sha256": "bd860c04a95c82afa1aa86c166a50eb561a952c6915257f941fa6d58a0431da9"
+    },
+    {
+      "path": "v2fly/facebook-dev",
+      "sha256": "c00b93eb804f470c2c9fae4ebae4e87539afbfdde3d52dbaf3f74d9b6ab96467"
+    },
+    {
+      "path": "v2fly/github-copilot",
+      "sha256": "e41465e9e15430bf31d1054d21c0551e8fa3ef24431e317317f409511c64483c"
+    },
+    {
+      "path": "v2fly/google-deepmind",
+      "sha256": "6a9195976e75c2b6adb255ec5cc4af6d8b66d0dd2a877437642deed6da244874"
+    },
+    {
+      "path": "v2fly/google-gemini",
+      "sha256": "30aff080b1a90df95d5cb2bbd32884b5d21f6231631f6ed869919d4fb073e4a6"
+    },
+    {
+      "path": "v2fly/instagram",
+      "sha256": "e392526b75e27218f874590d0db99b5e009fb0b7679095f0eac48a4ee3fb6413"
+    },
+    {
+      "path": "v2fly/messenger",
+      "sha256": "c8ef00eed5f51bd8d8ec2b73083a3ef012100c73aac382a76848338ae80c7e29"
+    },
+    {
+      "path": "v2fly/nvidia",
+      "sha256": "2ebead884984746dc9550a77577df0933bfd2cbccbf4f247a270e6c743e864de"
+    },
+    {
+      "path": "v2fly/openai",
+      "sha256": "ec1043e63c31bbef51efe13a3e2af29a3f66b8b4692f517d75a864cbc4a3d88d"
+    },
+    {
+      "path": "v2fly/playstation",
+      "sha256": "baa7363d38bf1dc4ae34ff76c70bb44f9484d1ed02810b296e86751416c1d3c7"
+    },
+    {
+      "path": "v2fly/plex",
+      "sha256": "bd1bfa81565849d956a409eed83337459a6344213814d6e4d90ed567d309e226"
+    },
+    {
+      "path": "v2fly/plutotv",
+      "sha256": "89409329752994849be0d3d69e1d6d290b4ec016f0c177ecbb6c1e55d7d19804"
+    },
+    {
+      "path": "v2fly/roku",
+      "sha256": "efb8bbf9a0bf5660ea29db54873c69649483e32ca38eb1eca6a235dbd9228abc"
+    },
+    {
+      "path": "v2fly/samsung",
+      "sha256": "25b80dc5b225b5e5780a15424168321c150f686fe12a416207a64e99114c1bf3"
+    },
+    {
+      "path": "v2fly/snap",
+      "sha256": "614a184555a121375a7eaac0c0d641b57bce7859a34445425bc6b8c6fc0009c7"
+    },
+    {
+      "path": "v2fly/spotify",
+      "sha256": "ec710e93e84e85536a661905f2182f239464f55c1e837523de222d7e9d21c65b"
+    },
+    {
+      "path": "v2fly/steam",
+      "sha256": "4ce9aaf395d54abd93196c188efed96d5649adcddb636ed8727ca7e665524810"
+    },
+    {
+      "path": "v2fly/tencent",
+      "sha256": "09042c7860e9173031fd264727ca30ce30b96cc04fe7850eb39dbd953dc2333a"
+    },
+    {
+      "path": "v2fly/tencent-games",
+      "sha256": "9a70f0f1d68301b27b689e84b91ef4dca54e1e9d0afa69aafecf7d524a8e77c2"
+    },
+    {
+      "path": "v2fly/tiktok",
+      "sha256": "e57322c704e4fe5ef3b202e4b86e82767fbe7f1af2c01f065fde4764205d0e4f"
+    },
+    {
+      "path": "v2fly/tubi",
+      "sha256": "232cf49662e10cd57e59bc905b4d77e68f306e21c3b41f919554ad51f8a44e48"
+    },
+    {
+      "path": "v2fly/twitter",
+      "sha256": "05fee908ab80f262be5f603b24d3bdaa60aee1005ccc1cec988bab9236061116"
+    },
+    {
+      "path": "v2fly/whatsapp",
+      "sha256": "62def09a533350c9e5259d1d498ed1da1689ff174f436f51c065260f21f037d2"
+    },
+    {
+      "path": "v2fly/xbox",
+      "sha256": "4b1f6c90a158596f219793d85e4cf4ec9b18041c79377cd168f578d2485ec064"
+    },
+    {
+      "path": "live-additional-probes.json",
+      "sha256": "a493fc676cfa7e7c22cd152cebe41e4583975a800589d91a5420f0d405c1092a"
+    },
+    {
+      "path": "probe_additional.py",
+      "sha256": "7bd4b66f290a3ce3718b3633722987c7cc4cd126c0ab9b12124ca9e0254b08d6"
+    },
+    {
+      "path": "ndpi-additional-domain-evidence.json",
+      "sha256": "948d4c12ffb98044962283bf7f21a7cd683bc8e24d9016f0a717e9533fb3ff0a"
+    },
+    {
+      "path": "fetch_lists.py",
+      "sha256": "2e7aae81eb6826f324df15a2963fc287ca433942c4cbc4e5bcd8cfbe24bc7eee"
+    }
+  ]
+}

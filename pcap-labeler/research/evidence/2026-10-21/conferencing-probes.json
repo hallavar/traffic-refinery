@@ -1,0 +1,595 @@
+{
+  "method_limits": [
+    "No login, meeting join, or media playback was performed.",
+    "Static HTML references are not observed subresource connections.",
+    "The local resolver sometimes returns special-use IPs; answers are diagnostic only, not public IP ranges."
+  ],
+  "http": [
+    {
+      "requested_url": "https://zoom.us/",
+      "method": "GET",
+      "tls_certificate_verification": true,
+      "status": 200,
+      "final_url": "https://www.zoom.com/",
+      "content_type": "text/html",
+      "response_bytes_read": 318999,
+      "truncated": false,
+      "hostnames_referenced_in_static_html": [
+        "app.zoom.us",
+        "careers.zoom.us",
+        "cdn.bc0a.com",
+        "cdn.cookielaw.org",
+        "cdn.optimizely.com",
+        "chrome.google.com",
+        "click.zoom.com",
+        "community.zoom.com",
+        "dev-integration.zoomdev.us",
+        "developers.zoom.us",
+        "ebc.zoom.us",
+        "en.wikipedia.org",
+        "ev.zoom.us",
+        "file-paa.zoom.us",
+        "file-paa.zoomdev.us",
+        "g.co",
+        "investors.zoom.us",
+        "learn-zoom.us",
+        "learning.zoom.us",
+        "logx.optimizely.com",
+        "marketplace.zoom.us",
+        "mypartnerportal.zoom.us",
+        "news.zoom.com",
+        "news.zoom.us",
+        "ogp.me",
+        "partner.zoom.com",
+        "partner.zoom.us",
+        "platform.cloud.coveo.com",
+        "schema.org",
+        "shophappy.zoom.us",
+        "st1.zoom.us",
+        "support.zoom.com",
+        "twitter.com",
+        "us01ccistatic.zoom.us",
+        "www.facebook.com",
+        "www.instagram.com",
+        "www.linkedin.com",
+        "www.w3.org",
+        "www.workvivo.com",
+        "www.youtube.com",
+        "www.zoom.com",
+        "x.com",
+        "zoom.us",
+        "zoomtopia.com"
+      ]
+    },
+    {
+      "requested_url": "https://zoom.com/",
+      "method": "GET",
+      "tls_certificate_verification": true,
+      "status": 200,
+      "final_url": "https://www.zoom.com/",
+      "content_type": "text/html",
+      "response_bytes_read": 318999,
+      "truncated": false,
+      "hostnames_referenced_in_static_html": [
+        "app.zoom.us",
+        "careers.zoom.us",
+        "cdn.bc0a.com",
+        "cdn.cookielaw.org",
+        "cdn.optimizely.com",
+        "chrome.google.com",
+        "click.zoom.com",
+        "community.zoom.com",
+        "dev-integration.zoomdev.us",
+        "developers.zoom.us",
+        "ebc.zoom.us",
+        "en.wikipedia.org",
+        "ev.zoom.us",
+        "file-paa.zoom.us",
+        "file-paa.zoomdev.us",
+        "g.co",
+        "investors.zoom.us",
+        "learn-zoom.us",
+        "learning.zoom.us",
+        "logx.optimizely.com",
+        "marketplace.zoom.us",
+        "mypartnerportal.zoom.us",
+        "news.zoom.com",
+        "news.zoom.us",
+        "ogp.me",
+        "partner.zoom.com",
+        "partner.zoom.us",
+        "platform.cloud.coveo.com",
+        "schema.org",
+        "shophappy.zoom.us",
+        "st1.zoom.us",
+        "support.zoom.com",
+        "twitter.com",
+        "us01ccistatic.zoom.us",
+        "www.facebook.com",
+        "www.instagram.com",
+        "www.linkedin.com",
+        "www.w3.org",
+        "www.workvivo.com",
+        "www.youtube.com",
+        "www.zoom.com",
+        "x.com",
+        "zoom.us",
+        "zoomtopia.com"
+      ]
+    },
+    {
+      "requested_url": "https://teams.microsoft.com/",
+      "method": "GET",
+      "tls_certificate_verification": true,
+      "status": 200,
+      "final_url": "https://teams.microsoft.com/v2/unsupported-browser#env=work",
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes_read": 231751,
+      "truncated": false,
+      "hostnames_referenced_in_static_html": [
+        "go.microsoft.com",
+        "local.teams.office.com",
+        "teams.public.onecdn.static.microsoft",
+        "www.w3.org"
+      ]
+    },
+    {
+      "requested_url": "https://teams.cloud.microsoft/",
+      "method": "GET",
+      "tls_certificate_verification": true,
+      "status": 200,
+      "final_url": "https://teams.cloud.microsoft/v2/unsupported-browser#env=work",
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes_read": 231751,
+      "truncated": false,
+      "hostnames_referenced_in_static_html": [
+        "go.microsoft.com",
+        "local.teams.office.com",
+        "teams.public.onecdn.static.microsoft",
+        "www.w3.org"
+      ]
+    },
+    {
+      "requested_url": "https://meet.google.com/",
+      "method": "GET",
+      "tls_certificate_verification": true,
+      "status": 200,
+      "final_url": "https://workspace.google.com/products/meet/",
+      "content_type": "text/html",
+      "response_bytes_read": 718306,
+      "truncated": false,
+      "hostnames_referenced_in_static_html": [
+        "about.appsheet.com",
+        "about.google",
+        "accounts.google.com",
+        "ads.google.com",
+        "ai-search-dot-gsuite-staging.appspot.com",
+        "app-sj24.marketo.com",
+        "apps.apple.com",
+        "businessmessages.google",
+        "chromeenterprise.google",
+        "cloud.google.com",
+        "cloud.withgoogle.com",
+        "cloudonair.withgoogle.com",
+        "domains.google.com",
+        "edu.google.com",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com",
+        "form-submit-service-dot-gsuite-staging.uc.r.appspot.com",
+        "goo.gle",
+        "lh3.googleusercontent.com",
+        "meetingdevices.withgoogle.com",
+        "one.google.com",
+        "play.google.com",
+        "policies.google.com",
+        "productforums.google.com",
+        "schema.org",
+        "storage.googleapis.com",
+        "support.google.com",
+        "workspace.google.com",
+        "www.facebook.com",
+        "www.google.com",
+        "www.googlecloudcommunity.com",
+        "www.googletagmanager.com",
+        "www.gstatic.com",
+        "www.instagram.com",
+        "www.linkedin.com",
+        "www.ppc.go.jp",
+        "www.w3.org",
+        "www.youtube.com",
+        "x.com"
+      ]
+    },
+    {
+      "requested_url": "https://www.webex.com/",
+      "method": "GET",
+      "tls_certificate_verification": true,
+      "status": 403,
+      "final_url": "https://www.webex.com/",
+      "error": "HTTPError"
+    }
+  ],
+  "dns": [
+    {
+      "hostname": "zoom.us",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "zoom.us.\t\t17\tIN\tA\t170.114.52.2"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "zoom.us.\t\t30\tIN\tAAAA\t2407:30c0:182::aa72:3402"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "zoom.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "zoom.com.\t\t20\tIN\tA\t170.114.0.12"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "teams.microsoft.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "teams.microsoft.com.\t10370\tIN\tCNAME\tteams.office.com.",
+            "teams.office.com.\t275\tIN\tCNAME\ttmc-g2.tm-4.office.com.",
+            "tmc-g2.tm-4.office.com.\t46\tIN\tCNAME\tteams-office-com.s-0005.dual-s-msedge.net.",
+            "teams-office-com.s-0005.dual-s-msedge.net. 115 IN CNAME\ts-0005.dual-s-msedge.net.",
+            "s-0005.dual-s-msedge.net. 98\tIN\tA\t52.123.128.14",
+            "s-0005.dual-s-msedge.net. 98\tIN\tA\t52.123.129.14"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "teams.microsoft.com.\t10370\tIN\tCNAME\tteams.office.com.",
+            "teams.office.com.\t275\tIN\tCNAME\ttmc-g2.tm-4.office.com.",
+            "tmc-g2.tm-4.office.com.\t46\tIN\tCNAME\tteams-office-com.s-0005.dual-s-msedge.net.",
+            "teams-office-com.s-0005.dual-s-msedge.net. 115 IN CNAME\ts-0005.dual-s-msedge.net.",
+            "s-0005.dual-s-msedge.net. 68\tIN\tAAAA\t2603:1063:27:1::14",
+            "s-0005.dual-s-msedge.net. 68\tIN\tAAAA\t2603:1063:27:2::14"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "teams.microsoft.com.\t10370\tIN\tCNAME\tteams.office.com."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "teams.cloud.microsoft",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "teams.cloud.microsoft.\t56\tIN\tCNAME\tteams-cloud-microsoft.s-0005.dual-s-msedge.net.",
+            "teams-cloud-microsoft.s-0005.dual-s-msedge.net.\t56 IN CNAME s-0005.dual-s-msedge.net.",
+            "s-0005.dual-s-msedge.net. 56\tIN\tA\t52.123.128.14",
+            "s-0005.dual-s-msedge.net. 56\tIN\tA\t52.123.129.14"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "teams.cloud.microsoft.\t291\tIN\tCNAME\tteams-cloud-microsoft.s-0005.dual-s-msedge.net.",
+            "teams-cloud-microsoft.s-0005.dual-s-msedge.net.\t104 IN CNAME s-0005.dual-s-msedge.net.",
+            "s-0005.dual-s-msedge.net. 68\tIN\tAAAA\t2603:1063:27:2::14",
+            "s-0005.dual-s-msedge.net. 68\tIN\tAAAA\t2603:1063:27:1::14"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "teams.cloud.microsoft.\t294\tIN\tCNAME\tteams-cloud-microsoft.s-0005.dual-s-msedge.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "meet.google.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "meet.google.com.\t94\tIN\tA\t142.251.157.5",
+            "meet.google.com.\t94\tIN\tA\t142.251.154.5",
+            "meet.google.com.\t94\tIN\tA\t142.251.152.5",
+            "meet.google.com.\t94\tIN\tA\t142.251.150.5",
+            "meet.google.com.\t94\tIN\tA\t142.251.151.5",
+            "meet.google.com.\t94\tIN\tA\t142.251.155.5",
+            "meet.google.com.\t94\tIN\tA\t142.251.153.5",
+            "meet.google.com.\t94\tIN\tA\t142.251.156.5"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "meet.google.com.\t94\tIN\tAAAA\t2001:4860:4829:500::",
+            "meet.google.com.\t94\tIN\tAAAA\t2001:4860:482d:500::",
+            "meet.google.com.\t94\tIN\tAAAA\t2001:4860:4826:500::",
+            "meet.google.com.\t94\tIN\tAAAA\t2001:4860:482a:500::",
+            "meet.google.com.\t94\tIN\tAAAA\t2001:4860:482b:500::",
+            "meet.google.com.\t94\tIN\tAAAA\t2001:4860:4827:500::",
+            "meet.google.com.\t94\tIN\tAAAA\t2001:4860:482c:500::",
+            "meet.google.com.\t94\tIN\tAAAA\t2001:4860:4828:500::"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "meetings.googleapis.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "meetings.googleapis.com. 9\tIN\tA\t172.217.117.4",
+            "meetings.googleapis.com. 9\tIN\tA\t172.217.112.4",
+            "meetings.googleapis.com. 9\tIN\tA\t172.217.114.4",
+            "meetings.googleapis.com. 9\tIN\tA\t172.217.118.4",
+            "meetings.googleapis.com. 9\tIN\tA\t172.217.113.4",
+            "meetings.googleapis.com. 9\tIN\tA\t172.217.116.4",
+            "meetings.googleapis.com. 9\tIN\tA\t172.217.119.4",
+            "meetings.googleapis.com. 9\tIN\tA\t172.217.115.4"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "meetings.googleapis.com. 241\tIN\tAAAA\t2001:4860:4845:400::",
+            "meetings.googleapis.com. 241\tIN\tAAAA\t2001:4860:4841:400::",
+            "meetings.googleapis.com. 241\tIN\tAAAA\t2001:4860:4842:400::",
+            "meetings.googleapis.com. 241\tIN\tAAAA\t2001:4860:4843:400::",
+            "meetings.googleapis.com. 241\tIN\tAAAA\t2001:4860:4840:400::",
+            "meetings.googleapis.com. 241\tIN\tAAAA\t2001:4860:4846:400::",
+            "meetings.googleapis.com. 241\tIN\tAAAA\t2001:4860:4844:400::",
+            "meetings.googleapis.com. 241\tIN\tAAAA\t2001:4860:4847:400::"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "meet.turns.goog",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "meet.turns.goog.\t30\tIN\tA\t142.250.82.251"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "meet.turns.goog.\t14400\tIN\tAAAA\t2001:4860:4864:6:8000::3"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "workspace.turns.goog",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "workspace.turns.goog.\t14400\tIN\tA\t74.125.250.131"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "workspace.turns.goog.\t14400\tIN\tAAAA\t2001:4860:4864:5:8000::3"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "www.webex.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "www.webex.com.\t\t10\tIN\tCNAME\tall-www.webex.com.edgekey.net.",
+            "all-www.webex.com.edgekey.net. 10 IN\tCNAME\te119.dsca.akamaiedge.net.",
+            "e119.dsca.akamaiedge.net. 10\tIN\tA\t104.121.2.70"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "www.webex.com.\t\t50\tIN\tCNAME\tall-www.webex.com.edgekey.net.",
+            "all-www.webex.com.edgekey.net. 50 IN\tCNAME\te119.dsca.akamaiedge.net.",
+            "e119.dsca.akamaiedge.net. 20\tIN\tAAAA\t2a02:26f0:5c00:78c::77",
+            "e119.dsca.akamaiedge.net. 20\tIN\tAAAA\t2a02:26f0:5c00:78a::77"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "www.webex.com.\t\t49\tIN\tCNAME\tall-www.webex.com.edgekey.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "webexapis.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "webexapis.com.\t\t60\tIN\tA\t170.72.238.67",
+            "webexapis.com.\t\t60\tIN\tA\t170.72.238.66",
+            "webexapis.com.\t\t60\tIN\tA\t170.72.238.16"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "youtubei-att.googleapis.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "youtubei-att.googleapis.com. 129 IN\tA\t142.251.209.74",
+            "youtubei-att.googleapis.com. 129 IN\tA\t172.217.17.42",
+            "youtubei-att.googleapis.com. 129 IN\tA\t142.250.74.170",
+            "youtubei-att.googleapis.com. 129 IN\tA\t142.251.142.74",
+            "youtubei-att.googleapis.com. 129 IN\tA\t142.250.74.74",
+            "youtubei-att.googleapis.com. 129 IN\tA\t142.250.181.106",
+            "youtubei-att.googleapis.com. 129 IN\tA\t142.250.181.202",
+            "youtubei-att.googleapis.com. 129 IN\tA\t142.251.208.234",
+            "youtubei-att.googleapis.com. 129 IN\tA\t142.250.181.138",
+            "youtubei-att.googleapis.com. 129 IN\tA\t172.217.20.106",
+            "youtubei-att.googleapis.com. 129 IN\tA\t172.217.18.106",
+            "youtubei-att.googleapis.com. 129 IN\tA\t142.251.39.170",
+            "youtubei-att.googleapis.com. 129 IN\tA\t142.250.178.10",
+            "youtubei-att.googleapis.com. 129 IN\tA\t142.251.36.202",
+            "youtubei-att.googleapis.com. 129 IN\tA\t142.251.208.138",
+            "youtubei-att.googleapis.com. 129 IN\tA\t142.251.36.138"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "youtubei-att.googleapis.com. 300 IN\tAAAA\t2a00:1450:4006:810::200a",
+            "youtubei-att.googleapis.com. 300 IN\tAAAA\t2a00:1450:4006:812::200a",
+            "youtubei-att.googleapis.com. 300 IN\tAAAA\t2a00:1450:4006:814::200a",
+            "youtubei-att.googleapis.com. 300 IN\tAAAA\t2a00:1450:4006:809::200a"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "i.huluim.com",
+      "records": {
+        "A": {
+          "status": "NXDOMAIN",
+          "answers": [],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NXDOMAIN",
+          "answers": [],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NXDOMAIN",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "huluqa.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "huluqa.com.\t\t20\tIN\tA\t23.61.250.123",
+            "huluqa.com.\t\t20\tIN\tA\t23.61.250.112"
+          ],
+          "exit_code": 0
+        },
+        "AAAA": {
+          "status": "NOERROR",
+          "answers": [
+            "huluqa.com.\t\t20\tIN\tAAAA\t2a02:26f0:e80:7f::17d8:868f",
+            "huluqa.com.\t\t20\tIN\tAAAA\t2a02:26f0:e80:7f::17d8:8691"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    }
+  ]
+}

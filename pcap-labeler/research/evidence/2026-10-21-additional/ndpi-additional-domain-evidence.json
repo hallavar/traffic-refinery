@@ -1,0 +1,781 @@
+{
+  "revision": "2b8c2989f8c36f94a639057aeebd4fc71d841928",
+  "source_url": "https://raw.githubusercontent.com/ntop/nDPI/2b8c2989f8c36f94a639057aeebd4fc71d841928/src/lib/ndpi_content_match.c.inc",
+  "entries": [
+    {
+      "hostname_pattern": "guzzoni.apple.",
+      "application": "AppleSiri",
+      "line": 461
+    },
+    {
+      "hostname_pattern": "wbagora.com",
+      "application": "Playstation",
+      "line": 462
+    },
+    {
+      "hostname_pattern": "wbplay.com",
+      "application": "Playstation",
+      "line": 463
+    },
+    {
+      "hostname_pattern": "xbox.com",
+      "application": "Xbox",
+      "line": 465
+    },
+    {
+      "hostname_pattern": "xboxlive.com",
+      "application": "Xbox",
+      "line": 466
+    },
+    {
+      "hostname_pattern": "xboxlive.com.akadns.net",
+      "application": "Xbox",
+      "line": 467
+    },
+    {
+      "hostname_pattern": "xboxlive.com.c.footprint.net",
+      "application": "Xbox",
+      "line": 468
+    },
+    {
+      "hostname_pattern": "xboxservices.com",
+      "application": "Xbox",
+      "line": 469
+    },
+    {
+      "hostname_pattern": "xboxab.com",
+      "application": "Xbox",
+      "line": 470
+    },
+    {
+      "hostname_pattern": "e13555.b.akamaiedge.net",
+      "application": "Playstation",
+      "line": 472
+    },
+    {
+      "hostname_pattern": "e1800.d.akamaiedge.net",
+      "application": "Playstation",
+      "line": 473
+    },
+    {
+      "hostname_pattern": "e1879.e7.akamaiedge.net",
+      "application": "Playstation",
+      "line": 474
+    },
+    {
+      "hostname_pattern": "instagram.",
+      "application": "Instagram",
+      "line": 512
+    },
+    {
+      "hostname_pattern": "cdninstagram.com",
+      "application": "Instagram",
+      "line": 513
+    },
+    {
+      "hostname_pattern": "igcdn-photos-",
+      "application": "Instagram",
+      "line": 515
+    },
+    {
+      "hostname_pattern": "instagramimages-",
+      "application": "Instagram",
+      "line": 516
+    },
+    {
+      "hostname_pattern": "instagramstatic-",
+      "application": "Instagram",
+      "line": 517
+    },
+    {
+      "hostname_pattern": "facebook.com",
+      "application": "Facebook",
+      "line": 519
+    },
+    {
+      "hostname_pattern": "facebook.net",
+      "application": "Facebook",
+      "line": 520
+    },
+    {
+      "hostname_pattern": "fbstatic-a.akamaihd.net",
+      "application": "Facebook",
+      "line": 521
+    },
+    {
+      "hostname_pattern": "fbcdn.net",
+      "application": "Facebook",
+      "line": 522
+    },
+    {
+      "hostname_pattern": "fbcdn-",
+      "application": "Facebook",
+      "line": 523
+    },
+    {
+      "hostname_pattern": "fbsbx.com",
+      "application": "Facebook",
+      "line": 524
+    },
+    {
+      "hostname_pattern": "fbwat.ch",
+      "application": "Facebook",
+      "line": 525
+    },
+    {
+      "hostname_pattern": "fb.com",
+      "application": "Facebook",
+      "line": 526
+    },
+    {
+      "hostname_pattern": "fb.gg",
+      "application": "Facebook",
+      "line": 527
+    },
+    {
+      "hostname_pattern": "twttr.com",
+      "application": "Twitter",
+      "line": 757
+    },
+    {
+      "hostname_pattern": "twitter.",
+      "application": "Twitter",
+      "line": 758
+    },
+    {
+      "hostname_pattern": "twimg.com",
+      "application": "Twitter",
+      "line": 759
+    },
+    {
+      "hostname_pattern": "t.co",
+      "application": "Twitter",
+      "line": 760
+    },
+    {
+      "hostname_pattern": "x.com",
+      "application": "Twitter",
+      "line": 761
+    },
+    {
+      "hostname_pattern": "mmg-fna.whatsapp.net",
+      "application": "WhatsAppFiles",
+      "line": 772
+    },
+    {
+      "hostname_pattern": "fna.whatsapp.net",
+      "application": "WhatsAppFiles",
+      "line": 773
+    },
+    {
+      "hostname_pattern": "cdn.whatsapp.net",
+      "application": "WhatsAppFiles",
+      "line": 774
+    },
+    {
+      "hostname_pattern": "mms.whatsapp.net",
+      "application": "WhatsAppFiles",
+      "line": 775
+    },
+    {
+      "hostname_pattern": "whatsapp.",
+      "application": "WhatsApp",
+      "line": 776
+    },
+    {
+      "hostname_pattern": "whatsapp.net",
+      "application": "WhatsApp",
+      "line": 777
+    },
+    {
+      "hostname_pattern": "chat-e2ee-mini.facebook.com",
+      "application": "WhatsApp",
+      "line": 778
+    },
+    {
+      "hostname_pattern": "spotify.com",
+      "application": "Spotify",
+      "line": 803
+    },
+    {
+      "hostname_pattern": "scdn.co",
+      "application": "Spotify",
+      "line": 804
+    },
+    {
+      "hostname_pattern": "pscdn.co",
+      "application": "Spotify",
+      "line": 805
+    },
+    {
+      "hostname_pattern": "spotifycdn.net",
+      "application": "Spotify",
+      "line": 806
+    },
+    {
+      "hostname_pattern": "spotifycdn.com",
+      "application": "Spotify",
+      "line": 807
+    },
+    {
+      "hostname_pattern": "audio4-ak-spotify-com.akamaized.net",
+      "application": "Spotify",
+      "line": 808
+    },
+    {
+      "hostname_pattern": "audio-ak-spotify-com.akamaized.net",
+      "application": "Spotify",
+      "line": 809
+    },
+    {
+      "hostname_pattern": "heads-ak-spotify-com.akamaized.net",
+      "application": "Spotify",
+      "line": 810
+    },
+    {
+      "hostname_pattern": "spotify-com.akamaized.net",
+      "application": "Spotify",
+      "line": 811
+    },
+    {
+      "hostname_pattern": "spotify.com.edgesuite.net",
+      "application": "Spotify",
+      "line": 812
+    },
+    {
+      "hostname_pattern": "spotify.map.fastly.net",
+      "application": "Spotify",
+      "line": 813
+    },
+    {
+      "hostname_pattern": "spotify.edgekey.net",
+      "application": "Spotify",
+      "line": 814
+    },
+    {
+      "hostname_pattern": "spotify.demdex.net",
+      "application": "Spotify",
+      "line": 815
+    },
+    {
+      "hostname_pattern": "spotilocal.com",
+      "application": "Spotify",
+      "line": 816
+    },
+    {
+      "hostname_pattern": "edge-mqtt.facebook.com",
+      "application": "FacebookMessenger",
+      "line": 819
+    },
+    {
+      "hostname_pattern": "mqtt-mini.facebook.com",
+      "application": "FacebookMessenger",
+      "line": 820
+    },
+    {
+      "hostname_pattern": "messenger.com",
+      "application": "FacebookMessenger",
+      "line": 821
+    },
+    {
+      "hostname_pattern": "m.me",
+      "application": "FacebookMessenger",
+      "line": 822
+    },
+    {
+      "hostname_pattern": "feelinsonice.appspot.com",
+      "application": "Snapchat",
+      "line": 849
+    },
+    {
+      "hostname_pattern": "feelinsonice-hrd.appspot.com",
+      "application": "Snapchat",
+      "line": 850
+    },
+    {
+      "hostname_pattern": "feelinsonice.com",
+      "application": "Snapchat",
+      "line": 851
+    },
+    {
+      "hostname_pattern": "api.snapchat.com",
+      "application": "Snapchat",
+      "line": 852
+    },
+    {
+      "hostname_pattern": "snapchat.",
+      "application": "Snapchat",
+      "line": 853
+    },
+    {
+      "hostname_pattern": "snapads.",
+      "application": "Snapchat",
+      "line": 854
+    },
+    {
+      "hostname_pattern": "sc-cdn.net",
+      "application": "Snapchat",
+      "line": 855
+    },
+    {
+      "hostname_pattern": "sc-prod.net",
+      "application": "Snapchat",
+      "line": 856
+    },
+    {
+      "hostname_pattern": "sc-jpl.com",
+      "application": "Snapchat",
+      "line": 857
+    },
+    {
+      "hostname_pattern": "sc-analytics.appspot.com",
+      "application": "Snapchat",
+      "line": 858
+    },
+    {
+      "hostname_pattern": "snap.api.mapbox.com",
+      "application": "Snapchat",
+      "line": 859
+    },
+    {
+      "hostname_pattern": "cognac-prod.appspot.com",
+      "application": "Snapchat",
+      "line": 860
+    },
+    {
+      "hostname_pattern": "addlive.io",
+      "application": "Snapchat",
+      "line": 861
+    },
+    {
+      "hostname_pattern": "sc-static.net",
+      "application": "Snapchat",
+      "line": 862
+    },
+    {
+      "hostname_pattern": "steampowered.com",
+      "application": "Steam",
+      "line": 933
+    },
+    {
+      "hostname_pattern": "steamcommunity.com",
+      "application": "Steam",
+      "line": 934
+    },
+    {
+      "hostname_pattern": "steamcontent.com",
+      "application": "Steam",
+      "line": 935
+    },
+    {
+      "hostname_pattern": "steamstatic.com",
+      "application": "Steam",
+      "line": 936
+    },
+    {
+      "hostname_pattern": "steamserver.net",
+      "application": "Steam",
+      "line": 937
+    },
+    {
+      "hostname_pattern": "steamcommunity-a.akamaihd.net",
+      "application": "Steam",
+      "line": 938
+    },
+    {
+      "hostname_pattern": "playstation.net",
+      "application": "Playstation",
+      "line": 962
+    },
+    {
+      "hostname_pattern": "playstation.com",
+      "application": "Playstation",
+      "line": 963
+    },
+    {
+      "hostname_pattern": "sonyentertainmentnetwork.com",
+      "application": "Playstation",
+      "line": 964
+    },
+    {
+      "hostname_pattern": "musical.ly",
+      "application": "TikTok",
+      "line": 1010
+    },
+    {
+      "hostname_pattern": "byteoversea.com",
+      "application": "TikTok",
+      "line": 1011
+    },
+    {
+      "hostname_pattern": "ibyteimg.com",
+      "application": "TikTok",
+      "line": 1012
+    },
+    {
+      "hostname_pattern": "tiktokcdn.com",
+      "application": "TikTok",
+      "line": 1013
+    },
+    {
+      "hostname_pattern": "p16-tiktok-va-h2.ibyteimg.com",
+      "application": "TikTok",
+      "line": 1014
+    },
+    {
+      "hostname_pattern": "p16-tiktokcdn-com.akamaized.net",
+      "application": "TikTok",
+      "line": 1015
+    },
+    {
+      "hostname_pattern": "p16-va-default.akamaized.net",
+      "application": "TikTok",
+      "line": 1016
+    },
+    {
+      "hostname_pattern": "tiktokcdn.liveplay.myqcloud.com",
+      "application": "TikTok",
+      "line": 1017
+    },
+    {
+      "hostname_pattern": "musemuse.cn",
+      "application": "TikTok",
+      "line": 1018
+    },
+    {
+      "hostname_pattern": "tiktokv.com",
+      "application": "TikTok",
+      "line": 1019
+    },
+    {
+      "hostname_pattern": "tiktokv.us",
+      "application": "TikTok",
+      "line": 1020
+    },
+    {
+      "hostname_pattern": "tiktokv.eu",
+      "application": "TikTok",
+      "line": 1021
+    },
+    {
+      "hostname_pattern": "bytecdn.cn",
+      "application": "TikTok",
+      "line": 1022
+    },
+    {
+      "hostname_pattern": "muscdn.com",
+      "application": "TikTok",
+      "line": 1023
+    },
+    {
+      "hostname_pattern": "tiktok.com",
+      "application": "TikTok",
+      "line": 1024
+    },
+    {
+      "hostname_pattern": "byted.org",
+      "application": "TikTok",
+      "line": 1025
+    },
+    {
+      "hostname_pattern": "tik-tokcdn.com",
+      "application": "TikTok",
+      "line": 1026
+    },
+    {
+      "hostname_pattern": "byteicdn.com",
+      "application": "TikTok",
+      "line": 1027
+    },
+    {
+      "hostname_pattern": "tiktokcdn-us.com",
+      "application": "TikTok",
+      "line": 1028
+    },
+    {
+      "hostname_pattern": "tiktokcdn-eu.com",
+      "application": "TikTok",
+      "line": 1029
+    },
+    {
+      "hostname_pattern": "discordapp.com",
+      "application": "Discord",
+      "line": 1036
+    },
+    {
+      "hostname_pattern": "discordapp.net",
+      "application": "Discord",
+      "line": 1037
+    },
+    {
+      "hostname_pattern": "discord.com",
+      "application": "Discord",
+      "line": 1038
+    },
+    {
+      "hostname_pattern": "discord.gg",
+      "application": "Discord",
+      "line": 1039
+    },
+    {
+      "hostname_pattern": "discord.media",
+      "application": "Discord",
+      "line": 1040
+    },
+    {
+      "hostname_pattern": "alexa.amazon.com",
+      "application": "AmazonAlexa",
+      "line": 1045
+    },
+    {
+      "hostname_pattern": "amazonalexa.com",
+      "application": "AmazonAlexa",
+      "line": 1046
+    },
+    {
+      "hostname_pattern": "avs-alexa-1-na.amazon.com",
+      "application": "AmazonAlexa",
+      "line": 1047
+    },
+    {
+      "hostname_pattern": "avs-alexa-2-na.amazon.com",
+      "application": "AmazonAlexa",
+      "line": 1048
+    },
+    {
+      "hostname_pattern": "avs-alexa-3-na.amazon.com",
+      "application": "AmazonAlexa",
+      "line": 1049
+    },
+    {
+      "hostname_pattern": "avs-alexa-4-na.amazon.com",
+      "application": "AmazonAlexa",
+      "line": 1050
+    },
+    {
+      "hostname_pattern": "avs-alexa-5-na.amazon.com",
+      "application": "AmazonAlexa",
+      "line": 1051
+    },
+    {
+      "hostname_pattern": "avs-alexa-6-na.amazon.com",
+      "application": "AmazonAlexa",
+      "line": 1052
+    },
+    {
+      "hostname_pattern": "avs-alexa-7-na.amazon.com",
+      "application": "AmazonAlexa",
+      "line": 1053
+    },
+    {
+      "hostname_pattern": "avs-alexa-8-na.amazon.com",
+      "application": "AmazonAlexa",
+      "line": 1054
+    },
+    {
+      "hostname_pattern": "avs-alexa-9-na.amazon.com",
+      "application": "AmazonAlexa",
+      "line": 1055
+    },
+    {
+      "hostname_pattern": "avs-alexa-10-na.amazon.com",
+      "application": "AmazonAlexa",
+      "line": 1056
+    },
+    {
+      "hostname_pattern": "avs-alexa-11-na.amazon.com",
+      "application": "AmazonAlexa",
+      "line": 1057
+    },
+    {
+      "hostname_pattern": "avs-alexa-12-na.amazon.com",
+      "application": "AmazonAlexa",
+      "line": 1058
+    },
+    {
+      "hostname_pattern": "avs-alexa-13-na.amazon.com",
+      "application": "AmazonAlexa",
+      "line": 1059
+    },
+    {
+      "hostname_pattern": "avs-alexa-14-na.amazon.com",
+      "application": "AmazonAlexa",
+      "line": 1060
+    },
+    {
+      "hostname_pattern": "avs-alexa-15-na.amazon.com",
+      "application": "AmazonAlexa",
+      "line": 1061
+    },
+    {
+      "hostname_pattern": "avs-alexa-16-na.amazon.com",
+      "application": "AmazonAlexa",
+      "line": 1062
+    },
+    {
+      "hostname_pattern": "avs-alexa-17-na.amazon.com",
+      "application": "AmazonAlexa",
+      "line": 1063
+    },
+    {
+      "hostname_pattern": "avs-alexa-18-na.amazon.com",
+      "application": "AmazonAlexa",
+      "line": 1064
+    },
+    {
+      "hostname_pattern": "avs-alexa-19-na.amazon.com",
+      "application": "AmazonAlexa",
+      "line": 1065
+    },
+    {
+      "hostname_pattern": "pitangui.amazon.com",
+      "application": "AmazonAlexa",
+      "line": 1066
+    },
+    {
+      "hostname_pattern": "dssott.com.akamaized.net",
+      "application": "DisneyPlus",
+      "line": 1094
+    },
+    {
+      "hostname_pattern": "disney-plus.com",
+      "application": "DisneyPlus",
+      "line": 1095
+    },
+    {
+      "hostname_pattern": "disney-plus.net",
+      "application": "DisneyPlus",
+      "line": 1096
+    },
+    {
+      "hostname_pattern": "disneyplus.com",
+      "application": "DisneyPlus",
+      "line": 1097
+    },
+    {
+      "hostname_pattern": "disneyplus.net",
+      "application": "DisneyPlus",
+      "line": 1098
+    },
+    {
+      "hostname_pattern": "dssott.com",
+      "application": "DisneyPlus",
+      "line": 1099
+    },
+    {
+      "hostname_pattern": "disneyplus.com.ssl.sc.omtrdc.net",
+      "application": "DisneyPlus",
+      "line": 1100
+    },
+    {
+      "hostname_pattern": "bamgrid.com",
+      "application": "DisneyPlus",
+      "line": 1101
+    },
+    {
+      "hostname_pattern": "go.com",
+      "application": "DisneyPlus",
+      "line": 1102
+    },
+    {
+      "hostname_pattern": "tv.apple.com",
+      "application": "AppleTVPlus",
+      "line": 1296
+    },
+    {
+      "hostname_pattern": "tv.g.apple.com",
+      "application": "AppleTVPlus",
+      "line": 1297
+    },
+    {
+      "hostname_pattern": "tv.v.aaplimg.com",
+      "application": "AppleTVPlus",
+      "line": 1298
+    },
+    {
+      "hostname_pattern": "siriusxm.ca",
+      "application": "SiriusXMRadio",
+      "line": 1352
+    },
+    {
+      "hostname_pattern": "siriusxm.com",
+      "application": "SiriusXMRadio",
+      "line": 1353
+    },
+    {
+      "hostname_pattern": "epicgames.com",
+      "application": "EpicGames",
+      "line": 1386
+    },
+    {
+      "hostname_pattern": "unrealengine.com",
+      "application": "EpicGames",
+      "line": 1387
+    },
+    {
+      "hostname_pattern": "fortnite.com",
+      "application": "EpicGames",
+      "line": 1388
+    },
+    {
+      "hostname_pattern": "fortnite-vod.akamaized.net",
+      "application": "EpicGames",
+      "line": 1389
+    },
+    {
+      "hostname_pattern": "epicgames.net",
+      "application": "EpicGames",
+      "line": 1390
+    },
+    {
+      "hostname_pattern": "epicgames.dev",
+      "application": "EpicGames",
+      "line": 1391
+    },
+    {
+      "hostname_pattern": "nvidiagrid.net",
+      "application": "GeForceNow",
+      "line": 1408
+    },
+    {
+      "hostname_pattern": "gfe.nvidia.com",
+      "application": "GeForceNow",
+      "line": 1409
+    },
+    {
+      "hostname_pattern": "geforcenow.com",
+      "application": "GeForceNow",
+      "line": 1410
+    },
+    {
+      "hostname_pattern": "geforce.com",
+      "application": "GeForceNow",
+      "line": 1411
+    },
+    {
+      "hostname_pattern": "kaizen.nvidia.com",
+      "application": "GeForceNow",
+      "line": 1412
+    },
+    {
+      "hostname_pattern": "dtrace.nvidia.com",
+      "application": "GeForceNow",
+      "line": 1413
+    },
+    {
+      "hostname_pattern": "nvgs.nvidia.com",
+      "application": "GeForceNow",
+      "line": 1414
+    },
+    {
+      "hostname_pattern": "gx.nvidia.com",
+      "application": "GeForceNow",
+      "line": 1415
+    },
+    {
+      "hostname_pattern": "userstore.nvidia.com",
+      "application": "GeForceNow",
+      "line": 1416
+    }
+  ]
+}

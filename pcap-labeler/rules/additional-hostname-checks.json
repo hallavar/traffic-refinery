@@ -1,0 +1,600 @@
+[
+  {
+    "hostname": "www.disneyplus.com",
+    "expected": "Disney+",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.facebook.com",
+    "expected": "Facebook",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "m.facebook.com",
+    "expected": "Facebook",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.instagram.com",
+    "expected": "Instagram",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "scontent.cdninstagram.com",
+    "expected": "Instagram",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "api.tiktokv.com",
+    "expected": "TikTok",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.snapchat.com",
+    "expected": "Snapchat",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "pbs.twimg.com",
+    "expected": "X",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "xboxlive.com",
+    "expected": "Xbox Live",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "store.steampowered.com",
+    "expected": "Steam",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "steamcommunity.com",
+    "expected": "Steam",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.playstation.com",
+    "expected": "PlayStation",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "store.epicgames.com",
+    "expected": "Epic Games",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "web.whatsapp.com",
+    "expected": "WhatsApp",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.messenger.com",
+    "expected": "Messenger",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "facetime.apple.com",
+    "expected": "FaceTime",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "gateway.discord.gg",
+    "expected": "Discord",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "cdn.discordapp.com",
+    "expected": "Discord",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "tubitv.com",
+    "expected": "Tubi",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "api.roku.com",
+    "expected": "Roku",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "pluto.tv",
+    "expected": "Pluto TV",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "app.plex.tv",
+    "expected": "Plex",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "spclient.wg.spotify.com",
+    "expected": "Spotify",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "api.music.apple.com",
+    "expected": "Apple Music",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "music.amazon.com",
+    "expected": "Amazon Music",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "api.music.amazon.dev",
+    "expected": "Amazon Music",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "play.geforcenow.com",
+    "expected": "GeForce NOW",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "example.nvidiagrid.net",
+    "expected": "GeForce NOW",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "start.qq.com",
+    "expected": "Tencent START",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "alexa.amazon.com",
+    "expected": "Alexa",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "avs-alexa-19-na.amazon.com",
+    "expected": "Alexa",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "discovery.meethue.com",
+    "expected": "Philips Hue",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "api.smartthings.com",
+    "expected": "SmartThings",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "chatgpt.com",
+    "expected": "ChatGPT",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "api.openai.com",
+    "expected": "OpenAI API",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "copilot.microsoft.com",
+    "expected": "Microsoft Copilot",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "copilot.cloud.microsoft",
+    "expected": "Microsoft Copilot",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "gemini.google.com",
+    "expected": "Gemini",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "generativelanguage.googleapis.com",
+    "expected": "Gemini",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "claude.ai",
+    "expected": "Claude",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "api.anthropic.com",
+    "expected": "Claude",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "notinstagram.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "tiktok.com.evil.example",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "foo.api.openai.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "foo.start.qq.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "foo.copilot.microsoft.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "foo.generativelanguage.googleapis.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "qq.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.tencent.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "cdn.myqcloud.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.nvidia.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.geforce.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.samsung.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "apple.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "icloud.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.amazon.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.amazon.co.uk",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.microsoft.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.bing.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "login.live.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "login.microsoftonline.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.github.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "raw.githubusercontent.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.google.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "a.googleapis.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.anthropic.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "openai.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "sora.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "notebooklm.google.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.deepmind.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.disney.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "www.espn.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "d12345.cloudfront.net",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "cdn.akamaihd.net",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "someapp.azureedge.net",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "ibyteimg.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "snapkit.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "bad host.example",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "https://copilot.microsoft.com/chat",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "facetime.apple.com:443",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "tv.apple.com.evil.example",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "avs-alexa-20-na.amazon.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "graph.facebook.com",
+    "expected": "ambiguous",
+    "expected_traffic_category": "unknown",
+    "candidate_ids_contain": [
+      "facebook",
+      "instagram",
+      "messenger"
+    ]
+  },
+  {
+    "hostname": "scontent.xx.fbcdn.net",
+    "expected": "ambiguous",
+    "expected_traffic_category": "unknown",
+    "candidate_ids_contain": [
+      "facebook",
+      "instagram",
+      "messenger",
+      "whatsapp"
+    ]
+  },
+  {
+    "hostname": "connect.facebook.net",
+    "expected": "ambiguous",
+    "expected_traffic_category": "unknown",
+    "candidate_ids_contain": [
+      "facebook",
+      "instagram",
+      "messenger"
+    ]
+  },
+  {
+    "hostname": "edge-mqtt.facebook.com",
+    "expected": "ambiguous",
+    "expected_traffic_category": "unknown",
+    "candidate_ids_contain": [
+      "facebook",
+      "messenger"
+    ]
+  },
+  {
+    "hostname": "disney.api.edge.bamgrid.com",
+    "expected": "ambiguous",
+    "expected_traffic_category": "unknown",
+    "candidate_ids_contain": [
+      "disneyplus",
+      "hulu"
+    ]
+  },
+  {
+    "hostname": "hulu.playback.edge.bamgrid.com",
+    "expected": "ambiguous",
+    "expected_traffic_category": "unknown",
+    "candidate_ids_contain": [
+      "disneyplus",
+      "hulu"
+    ]
+  },
+  {
+    "hostname": "rr1---sn-example.googlevideo.com",
+    "expected": "ambiguous",
+    "expected_traffic_category": "unknown",
+    "candidate_ids_contain": [
+      "youtube"
+    ]
+  },
+  {
+    "hostname": "tv.apple.com",
+    "expected": "ambiguous",
+    "expected_traffic_category": "unknown",
+    "candidate_ids_contain": [
+      "appletvplus"
+    ]
+  },
+  {
+    "hostname": "uts-api.itunes.apple.com",
+    "expected": "ambiguous",
+    "expected_traffic_category": "unknown",
+    "candidate_ids_contain": [
+      "appletvplus"
+    ]
+  },
+  {
+    "hostname": "a.mzstatic.com",
+    "expected": "ambiguous",
+    "expected_traffic_category": "unknown",
+    "candidate_ids_contain": [
+      "applemusic",
+      "appletvplus"
+    ]
+  },
+  {
+    "hostname": "guzzoni.apple.com",
+    "expected": "ambiguous",
+    "expected_traffic_category": "unknown",
+    "candidate_ids_contain": [
+      "siri"
+    ]
+  },
+  {
+    "hostname": "api.smoot.apple.com",
+    "expected": "ambiguous",
+    "expected_traffic_category": "unknown",
+    "candidate_ids_contain": [
+      "siri",
+      "applemusic"
+    ]
+  },
+  {
+    "hostname": "m.media-amazon.com",
+    "expected": "ambiguous",
+    "expected_traffic_category": "unknown",
+    "candidate_ids_contain": [
+      "primevideo",
+      "amazonmusic",
+      "alexa"
+    ]
+  },
+  {
+    "hostname": "cdn.oaistatic.com",
+    "expected": "ambiguous",
+    "expected_traffic_category": "unknown",
+    "candidate_ids_contain": [
+      "chatgpt",
+      "openai-api"
+    ]
+  },
+  {
+    "hostname": "api.github.com",
+    "expected": "ambiguous",
+    "expected_traffic_category": "unknown",
+    "candidate_ids_contain": [
+      "github-copilot"
+    ]
+  },
+  {
+    "hostname": "graph.microsoft.com",
+    "expected": "ambiguous",
+    "expected_traffic_category": "unknown",
+    "candidate_ids_contain": [
+      "teams",
+      "ms-copilot"
+    ]
+  },
+  {
+    "hostname": "api.githubcopilot.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "api.githubcopilot.com",
+    "expected": "GitHub Copilot",
+    "expected_traffic_category": "unknown",
+    "include_optional": true
+  },
+  {
+    "hostname": "copilot-proxy.githubusercontent.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "copilot-proxy.githubusercontent.com",
+    "expected": "GitHub Copilot",
+    "expected_traffic_category": "unknown",
+    "include_optional": true
+  },
+  {
+    "hostname": "bixby-client.aibixby.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "bixby-client.aibixby.com",
+    "expected": "Bixby",
+    "expected_traffic_category": "unknown",
+    "include_optional": true
+  },
+  {
+    "hostname": "bixbydevelopers.com",
+    "expected": "unknown",
+    "expected_traffic_category": "unknown"
+  },
+  {
+    "hostname": "bixbydevelopers.com",
+    "expected": "Bixby",
+    "expected_traffic_category": "unknown",
+    "include_optional": true
+  }
+]

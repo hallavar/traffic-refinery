@@ -1,0 +1,53 @@
+{
+  "retrieved_on": "2026-10-21",
+  "v2fly_commit": {
+    "sha": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+    "date": "2026-10-21T01:12:38Z"
+  },
+  "files": [
+    {
+      "path": "v2fly/youtube",
+      "sha256": "9ffb657176fdffed567953749c137bb3d8a216ce4e839b3831b626c752902213"
+    },
+    {
+      "path": "v2fly/netflix",
+      "sha256": "6a5568ce8d99b718b3a191292c81c94be56b5e14601316b99a6ece708f8f91f7"
+    },
+    {
+      "path": "v2fly/primevideo",
+      "sha256": "9b525a90bf899e64ee4239e131207a13c556a92fc68357c7d5ac628caada8748"
+    },
+    {
+      "path": "v2fly/hulu",
+      "sha256": "d4696aed44dfa0440ec910adb027319d73525b3314dd3d6a8445e15a8aaa4315"
+    },
+    {
+      "path": "v2fly/twitch",
+      "sha256": "cf62540f2205459c26f4b39478dff141ee15b4c3d9f9bc6fc34a15a7545306f4"
+    },
+    {
+      "path": "v2fly/LICENSE",
+      "sha256": "b9d84a22870d3f21c91a4c6e410c9cc51d00902f5233ad0c84011479244bf7d2"
+    },
+    {
+      "path": "live-probes.json",
+      "sha256": "6ab12b495b9e0399abe83ad8a0692a8868a59e5f5c9fce8b5c42cd987854126e"
+    },
+    {
+      "path": "conferencing-probes.json",
+      "sha256": "ded2e3afdb313770da6fcab62ebad0f37409903ea98a9f7b3bb4c39f5896a593"
+    },
+    {
+      "path": "ndpi-domain-evidence.json",
+      "sha256": "002d0f24fec550269a1a77a16cdd054e1ec8e126418a79b3c305c2d2e687fdc5"
+    },
+    {
+      "path": "probe_services.py",
+      "sha256": "c203922d25a99ebf32f6f0e68a1f7fd3d74e4037dbac6039a69f10644cc0a829"
+    },
+    {
+      "path": "probe_conferencing.py",
+      "sha256": "a6ad0cb04d0351a7b516fa5625a3929840a2e10372ad781f9427f05f61b5f970"
+    }
+  ]
+}

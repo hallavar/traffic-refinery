@@ -1,0 +1,170 @@
+{
+  "repository": "https://github.com/ntop/nDPI",
+  "sha": "2b8c2989f8c36f94a639057aeebd4fc71d841928",
+  "commit_date": "2026-10-20T21:02:56Z",
+  "source_url": "https://raw.githubusercontent.com/ntop/nDPI/2b8c2989f8c36f94a639057aeebd4fc71d841928/src/lib/ndpi_content_match.c.inc",
+  "source_sha256": "1423b6d521b665a241ea46e26f32f75a03b4491b973b05df22fb2d41ca506a15",
+  "note": "Domain classification facts extracted for review; source code is not copied. These are upstream rules, not vendor guarantees of exclusivity.",
+  "entries": [
+    {
+      "domain": "dmqdd6hw24ucf.cloudfront.net",
+      "application": "AmazonVideo",
+      "line": 399
+    },
+    {
+      "domain": "d25xi40x97liuc.cloudfront.net",
+      "application": "AmazonVideo",
+      "line": 400
+    },
+    {
+      "domain": "aiv-delivery.net",
+      "application": "AmazonVideo",
+      "line": 401
+    },
+    {
+      "domain": "aiv-cdn.net",
+      "application": "AmazonVideo",
+      "line": 402
+    },
+    {
+      "domain": "1s3.lvlt.dash.us.aiv-cdn.net.c.footprint.net",
+      "application": "AmazonVideo",
+      "line": 403
+    },
+    {
+      "domain": "s.loris.llnwd.net",
+      "application": "AmazonVideo",
+      "line": 404
+    },
+    {
+      "domain": "atv-ext.amazon.com",
+      "application": "AmazonVideo",
+      "line": 405
+    },
+    {
+      "domain": "atv-ps.amazon.com",
+      "application": "AmazonVideo",
+      "line": 406
+    },
+    {
+      "domain": "amazonvideo.com",
+      "application": "AmazonVideo",
+      "line": 407
+    },
+    {
+      "domain": "primevideo.com",
+      "application": "AmazonVideo",
+      "line": 408
+    },
+    {
+      "domain": "pv-cdn.net",
+      "application": "AmazonVideo",
+      "line": 409
+    },
+    {
+      "domain": "youtubei.googleapis.com",
+      "application": "YouTube",
+      "line": 792
+    },
+    {
+      "domain": "youtube.",
+      "application": "YouTube",
+      "line": 794
+    },
+    {
+      "domain": "youtu.be",
+      "application": "YouTube",
+      "line": 795
+    },
+    {
+      "domain": "yt3.ggpht.com",
+      "application": "YouTube",
+      "line": 796
+    },
+    {
+      "domain": "googlevideo.com",
+      "application": "YouTube",
+      "line": 797
+    },
+    {
+      "domain": "ytimg.com",
+      "application": "YouTube",
+      "line": 798
+    },
+    {
+      "domain": "youtube-nocookie.",
+      "application": "YouTube",
+      "line": 799
+    },
+    {
+      "domain": "youtube-ui.l.google.com",
+      "application": "YouTube",
+      "line": 800
+    },
+    {
+      "domain": "youtubeeducation.com",
+      "application": "YouTube",
+      "line": 801
+    },
+    {
+      "domain": "ttvnw.net",
+      "application": "Twitch",
+      "line": 831
+    },
+    {
+      "domain": "jtvnw.net",
+      "application": "Twitch",
+      "line": 832
+    },
+    {
+      "domain": "twitch.tv",
+      "application": "Twitch",
+      "line": 833
+    },
+    {
+      "domain": "twitchcdn.net",
+      "application": "Twitch",
+      "line": 834
+    },
+    {
+      "domain": "twitchsvc.net",
+      "application": "Twitch",
+      "line": 835
+    },
+    {
+      "domain": "live-video.net",
+      "application": "Twitch",
+      "line": 836
+    },
+    {
+      "domain": "hulustream.com",
+      "application": "Hulu",
+      "line": 988
+    },
+    {
+      "domain": "hulu.com",
+      "application": "Hulu",
+      "line": 989
+    },
+    {
+      "domain": "assetshuluimcom-a.akamaihd.net",
+      "application": "Hulu",
+      "line": 990
+    },
+    {
+      "domain": "ibhuluimcom-a.akamaihd.net",
+      "application": "Hulu",
+      "line": 991
+    },
+    {
+      "domain": "huluad.com",
+      "application": "Hulu",
+      "line": 992
+    },
+    {
+      "domain": "huluim.com",
+      "application": "Hulu",
+      "line": 993
+    }
+  ]
+}

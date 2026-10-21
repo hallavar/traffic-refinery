@@ -1,0 +1,1884 @@
+{
+  "started_at_utc": "2026-10-21T08:02:34.156499+00:00",
+  "finished_at_utc": "2026-10-21T08:02:50.262117+00:00",
+  "limits": [
+    "No login, API keys, meeting join, streaming, gaming session or packet capture.",
+    "HTML references are not observed subresource connections or proof of exclusive use.",
+    "The execution resolver may synthesize special-use addresses. No IP rules are derived.",
+    "HTTP failures or absent root records do not rule out working app clients or subdomains."
+  ],
+  "http": [
+    {
+      "requested_url": "https://www.disneyplus.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "www.disneyplus.com",
+      "bytes_read": 350001,
+      "truncated": true,
+      "body_prefix_sha256": "8a6864eb743d2157579ab38694f74e7fd1ed9d56f435493c78b12112d1e3a295",
+      "static_html_hostname_references": [
+        "cnbl-cdn.bamgrid.com",
+        "disney.images.edge.bamgrid.com",
+        "prod-static.disney-plus.net",
+        "static-assets.bamgrid.com",
+        "www.disneyplus.com",
+        "www.w3.org"
+      ]
+    },
+    {
+      "requested_url": "https://www.facebook.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "www.facebook.com",
+      "bytes_read": 350001,
+      "truncated": true,
+      "body_prefix_sha256": "68d6229d7576e17ba9d5f94eddbe11561a36dfb38e9c5eaad132b7c512e9a289",
+      "static_html_hostname_references": [
+        "about.meta.com",
+        "bluejeans.com",
+        "developers.facebook.com",
+        "edge-chat.facebook.com",
+        "es-es.facebook.com",
+        "facebook.csod.com",
+        "fb.zoom.us",
+        "messenger.com",
+        "muse.ai",
+        "sinarabadi.xyz",
+        "sn.tg-need.com",
+        "static.xx.fbcdn.net",
+        "stecu.short.gy",
+        "stockx.com",
+        "tinyurl.com",
+        "www.facebook.com",
+        "www.instagram.com",
+        "www.meta.ai",
+        "www.meta.com",
+        "www.threads.com",
+        "www.youtube.com"
+      ]
+    },
+    {
+      "requested_url": "https://www.instagram.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "www.instagram.com",
+      "bytes_read": 350001,
+      "truncated": true,
+      "body_prefix_sha256": "2a1ebd19094f6e3aee667b285cda2e0a1c10d4dac3855dd6cbba213161bf3f20",
+      "static_html_hostname_references": [
+        "bluejeans.com",
+        "edge-chat.facebook.com",
+        "facebook.csod.com",
+        "fb.zoom.us",
+        "instagram.com",
+        "muse.ai",
+        "sinarabadi.xyz",
+        "sn.tg-need.com",
+        "static.cdninstagram.com",
+        "stecu.short.gy",
+        "stockx.com",
+        "tinyurl.com",
+        "www.facebook.com",
+        "www.instagram.com",
+        "www.youtube.com"
+      ]
+    },
+    {
+      "requested_url": "https://www.tiktok.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "www.tiktok.com",
+      "bytes_read": 350001,
+      "truncated": true,
+      "body_prefix_sha256": "a47d035e22698cd0d3d3c85cb636d581124c43b60861004f5e2cd3329d3e3d92",
+      "static_html_hostname_references": [
+        "im-api.tiktok.com",
+        "lf16-cdn-tos.tiktokcdn-us.com",
+        "libraweb16-normal-useastred.tiktokw.eu",
+        "location.tiktokw.eu",
+        "m.tiktok.com",
+        "mcs16-normal-useastred.tiktokw.eu",
+        "sf-i18n-resources.tiktokcdn.com",
+        "sf-tcc-config.tiktokcdn-eu.com",
+        "sf16-website-login.neutral.tiktokcdn-eu.com",
+        "sf16-website-login.neutral.ttwstatic.com",
+        "starling16-normal-useastred.tiktokv.eu",
+        "webcast.tiktok.com",
+        "www.tiktok.com"
+      ]
+    },
+    {
+      "requested_url": "https://www.snapchat.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "www.snapchat.com",
+      "bytes_read": 135134,
+      "truncated": false,
+      "body_prefix_sha256": "0f3ecf8b6792f663781fd5984f33258e4e28887c17ac5cdca6e058df23947db0",
+      "static_html_hostname_references": [
+        "accounts.snapchat.com",
+        "ads.snapchat.com",
+        "ar.snap.com",
+        "businesshelp.snapchat.com",
+        "careers.snap.com",
+        "creators.snap.com",
+        "developers.snap.com",
+        "forbusiness.snapchat.com",
+        "help.snapchat.com",
+        "link.snapchat.com",
+        "newsroom.snap.com",
+        "ogp.me",
+        "parents.snapchat.com",
+        "playcanvas.com",
+        "snap.com",
+        "snapchat.com",
+        "static.snapchat.com",
+        "support.spectacles.com",
+        "values.snap.com",
+        "web.snapchat.com",
+        "www.snapchat.com",
+        "www.spectacles.com",
+        "www.w3.org"
+      ]
+    },
+    {
+      "requested_url": "https://x.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "x.com",
+      "bytes_read": 41611,
+      "truncated": false,
+      "body_prefix_sha256": "d0059da764dfd26db9a9fa5384b3bbba5e5e9bfd82d555bd1536b285110f3e7b",
+      "static_html_hostname_references": [
+        "about.x.com",
+        "abs.twimg.com",
+        "api.x.com",
+        "business.x.com",
+        "careers.x.com",
+        "cdn.syndication.twimg.com",
+        "developer.x.com",
+        "grok.com",
+        "help.x.com",
+        "pbs.twimg.com",
+        "support.x.com",
+        "t.co",
+        "ton.twimg.com",
+        "twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion",
+        "video.twimg.com",
+        "www.w3.org",
+        "x.com"
+      ]
+    },
+    {
+      "requested_url": "https://www.xbox.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "www.xbox.com",
+      "bytes_read": 350001,
+      "truncated": true,
+      "body_prefix_sha256": "c573883622b292fad298f3d5cbc54a002ca6b3762252b340537e5bfb61b215b5",
+      "static_html_hostname_references": [
+        "apps.microsoft.com",
+        "assets-xbxweb.xbox.com",
+        "assets.adobedtm.com",
+        "assets.xboxservices.com",
+        "azure.microsoft.com",
+        "cdnjs.cloudflare.com",
+        "copilot.com",
+        "developer.microsoft.com",
+        "gear.xbox.com",
+        "learn.microsoft.com",
+        "marketplace.microsoft.com",
+        "shop.xboxgamestudios.com",
+        "support.microsoft.com",
+        "support.xbox.com",
+        "techcommunity.microsoft.com",
+        "uhf.microsoft.com",
+        "visualstudio.microsoft.com",
+        "www.bing.com",
+        "www.microsoft.com",
+        "www.xbox.com",
+        "xboxdesignlab.xbox.com"
+      ]
+    },
+    {
+      "requested_url": "https://store.steampowered.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "store.steampowered.com",
+      "bytes_read": 350001,
+      "truncated": true,
+      "body_prefix_sha256": "7cdae56045f83cef4e1e0deb6f6619650f2568f79e3c01bce3a77f1904f21c5b",
+      "static_html_hostname_references": [
+        "api.steampowered.com",
+        "avatars.fastly.steamstatic.com",
+        "cdn.fastly.steamstatic.com",
+        "checkout.steampowered.com",
+        "clan.fastly.steamstatic.com",
+        "community.fastly.steamstatic.com",
+        "help.steampowered.com",
+        "login.steampowered.com",
+        "partner.steamgames.com",
+        "partner.steampowered.com",
+        "shared.fastly.steamstatic.com",
+        "steam.tv",
+        "steamcommunity.com",
+        "steamstats.valve.org",
+        "steamsupport.valvesoftware.com",
+        "store.fastly.steamstatic.com",
+        "store.steampowered.com",
+        "video.akamai.steamstatic.com",
+        "video.fastly.steamstatic.com",
+        "www.valvesoftware.com"
+      ]
+    },
+    {
+      "requested_url": "https://www.playstation.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "www.playstation.com",
+      "bytes_read": 350001,
+      "truncated": true,
+      "body_prefix_sha256": "dd16253132df37d94bbb618a94f5aaf6fc00b99fba7b82ccf710b1dfa3971c32",
+      "static_html_hostname_references": [
+        "apps.apple.com",
+        "assets.adobedtm.com",
+        "blog.es.playstation.com",
+        "c.evidon.com",
+        "c.la1-core1.sfdc-8tgtt5.salesforceliveagent.com",
+        "cdn.cookielaw.org",
+        "cdn.schemaapp.com",
+        "checkout.playstation.com",
+        "d.la1-core1.sfdc-8tgtt5.salesforceliveagent.com",
+        "direct.playstation.com",
+        "europa.eu",
+        "fast.fonts.net",
+        "gmedia.playstation.com",
+        "id.sonyentertainmentnetwork.com",
+        "image.api.playstation.com",
+        "io.playstation.com",
+        "library.playstation.com",
+        "partners.playstation.net",
+        "play.google.com",
+        "ps-support.playstation.com",
+        "service.force.com",
+        "sie-calypso.my.salesforce.com",
+        "static.playstation.com",
+        "status.playstation.com",
+        "store.playstation.com",
+        "twitter.com",
+        "web-commerce-anywhere.playstation.com",
+        "web-toolbar.playstation.com",
+        "web.np.playstation.com",
+        "www.facebook.com",
+        "www.instagram.com",
+        "www.playstation.com",
+        "www.sie.com",
+        "www.twitch.tv",
+        "www.w3.org",
+        "www.youtube.com"
+      ]
+    },
+    {
+      "requested_url": "https://store.epicgames.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 403,
+      "error": "HTTPError",
+      "final_hostname": "store.epicgames.com"
+    },
+    {
+      "requested_url": "https://www.whatsapp.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "www.whatsapp.com",
+      "bytes_read": 280333,
+      "truncated": false,
+      "body_prefix_sha256": "595492f30af71d51acb8753e962c135a025ca70932a9b1be1901c1ca6868b410",
+      "static_html_hostname_references": [
+        "blog.whatsapp.com",
+        "buy2.boku.com",
+        "facebook.dlocal.com",
+        "facebook.payulatam.com",
+        "faq.whatsapp.com",
+        "integration-facebook.payu.in",
+        "live.adyen.com",
+        "scontent.whatsapp.net",
+        "secure.payu.com",
+        "static.whatsapp.net",
+        "web.whatsapp.com",
+        "whatsappbusiness.com",
+        "www.facebook.com",
+        "www.instagram.com",
+        "www.metacareers.com",
+        "www.threads.com",
+        "www.w3.org",
+        "www.whatsapp.com",
+        "www.youtube.com",
+        "x.com"
+      ]
+    },
+    {
+      "requested_url": "https://www.messenger.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "www.messenger.com",
+      "bytes_read": 184717,
+      "truncated": false,
+      "body_prefix_sha256": "2ceee0d95eb01ff06dc6eb0d1468358f68dca3038a761c77e95cecf8d6da6a4c",
+      "static_html_hostname_references": [
+        "apps.apple.com",
+        "bluejeans.com",
+        "buy2.boku.com",
+        "developers.facebook.com",
+        "facebook.com",
+        "facebook.csod.com",
+        "facebook.dlocal.com",
+        "facebook.payulatam.com",
+        "fb.zoom.us",
+        "integration-facebook.payu.in",
+        "itunes.apple.com",
+        "l.messenger.com",
+        "live.adyen.com",
+        "market.android.com",
+        "messenger.com",
+        "scontent-bcn1-1.xx.fbcdn.net",
+        "secure.payu.com",
+        "sinarabadi.xyz",
+        "sn.tg-need.com",
+        "static.xx.fbcdn.net",
+        "stecu.short.gy",
+        "stockx.com",
+        "tinyurl.com",
+        "www.facebook.com",
+        "www.messenger.com",
+        "www.microsoft.com",
+        "www.w3.org",
+        "www.youtube.com"
+      ]
+    },
+    {
+      "requested_url": "https://facetime.apple.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "support.apple.com",
+      "bytes_read": 164891,
+      "truncated": false,
+      "body_prefix_sha256": "f6d4d166a2119d96100a8664daf4e3f487ab09f10b6ecabc8f633efeef07a6b1",
+      "static_html_hostname_references": [
+        "cdsassets.apple.com",
+        "ogp.me",
+        "schema.org",
+        "support.apple.com",
+        "supportmetrics.apple.com",
+        "www.apple.com",
+        "www.w3.org"
+      ]
+    },
+    {
+      "requested_url": "https://discord.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "discord.com",
+      "bytes_read": 170216,
+      "truncated": false,
+      "body_prefix_sha256": "eb1202f10ca604d0efc1e7f56fe49b21d3ba48b7d40a11565aa4f76390b43411",
+      "static_html_hostname_references": [
+        "ajax.googleapis.com",
+        "assets-global.website-files.com",
+        "cdn.discordapp.com",
+        "cdn.localizeapi.com",
+        "cdn.prod.website-files.com",
+        "d3e54v103j8qbb.cloudfront.net",
+        "discord.com",
+        "discordmerch.com",
+        "discordstatus.com",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com",
+        "hubspotonwebflow.com",
+        "schema.org",
+        "support-dev.discord.com",
+        "support.discord.com",
+        "twitter.com",
+        "www.facebook.com",
+        "www.googletagmanager.com",
+        "www.instagram.com",
+        "www.tiktok.com",
+        "www.w3.org",
+        "www.youtube.com",
+        "x.com"
+      ]
+    },
+    {
+      "requested_url": "https://tubitv.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "gdpr.tubi.tv",
+      "bytes_read": 2861,
+      "truncated": false,
+      "body_prefix_sha256": "9b9e9429aecbbe5d32afd433fc3c308d5277265fea63487c95aba1428d59402f",
+      "static_html_hostname_references": [
+        "fonts.gstatic.com"
+      ]
+    },
+    {
+      "requested_url": "https://www.roku.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "www.roku.com",
+      "bytes_read": 59799,
+      "truncated": false,
+      "body_prefix_sha256": "225730487a6bf3ad1629496db9e19c336186269365ae9563476b44e09e5f944e",
+      "static_html_hostname_references": [
+        "advertising.roku.com",
+        "apipub.roku.com",
+        "channelstore.roku.com",
+        "cigars.roku.com",
+        "cl.exct.net",
+        "community.roku.com",
+        "developer.roku.com",
+        "docs.roku.com",
+        "email.bdp.roku.com",
+        "image.roku.com",
+        "intl.roku.com",
+        "logon.eng.roku.com",
+        "ls.cti.roku.com",
+        "my.roku.com",
+        "newsroom.roku.com",
+        "owner.roku.com",
+        "owner.web.roku.com",
+        "privacy.roku.com",
+        "retail-api-production.us-east-1.elasticbeanstalk.com",
+        "retail-cart-production.eba-a5p48kmw.us-east-1.elasticbeanstalk.com",
+        "roku-dps-prod.us-east-1.elasticbeanstalk.com",
+        "schema.org",
+        "shop-backend-prod.us-east-1.elasticbeanstalk.com",
+        "static.cloudflareinsights.com",
+        "support.roku.com",
+        "survey.web.roku.com",
+        "therokuchannel.roku.com",
+        "twitter.com",
+        "www.facebook.com",
+        "www.google-analytics.com",
+        "www.googletagmanager.com",
+        "www.instagram.com",
+        "www.linkedin.com",
+        "www.roku.com",
+        "www.tiktok.com",
+        "www.weareroku.com",
+        "www.wikidata.org",
+        "www.youtube.com"
+      ]
+    },
+    {
+      "requested_url": "https://tv.apple.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "tv.apple.com",
+      "bytes_read": 350001,
+      "truncated": true,
+      "body_prefix_sha256": "abb7735a1c920e95d12bee4738e287d53fc4e285db3c8280dd6a2d00fb216b2d",
+      "static_html_hostname_references": [
+        "giphy.com",
+        "is1-ssl.mzstatic.com",
+        "schema.org",
+        "tv.apple.com",
+        "twitter.com",
+        "www.apple.com",
+        "www.facebook.com",
+        "www.instagram.com",
+        "www.w3.org",
+        "www.wikidata.org",
+        "www.youtube.com"
+      ]
+    },
+    {
+      "requested_url": "https://pluto.tv/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "pluto.tv",
+      "bytes_read": 350001,
+      "truncated": true,
+      "body_prefix_sha256": "600802927a86be5b2c2c38b5fb59fe4ac0cf7f9bf7d4bad51e601918afb42436",
+      "static_html_hostname_references": [
+        "api-cache",
+        "careers.paramount.com",
+        "cdn.privacy.paramount.com",
+        "channelstore.roku.com",
+        "corporate.walmart.com",
+        "en.wikipedia.org",
+        "global.ketchcdn.com",
+        "help.paramountplus.com",
+        "ipv4.pluto.tv",
+        "legal.paramount.com",
+        "link.pluto.tv",
+        "player-services.pluto.tv",
+        "pluto.tv",
+        "plutotv.smart.link",
+        "privacy.paramount.com",
+        "schema.org",
+        "service-cookie-sync-use1-1.prd.pluto.tv",
+        "support.paramountplus.com",
+        "support.pluto.tv",
+        "tm.pluto.tv",
+        "variants-api.pluto-us-prod",
+        "www.amazon.com",
+        "www.delta.com",
+        "www.facebook.com",
+        "www.instagram.com",
+        "www.linkedin.com",
+        "www.paramountplus.com",
+        "www.pplus.legal",
+        "www.tiktok.com",
+        "www.w3.org",
+        "www.walmart.com",
+        "www.youtube.com",
+        "wwwimage-us.plutostatic.tv",
+        "x.com"
+      ]
+    },
+    {
+      "requested_url": "https://www.plex.tv/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "watch.plex.tv",
+      "bytes_read": 350001,
+      "truncated": true,
+      "body_prefix_sha256": "8ce61ecda627ef214e08768a33bdbe301c9a66feac7bc7ef2f8528f793d2a779",
+      "static_html_hostname_references": [
+        "bsky.app",
+        "cordcutter.plex.tv",
+        "forums.plex.tv",
+        "plex-gear.myshopify.com",
+        "status.plex.tv",
+        "support.plex.tv",
+        "www.facebook.com",
+        "www.instagram.com",
+        "www.linkedin.com",
+        "www.plex.tv",
+        "www.tiktok.com",
+        "www.w3.org",
+        "www.youtube.com",
+        "x.com"
+      ]
+    },
+    {
+      "requested_url": "https://open.spotify.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "open.spotify.com",
+      "bytes_read": 309810,
+      "truncated": false,
+      "body_prefix_sha256": "d7230a6f7eae582192a516f030b2ffc5fdffbcdb2f23300ff512ad10d945604d",
+      "static_html_hostname_references": [
+        "api-partner.spotify.com",
+        "api.spotify.com",
+        "apresolve.spotify.com",
+        "charts-images.scdn.co",
+        "clienttoken.spotify.com",
+        "daily-mix.scdn.co",
+        "encore.scdn.co",
+        "exp.wg.spotify.com",
+        "gew1-dealer.g2.spotify.com",
+        "gew1-spclient.spotify.com",
+        "i.scdn.co",
+        "lineup-images.scdn.co",
+        "mosaic.scdn.co",
+        "open.spotify.com",
+        "open.spotifycdn.com",
+        "pickasso.spotifycdn.com",
+        "pixel-static.spotify.com",
+        "pixel.spotify.com",
+        "pl.scdn.co",
+        "spclient.wg.spotify.com"
+      ]
+    },
+    {
+      "requested_url": "https://music.apple.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "music.apple.com",
+      "bytes_read": 350001,
+      "truncated": true,
+      "body_prefix_sha256": "996d637d365c87a96f4cce5e1aeb1efd3f6e02123d004a49fb343216fd6975a7",
+      "static_html_hostname_references": [
+        "giphy.com",
+        "is1-ssl.mzstatic.com",
+        "music.apple.com",
+        "schema.org",
+        "www.apple.com",
+        "www.facebook.com",
+        "www.instagram.com",
+        "www.snapchat.com",
+        "www.tiktok.com",
+        "www.w3.org",
+        "www.wikidata.org",
+        "www.youtube.com",
+        "x.com"
+      ]
+    },
+    {
+      "requested_url": "https://music.amazon.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "music.amazon.com",
+      "bytes_read": 11461,
+      "truncated": false,
+      "body_prefix_sha256": "cd5d43ab3d426538b407a083a7e0bc90fe4d1af477af39c9d3d2df52204e25d8",
+      "static_html_hostname_references": [
+        "cdn.branch.io",
+        "client.rum.us-east-1.amazonaws.com",
+        "d5fx445wy2wpk.cloudfront.net",
+        "dataplane.rum.us-east-1.amazonaws.com",
+        "m.media-amazon.com",
+        "na.mesk.skill.music.a2z.com",
+        "www.w3.org"
+      ]
+    },
+    {
+      "requested_url": "https://play.geforcenow.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "play.geforcenow.com",
+      "bytes_read": 70033,
+      "truncated": false,
+      "body_prefix_sha256": "162e319b9b2139cd281d2efd282ad5512faa5113a66755d811207e8dfbc2130d",
+      "static_html_hostname_references": [
+        "gx-target-experiments-frontend-api.gx.nvidia.com",
+        "pcs.geforcenow.com",
+        "play.geforcenow.com",
+        "public.games.geforce.com",
+        "www.nvidia.com"
+      ]
+    },
+    {
+      "requested_url": "https://start.qq.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "start.qq.com",
+      "bytes_read": 11417,
+      "truncated": false,
+      "body_prefix_sha256": "fb3fd2ef08e0244ca969fab41ceb7706c61f04b313469bf16980da0086349f34",
+      "static_html_hostname_references": [
+        "beacon.cdn.qq.com",
+        "cdn.start.qq.com",
+        "midas.gtimg.cn",
+        "ossweb-img.qq.com",
+        "start.gtimg.com",
+        "tam.cdn-go.cn"
+      ]
+    },
+    {
+      "requested_url": "https://alexa.amazon.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 302,
+      "error": "HTTPError",
+      "final_hostname": "alexa.amazon.com"
+    },
+    {
+      "requested_url": "https://bixby.samsung.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "requested_url": "https://bixbydevelopers.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "bixbydevelopers.com",
+      "bytes_read": 73289,
+      "truncated": false,
+      "body_prefix_sha256": "61d3ea29aa6b4870b97ac90e22f636a5565b48ac05bc53e57973ef3af2ca099b",
+      "static_html_hostname_references": [
+        "bhs.bixbydevelopers.com",
+        "bixby-client.aibixby.com",
+        "bixby-developer-assets.aibixby.com",
+        "bixby-studio.s3.amazonaws.com",
+        "bixbydevelopers.com",
+        "dcapi-a4ee7d0c",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com",
+        "localhost",
+        "security.samsungmobile.com",
+        "stackoverflow.com",
+        "support.bixbydevelopers.com",
+        "twitter.com",
+        "www.facebook.com",
+        "www.w3.org",
+        "www.youtube.com"
+      ]
+    },
+    {
+      "requested_url": "https://www.philips-hue.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "www.philips-hue.com",
+      "bytes_read": 350001,
+      "truncated": true,
+      "body_prefix_sha256": "d9abed8ce9d8d462c83c8bcd9485a3df48dc39472646ca783082b0575850fe97",
+      "static_html_hostname_references": [
+        "assets.adobedtm.com",
+        "rum.hlx.page",
+        "s.go-mpulse.net",
+        "s2.go-mpulse.net",
+        "schema.org",
+        "twitter.com",
+        "www.assets.signify.com",
+        "www.facebook.com",
+        "www.instagram.com",
+        "www.philips-hue.com",
+        "www.pinterest.com"
+      ]
+    },
+    {
+      "requested_url": "https://www.smartthings.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "www.samsung.com",
+      "bytes_read": 350001,
+      "truncated": true,
+      "body_prefix_sha256": "98a7c7b49a9df55186d9ddd4946ac537a641a9365d66018f95dd836c970e3c5d",
+      "static_html_hostname_references": [
+        "account.samsung.com",
+        "api.bazaarvoice.com",
+        "cxoffering.samsungiotcloud.com",
+        "esapi.samsung.com",
+        "image-us.samsung.com",
+        "images.samsung.com",
+        "in2.ecom-qa.samsung.com",
+        "p1-smu-api-cdn.shop.samsung.com",
+        "s.go-mpulse.net",
+        "s2.go-mpulse.net",
+        "shop.samsung.com",
+        "us.community.samsung.com",
+        "v3.account.samsung.com",
+        "www.samsung.com",
+        "www.samsunghvac.com",
+        "www.smartthings.com"
+      ]
+    },
+    {
+      "requested_url": "https://chatgpt.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 403,
+      "error": "HTTPError",
+      "final_hostname": "chatgpt.com"
+    },
+    {
+      "requested_url": "https://api.openai.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 421,
+      "error": "HTTPError",
+      "final_hostname": "api.openai.com"
+    },
+    {
+      "requested_url": "https://copilot.microsoft.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "copilot.microsoft.com",
+      "bytes_read": 38545,
+      "truncated": false,
+      "body_prefix_sha256": "5a165b17fba2e83c1ff78cc87a376baf3a32a698e6ef94c72001b340edc646fa",
+      "static_html_hostname_references": [
+        "copilot.com",
+        "copilot.microsoft.com",
+        "login.live.com",
+        "login.microsoftonline.com",
+        "www.w3.org"
+      ]
+    },
+    {
+      "requested_url": "https://gemini.google.com/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 200,
+      "final_hostname": "gemini.google.com",
+      "bytes_read": 350001,
+      "truncated": true,
+      "body_prefix_sha256": "57768fc4edc9904390ab40cd8ef56dc9df3ea69a7c2bd494fd442f25668e9456",
+      "static_html_hostname_references": [
+        "admin.google.com",
+        "ai.google.dev",
+        "apps.apple.com",
+        "chromebook.com",
+        "content.googleapis.com",
+        "default-bard-run-dev.corp.goog",
+        "docs.google.com",
+        "drive.google.com",
+        "forms.gle",
+        "gemini.app.google",
+        "gemini.google.com",
+        "gemini.gstatic.com",
+        "geminiweb-pa.clients6.google.com",
+        "github.com",
+        "google.qualtrics.com",
+        "healthapp.google.com",
+        "lh3.googleusercontent.com",
+        "myaccount.google.com",
+        "notebooklm.google.com",
+        "ogads-pa.clients6.google.com",
+        "one.google.com",
+        "play.google.com",
+        "push.clients6.google.com",
+        "ssl.gstatic.com",
+        "support.google.com",
+        "waa-pa.clients6.google.com",
+        "workspace.google.com",
+        "www.google.com",
+        "www.gstatic.com",
+        "www.w3.org",
+        "www.youtube.com"
+      ]
+    },
+    {
+      "requested_url": "https://claude.ai/",
+      "method": "GET",
+      "tls_verification": true,
+      "status": 403,
+      "error": "HTTPError",
+      "final_hostname": "claude.ai"
+    }
+  ],
+  "dns": [
+    {
+      "hostname": "alexa.amazon.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "alexa.amazon.com.\t23\tIN\tCNAME\tpitangui.amazon.com.",
+            "pitangui.amazon.com.\t23\tIN\tCNAME\ttp.5fd53c725-frontier.amazon.com.",
+            "tp.5fd53c725-frontier.amazon.com. 23 IN\tCNAME\td1wg1w6p5q8555.cloudfront.net.",
+            "d1wg1w6p5q8555.cloudfront.net. 23 IN\tA\t3.160.182.24"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "alexa.amazon.com.\t53\tIN\tCNAME\tpitangui.amazon.com."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "api.amazonalexa.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "api.amazonalexa.com.\t30\tIN\tCNAME\ttp.b16066390-frontier.amazonalexa.com.",
+            "tp.b16066390-frontier.amazonalexa.com. 30 IN CNAME d1gsg05rq1vjdw.cloudfront.net.",
+            "d1gsg05rq1vjdw.cloudfront.net. 30 IN\tA\t52.84.49.87"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "api.amazonalexa.com.\t1800\tIN\tCNAME\ttp.b16066390-frontier.amazonalexa.com."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "api.anthropic.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "api.anthropic.com.\t9\tIN\tA\t160.79.104.10"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "api.githubcopilot.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "api.githubcopilot.com.\t2492\tIN\tCNAME\tglb-db52c2cf8be544.github.com.",
+            "glb-db52c2cf8be544.github.com. 30 IN\tA\t140.82.114.21"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "api.githubcopilot.com.\t2492\tIN\tCNAME\tglb-db52c2cf8be544.github.com."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "api.music.amazon.dev",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "api.music.amazon.dev.\t60\tIN\tA\t89.60.158.188",
+            "api.music.amazon.dev.\t60\tIN\tA\t89.60.70.182",
+            "api.music.amazon.dev.\t60\tIN\tA\t89.60.106.4"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "api.music.apple.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "api.music.apple.com.\t30\tIN\tCNAME\tapi.music-lb.itunes-apple.com.akadns.net.",
+            "api.music-lb.itunes-apple.com.akadns.net. 30 IN\tCNAME api.music.apple.com.edgekey.net.",
+            "api.music.apple.com.edgekey.net. 30 IN\tCNAME\te673.dscx.akamaiedge.net.",
+            "e673.dscx.akamaiedge.net. 20\tIN\tA\t23.40.112.30"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "api.music.apple.com.\t3600\tIN\tCNAME\tapi.music-lb.itunes-apple.com.akadns.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "api.openai.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "api.openai.com.\t\t56\tIN\tA\t162.159.140.245",
+            "api.openai.com.\t\t56\tIN\tA\t172.66.0.243"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "api.smartthings.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "api.smartthings.com.\t30\tIN\tA\t34.251.12.203",
+            "api.smartthings.com.\t30\tIN\tA\t54.73.41.65",
+            "api.smartthings.com.\t30\tIN\tA\t52.209.110.136",
+            "api.smartthings.com.\t30\tIN\tA\t99.81.227.43",
+            "api.smartthings.com.\t30\tIN\tA\t52.30.94.207",
+            "api.smartthings.com.\t30\tIN\tA\t34.248.45.89",
+            "api.smartthings.com.\t30\tIN\tA\t108.133.196.51",
+            "api.smartthings.com.\t30\tIN\tA\t54.195.178.98"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "avs-alexa-na.amazon.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "avs-alexa-na.amazon.com. 900\tIN\tCNAME\tdefault.na.gateway.devices.a2z.com.",
+            "default.na.gateway.devices.a2z.com. 53 IN CNAME\tbobdi-exter-1vqeilnw5zym1-5134ab8e5a874149.elb.us-east-1.amazonaws.com.",
+            "bobdi-exter-1vqeilnw5zym1-5134ab8e5a874149.elb.us-east-1.amazonaws.com.\t60 IN A\t44.199.80.228",
+            "bobdi-exter-1vqeilnw5zym1-5134ab8e5a874149.elb.us-east-1.amazonaws.com.\t60 IN A\t3.217.147.217",
+            "bobdi-exter-1vqeilnw5zym1-5134ab8e5a874149.elb.us-east-1.amazonaws.com.\t60 IN A\t35.175.71.102",
+            "bobdi-exter-1vqeilnw5zym1-5134ab8e5a874149.elb.us-east-1.amazonaws.com.\t60 IN A\t3.223.181.245",
+            "bobdi-exter-1vqeilnw5zym1-5134ab8e5a874149.elb.us-east-1.amazonaws.com.\t60 IN A\t54.167.177.211"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "avs-alexa-na.amazon.com. 900\tIN\tCNAME\tdefault.na.gateway.devices.a2z.com."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "bixby-client.aibixby.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "bixby-client.aibixby.com. 30\tIN\tCNAME\td1560qkolaukv2.cloudfront.net.",
+            "d1560qkolaukv2.cloudfront.net. 30 IN\tA\t3.175.86.30",
+            "d1560qkolaukv2.cloudfront.net. 30 IN\tA\t3.175.86.14",
+            "d1560qkolaukv2.cloudfront.net. 30 IN\tA\t3.175.86.74",
+            "d1560qkolaukv2.cloudfront.net. 30 IN\tA\t3.175.86.118"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "bixby-client.aibixby.com. 60\tIN\tCNAME\td1560qkolaukv2.cloudfront.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "bixby.samsung.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "bixby.samsung.com.\t294\tIN\tCNAME\td1r9pqlfmmbd0m.cloudfront.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "bixbydevelopers.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "bixbydevelopers.com.\t55\tIN\tA\t3.14.207.163",
+            "bixbydevelopers.com.\t55\tIN\tA\t18.225.51.134",
+            "bixbydevelopers.com.\t55\tIN\tA\t3.147.148.79"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "chat-e2ee-mini.facebook.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "chat-e2ee-mini.facebook.com. 920 IN\tCNAME\tchat-e2ee-mini.c10r.facebook.com.",
+            "chat-e2ee-mini.c10r.facebook.com. 17 IN\tA\t157.240.243.38"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "chat-e2ee-mini.facebook.com. 920 IN\tCNAME\tchat-e2ee-mini.c10r.facebook.com."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "chatgpt.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "chatgpt.com.\t\t29\tIN\tA\t104.18.32.47",
+            "chatgpt.com.\t\t29\tIN\tA\t172.64.155.209"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "claude.ai",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "claude.ai.\t\t16\tIN\tA\t160.79.104.10"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "copilot.cloud.microsoft",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "copilot.cloud.microsoft. 30\tIN\tCNAME\tofficehomeccm.afdmira.tm.svc.cloud.microsoft.",
+            "officehomeccm.afdmira.tm.svc.cloud.microsoft. 30 IN CNAME atm.common.mira.tm.svc.cloud.microsoft.",
+            "atm.common.mira.tm.svc.cloud.microsoft.\t10 IN A\t23.103.243.225",
+            "atm.common.mira.tm.svc.cloud.microsoft.\t10 IN A\t23.103.243.226",
+            "atm.common.mira.tm.svc.cloud.microsoft.\t10 IN A\t23.103.243.224",
+            "atm.common.mira.tm.svc.cloud.microsoft.\t10 IN A\t23.103.243.227"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "copilot.cloud.microsoft. 300\tIN\tCNAME\tofficehomeccm.afdmira.tm.svc.cloud.microsoft."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "copilot.microsoft.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "copilot.microsoft.com.\t26\tIN\tCNAME\tcopilot-copilot-msft-com.trafficmanager.net.",
+            "copilot-copilot-msft-com.trafficmanager.net. 26\tIN CNAME copilot.microsoft.com.cdn.cloudflare.net.",
+            "copilot.microsoft.com.cdn.cloudflare.net. 26 IN\tA 104.18.23.222",
+            "copilot.microsoft.com.cdn.cloudflare.net. 26 IN\tA 104.18.22.222"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "copilot.microsoft.com.\t3596\tIN\tCNAME\tcopilot-copilot-msft-com.trafficmanager.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "discord.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "discord.com.\t\t222\tIN\tA\t162.159.136.232",
+            "discord.com.\t\t222\tIN\tA\t162.159.135.232",
+            "discord.com.\t\t222\tIN\tA\t162.159.138.232",
+            "discord.com.\t\t222\tIN\tA\t162.159.128.233",
+            "discord.com.\t\t222\tIN\tA\t162.159.137.232"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "discovery.meethue.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "discovery.meethue.com.\t30\tIN\tA\t136.81.212.100"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "edge-mqtt.facebook.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "edge-mqtt.facebook.com.\t3383\tIN\tCNAME\tmqtt.c10r.facebook.com.",
+            "mqtt.c10r.facebook.com.\t24\tIN\tA\t157.240.243.18"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "edge-mqtt.facebook.com.\t3383\tIN\tCNAME\tmqtt.c10r.facebook.com."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "facetime.apple.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "facetime.apple.com.\t287\tIN\tCNAME\tfacetime-apple-com.we.apple-dns.net.",
+            "facetime-apple-com.we.apple-dns.net. 48\tIN A\t17.250.90.8",
+            "facetime-apple-com.we.apple-dns.net. 48\tIN A\t17.250.90.16"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "facetime.apple.com.\t287\tIN\tCNAME\tfacetime-apple-com.we.apple-dns.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "gemini.google.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "gemini.google.com.\t109\tIN\tA\t142.251.150.2",
+            "gemini.google.com.\t109\tIN\tA\t142.251.153.2",
+            "gemini.google.com.\t109\tIN\tA\t142.251.156.2",
+            "gemini.google.com.\t109\tIN\tA\t142.251.155.2",
+            "gemini.google.com.\t109\tIN\tA\t142.251.157.2",
+            "gemini.google.com.\t109\tIN\tA\t142.251.151.2",
+            "gemini.google.com.\t109\tIN\tA\t142.251.152.2",
+            "gemini.google.com.\t109\tIN\tA\t142.251.154.2"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "generativelanguage.googleapis.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "generativelanguage.googleapis.com. 30 IN A\t172.217.117.4",
+            "generativelanguage.googleapis.com. 30 IN A\t172.217.116.4",
+            "generativelanguage.googleapis.com. 30 IN A\t172.217.118.4",
+            "generativelanguage.googleapis.com. 30 IN A\t172.217.112.4",
+            "generativelanguage.googleapis.com. 30 IN A\t172.217.115.4",
+            "generativelanguage.googleapis.com. 30 IN A\t172.217.114.4",
+            "generativelanguage.googleapis.com. 30 IN A\t172.217.119.4",
+            "generativelanguage.googleapis.com. 30 IN A\t172.217.113.4"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "graph.facebook.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "graph.facebook.com.\t2867\tIN\tCNAME\tstar.c10r.facebook.com.",
+            "star.c10r.facebook.com.\t9\tIN\tA\t157.240.243.14"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "graph.facebook.com.\t2866\tIN\tCNAME\tstar.c10r.facebook.com."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "guzzoni.apple.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "guzzoni.apple.com.\t1505\tIN\tCNAME\tguzzoni-apple-com.v.aaplimg.com.",
+            "guzzoni-apple-com.v.aaplimg.com. 10 IN\tA\t54.217.122.41"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "guzzoni.apple.com.\t1505\tIN\tCNAME\tguzzoni-apple-com.v.aaplimg.com."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "music.amazon.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "music.amazon.com.\t1478\tIN\tCNAME\ttp.7f9f74c4d-frontier.amazon.com.",
+            "tp.7f9f74c4d-frontier.amazon.com. 16 IN\tCNAME\tdbvkft081g10r.cloudfront.net.",
+            "dbvkft081g10r.cloudfront.net. 16 IN\tA\t3.164.77.68"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "music.amazon.com.\t1478\tIN\tCNAME\ttp.7f9f74c4d-frontier.amazon.com."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "music.apple.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "music.apple.com.\t20\tIN\tCNAME\tmusic-cdn.itunes-apple.com.akadns.net.",
+            "music-cdn.itunes-apple.com.akadns.net. 20 IN CNAME music-cdn-row.itunes-apple.com.akadns.net.",
+            "music-cdn-row.itunes-apple.com.akadns.net. 20 IN CNAME itunes.apple.com.edgekey.net.",
+            "itunes.apple.com.edgekey.net. 52 IN\tCNAME\te673.dsce9.akamaiedge.net.",
+            "e673.dsce9.akamaiedge.net. 8\tIN\tA\t2.20.32.28"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "music.apple.com.\t290\tIN\tCNAME\tmusic-cdn.itunes-apple.com.akadns.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "open.spotify.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "open.spotify.com.\t146\tIN\tCNAME\tatc.spotify.map.fastly.net.",
+            "atc.spotify.map.fastly.net. 29\tIN\tA\t199.232.35.42"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "open.spotify.com.\t146\tIN\tCNAME\tatc.spotify.map.fastly.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "play.geforcenow.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "play.geforcenow.com.\t2\tIN\tCNAME\td37fmfghjt329d.cloudfront.net.",
+            "d37fmfghjt329d.cloudfront.net. 52 IN\tA\t216.137.52.39",
+            "d37fmfghjt329d.cloudfront.net. 52 IN\tA\t216.137.52.9",
+            "d37fmfghjt329d.cloudfront.net. 52 IN\tA\t216.137.52.71",
+            "d37fmfghjt329d.cloudfront.net. 52 IN\tA\t216.137.52.34"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "play.geforcenow.com.\t2\tIN\tCNAME\td37fmfghjt329d.cloudfront.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "pluto.tv",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "pluto.tv.\t\t19\tIN\tA\t151.101.65.91",
+            "pluto.tv.\t\t19\tIN\tA\t151.101.193.91",
+            "pluto.tv.\t\t19\tIN\tA\t151.101.1.91",
+            "pluto.tv.\t\t19\tIN\tA\t151.101.129.91"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "start.qq.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "start.qq.com.\t\t592\tIN\tA\t163.177.30.152"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "store.epicgames.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "store.epicgames.com.\t17\tIN\tCNAME\tstore-weighted-cdn.epicgames.com.",
+            "store-weighted-cdn.epicgames.com. 17 IN\tCNAME\tstore.epicgames.com.cdn.cloudflare.net.",
+            "store.epicgames.com.cdn.cloudflare.net.\t17 IN A\t104.18.3.64",
+            "store.epicgames.com.cdn.cloudflare.net.\t17 IN A\t104.18.2.64"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "store.epicgames.com.\t287\tIN\tCNAME\tstore-weighted-cdn.epicgames.com."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "store.steampowered.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "store.steampowered.com.\t20\tIN\tA\t23.40.114.148"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "tubitv.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "tubitv.com.\t\t18\tIN\tA\t3.175.86.57",
+            "tubitv.com.\t\t18\tIN\tA\t3.175.86.38",
+            "tubitv.com.\t\t18\tIN\tA\t3.175.86.55",
+            "tubitv.com.\t\t18\tIN\tA\t3.175.86.75"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "tv.apple.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "tv.apple.com.\t\t18\tIN\tCNAME\ttv-cdn.itunes-apple.com.akadns.net.",
+            "tv-cdn.itunes-apple.com.akadns.net. 18 IN CNAME\ttv-cdn-row.itunes-apple.com.akadns.net.",
+            "tv-cdn-row.itunes-apple.com.akadns.net.\t18 IN CNAME itunes.apple.com.edgekey.net.",
+            "itunes.apple.com.edgekey.net. 52 IN\tCNAME\te673.dsce9.akamaiedge.net.",
+            "e673.dsce9.akamaiedge.net. 2\tIN\tA\t2.20.32.28"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "tv.apple.com.\t\t288\tIN\tCNAME\ttv-cdn.itunes-apple.com.akadns.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "www.disneyplus.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "www.disneyplus.com.\t60\tIN\tA\t192.0.0.56"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NXDOMAIN",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "www.facebook.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "www.facebook.com.\t1535\tIN\tCNAME\tstar-mini.c10r.facebook.com.",
+            "star-mini.c10r.facebook.com. 37\tIN\tA\t157.240.243.35"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "www.facebook.com.\t1535\tIN\tCNAME\tstar-mini.c10r.facebook.com."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "www.instagram.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "www.instagram.com.\t1476\tIN\tCNAME\tz-p42-instagram.c10r.instagram.com.",
+            "z-p42-instagram.c10r.instagram.com. 14 IN A\t157.240.243.174"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "www.instagram.com.\t1476\tIN\tCNAME\tz-p42-instagram.c10r.instagram.com."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "www.messenger.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "www.messenger.com.\t17\tIN\tCNAME\tstar.facebook.com.",
+            "star.facebook.com.\t17\tIN\tCNAME\tstar.c10r.facebook.com.",
+            "star.c10r.facebook.com.\t44\tIN\tA\t157.240.243.14"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "www.messenger.com.\t3587\tIN\tCNAME\tstar.facebook.com."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "www.philips-hue.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "www.philips-hue.com.\t24\tIN\tCNAME\tprod-02.signify.com.edgekey.net.",
+            "prod-02.signify.com.edgekey.net. 24 IN\tCNAME\te15987.dscf.akamaiedge.net.",
+            "e15987.dscf.akamaiedge.net. 14\tIN\tA\t95.101.234.69",
+            "e15987.dscf.akamaiedge.net. 14\tIN\tA\t95.101.234.89"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "www.philips-hue.com.\t3593\tIN\tCNAME\tprod-02.signify.com.edgekey.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "www.playstation.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "www.playstation.com.\t2135\tIN\tCNAME\twww.playstation.com-v2.edgekey.net.",
+            "www.playstation.com-v2.edgekey.net. 2135 IN CNAME e2790.dscx.akamaiedge.net.",
+            "e2790.dscx.akamaiedge.net. 7\tIN\tA\t23.40.112.108"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "www.playstation.com.\t2134\tIN\tCNAME\twww.playstation.com-v2.edgekey.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "www.plex.tv",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "www.plex.tv.\t\t18\tIN\tA\t104.18.36.51",
+            "www.plex.tv.\t\t18\tIN\tA\t172.64.151.205"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "www.roku.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "www.roku.com.\t\t47\tIN\tCNAME\twww.roku.com.cdn.cloudflare.net.",
+            "www.roku.com.cdn.cloudflare.net. 287 IN\tA\t162.159.136.11",
+            "www.roku.com.cdn.cloudflare.net. 287 IN\tA\t162.159.135.11"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "www.roku.com.\t\t47\tIN\tCNAME\twww.roku.com.cdn.cloudflare.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "www.smartthings.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "www.smartthings.com.\t53\tIN\tA\t52.84.45.125",
+            "www.smartthings.com.\t53\tIN\tA\t52.84.45.2",
+            "www.smartthings.com.\t53\tIN\tA\t52.84.45.58",
+            "www.smartthings.com.\t53\tIN\tA\t52.84.45.20"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "www.snapchat.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "www.snapchat.com.\t14\tIN\tCNAME\tweb-gcp.api.snapchat.com.",
+            "web-gcp.api.snapchat.com. 14\tIN\tCNAME\tweb-gcp.api.sc-gw.com.",
+            "web-gcp.api.sc-gw.com.\t14\tIN\tA\t34.149.46.130"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "www.snapchat.com.\t284\tIN\tCNAME\tweb-gcp.api.snapchat.com."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "www.tiktok.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "www.tiktok.com.\t\t1392\tIN\tCNAME\twww.tiktok.com.edgesuite.net.",
+            "www.tiktok.com.edgesuite.net. 11744 IN\tCNAME\tshared-global-api-spread.bytewlb.akadns.net.",
+            "shared-global-api-spread.bytewlb.akadns.net. 43\tIN CNAME a2047.api6.akamai.net.",
+            "a2047.api6.akamai.net.\t3\tIN\tA\t184.25.102.76",
+            "a2047.api6.akamai.net.\t3\tIN\tA\t184.25.102.73",
+            "a2047.api6.akamai.net.\t3\tIN\tA\t184.25.102.74",
+            "a2047.api6.akamai.net.\t3\tIN\tA\t184.25.102.80",
+            "a2047.api6.akamai.net.\t3\tIN\tA\t184.25.102.79",
+            "a2047.api6.akamai.net.\t3\tIN\tA\t184.25.102.75",
+            "a2047.api6.akamai.net.\t3\tIN\tA\t184.25.102.72",
+            "a2047.api6.akamai.net.\t3\tIN\tA\t184.25.102.78",
+            "a2047.api6.akamai.net.\t3\tIN\tA\t184.25.102.77"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "www.tiktok.com.\t\t1392\tIN\tCNAME\twww.tiktok.com.edgesuite.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "www.whatsapp.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "www.whatsapp.com.\t1990\tIN\tCNAME\tmmx-ds.cdn.whatsapp.net.",
+            "mmx-ds.cdn.whatsapp.net. 19\tIN\tA\t157.240.243.60"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "www.whatsapp.com.\t1990\tIN\tCNAME\tmmx-ds.cdn.whatsapp.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "www.xbox.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "www.xbox.com.\t\t14\tIN\tCNAME\twildcard.xbox.com.edgekey.net.",
+            "wildcard.xbox.com.edgekey.net. 14 IN\tCNAME\te1822.dsca.akamaiedge.net.",
+            "e1822.dsca.akamaiedge.net. 4\tIN\tA\t23.40.112.65"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [
+            "www.xbox.com.\t\t3584\tIN\tCNAME\twildcard.xbox.com.edgekey.net."
+          ],
+          "exit_code": 0
+        }
+      }
+    },
+    {
+      "hostname": "x.com",
+      "records": {
+        "A": {
+          "status": "NOERROR",
+          "answers": [
+            "x.com.\t\t\t132\tIN\tA\t172.66.0.227"
+          ],
+          "exit_code": 0
+        },
+        "CNAME": {
+          "status": "NOERROR",
+          "answers": [],
+          "exit_code": 0
+        }
+      }
+    }
+  ]
+}

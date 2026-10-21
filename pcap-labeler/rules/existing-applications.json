@@ -1,0 +1,620 @@
+{
+  "schema_version": 2,
+  "status": "research_draft_not_pcap_validated",
+  "reviewed_on": "2026-10-21",
+  "coverage": "Nine application entries already present in the video and VoIP configs. New inventory applications are outside this review.",
+  "label_policy": {
+    "unmatched_label": "unknown",
+    "retain_unknown_flows": true,
+    "conflict_label": "ambiguous",
+    "first_match_wins": false
+  },
+  "matching_contract": {
+    "input": "DNS question/original service hostname or TLS SNI; retain the evidence type in output.",
+    "normalization": "ASCII DNS hostnames, case-insensitive, remove one optional terminal dot; reject URLs, IP literals, ports and malformed labels. Convert IDNs to ASCII before matching.",
+    "domain_suffix": "host == domain or host.endswith(\".\" + domain)",
+    "exact_hostname": "host == value; no automatic subdomain matching",
+    "ip_prefixes": "No IP-prefix attribution in this pack; old ranges are not carried forward.",
+    "dns_correlation": "A future flow labeler must scope DNS associations by client, answer chain, TTL and capture time, handle shared IPs, and avoid transferring one service label to unrelated flows sharing an IP.",
+    "integration": "This is not a drop-in Traffic Refinery config. The legacy DomainsString matcher performs substring matching and cannot implement this contract. Schema v2 inventory_category is descriptive service metadata only. DNS/SNI matches identify an application and a provisional role hint; they cannot automatically output a video category."
+  },
+  "sources": {
+    "legacy-video": {
+      "kind": "repository_baseline",
+      "path": "configs/trconfig_video.json"
+    },
+    "legacy-voip": {
+      "kind": "repository_baseline",
+      "path": "configs/trconfig_voip.json"
+    },
+    "google-youtube": {
+      "kind": "vendor_documentation",
+      "url": "https://knowledge.workspace.google.com/admin/youtube/control-youtube-content-available-to-users"
+    },
+    "google-meet": {
+      "kind": "vendor_documentation",
+      "url": "https://knowledge.workspace.google.com/admin/meet/prepare-your-network-for-meet-meetings-and-live-streams"
+    },
+    "microsoft-teams": {
+      "kind": "vendor_documentation",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide"
+    },
+    "zoom": {
+      "kind": "vendor_documentation",
+      "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060548"
+    },
+    "webex": {
+      "kind": "vendor_documentation",
+      "url": "https://help.webex.com/en-us/article/WBX000028782/Network-Requirements-for-Webex-Services"
+    },
+    "twitch-extensions": {
+      "kind": "vendor_documentation",
+      "url": "https://dev.twitch.tv/docs/extensions/"
+    },
+    "aws-ivs": {
+      "kind": "vendor_documentation",
+      "url": "https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/real-time-network-requirements.html"
+    },
+    "ndpi": {
+      "kind": "upstream_classifier",
+      "url": "https://raw.githubusercontent.com/ntop/nDPI/2b8c2989f8c36f94a639057aeebd4fc71d841928/src/lib/ndpi_content_match.c.inc",
+      "revision": "2b8c2989f8c36f94a639057aeebd4fc71d841928",
+      "evidence_path": "research/evidence/2026-10-21/ndpi-domain-evidence.json"
+    },
+    "live": {
+      "kind": "public_http_and_local_dns_probe",
+      "path": "research/evidence/2026-10-21/live-probes.json"
+    },
+    "live-conferencing": {
+      "kind": "public_http_and_local_dns_probe",
+      "path": "research/evidence/2026-10-21/conferencing-probes.json"
+    },
+    "dlc-youtube": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/youtube",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21/v2fly/youtube",
+      "license": "MIT; see research/evidence/2026-10-21/v2fly/LICENSE"
+    },
+    "dlc-netflix": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/netflix",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21/v2fly/netflix",
+      "license": "MIT; see research/evidence/2026-10-21/v2fly/LICENSE"
+    },
+    "dlc-primevideo": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/primevideo",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21/v2fly/primevideo",
+      "license": "MIT; see research/evidence/2026-10-21/v2fly/LICENSE"
+    },
+    "dlc-hulu": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/hulu",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21/v2fly/hulu",
+      "license": "MIT; see research/evidence/2026-10-21/v2fly/LICENSE"
+    },
+    "dlc-twitch": {
+      "kind": "upstream_community_routing_list",
+      "url": "https://github.com/v2fly/domain-list-community/blob/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/twitch",
+      "revision": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+      "path": "research/evidence/2026-10-21/v2fly/twitch",
+      "license": "MIT; see research/evidence/2026-10-21/v2fly/LICENSE"
+    }
+  },
+  "applications": [
+    {
+      "id": "youtube",
+      "label": "YouTube",
+      "legacy_names": [
+        "Youtube"
+      ],
+      "inventory_name": "YouTube",
+      "enabled_by_default": true,
+      "scope": "",
+      "rules": [
+        {
+          "id": "youtube-core",
+          "match": "domain_suffix",
+          "values": [
+            "youtube.com",
+            "youtube-nocookie.com",
+            "youtu.be",
+            "youtubeeducation.com",
+            "youtubekids.com",
+            "yt.be"
+          ],
+          "sources": [
+            "legacy-video",
+            "dlc-youtube",
+            "google-youtube"
+          ],
+          "support": "vendor_and_upstream",
+          "notes": "A service-family label, including embeds, Kids and website traffic; not proof of video playback.",
+          "traffic_role_hint": "browsing_or_api"
+        },
+        {
+          "id": "youtube-media",
+          "match": "domain_suffix",
+          "values": [
+            "googlevideo.com"
+          ],
+          "sources": [
+            "legacy-video",
+            "dlc-youtube",
+            "ndpi"
+          ],
+          "support": "upstream_classification_not_exclusivity_proof",
+          "notes": "Retained as the legacy YouTube media heuristic. The hostname alone is not proof of the initiating application or exclusive YouTube use; validate against other Google video services before dataset release.",
+          "traffic_role_hint": "media_delivery_candidate"
+        },
+        {
+          "id": "youtube-api",
+          "match": "exact_hostname",
+          "values": [
+            "youtubei.googleapis.com",
+            "youtube.googleapis.com"
+          ],
+          "sources": [
+            "google-youtube",
+            "dlc-youtube"
+          ],
+          "support": "vendor_documented",
+          "notes": "",
+          "traffic_role_hint": "browsing_or_api"
+        },
+        {
+          "id": "youtube-embedded-api",
+          "match": "exact_hostname",
+          "values": [
+            "youtubeembeddedplayer.googleapis.com",
+            "youtube-ui.l.google.com"
+          ],
+          "sources": [
+            "dlc-youtube",
+            "ndpi"
+          ],
+          "support": "upstream_classifier_or_routing_list",
+          "notes": "",
+          "traffic_role_hint": "browsing_or_api"
+        },
+        {
+          "id": "youtube-att-api",
+          "match": "exact_hostname",
+          "values": [
+            "youtubei-att.googleapis.com"
+          ],
+          "sources": [
+            "live"
+          ],
+          "support": "public_page_reference",
+          "notes": "Referenced in YouTube HTML fetched on the review date; not an observed subresource connection or playback validation.",
+          "traffic_role_hint": "unknown"
+        },
+        {
+          "id": "youtube-assets",
+          "match": "domain_suffix",
+          "values": [
+            "ytimg.com"
+          ],
+          "sources": [
+            "legacy-video",
+            "dlc-youtube",
+            "live"
+          ],
+          "support": "upstream_with_landing_page_reference",
+          "notes": "Image/static asset candidate; no video payload attribution.",
+          "traffic_role_hint": "static_assets"
+        }
+      ],
+      "inventory_category": "Video streaming"
+    },
+    {
+      "id": "netflix",
+      "label": "Netflix",
+      "legacy_names": [
+        "Netflix"
+      ],
+      "inventory_name": "Netflix",
+      "enabled_by_default": true,
+      "scope": "",
+      "rules": [
+        {
+          "id": "netflix-core",
+          "match": "domain_suffix",
+          "values": [
+            "netflix.com",
+            "nflxvideo.net",
+            "nflximg.net",
+            "nflxext.com",
+            "nflximg.com",
+            "nflxso.net",
+            "netflix.net",
+            "netflix.ca",
+            "nflxsearch.net"
+          ],
+          "sources": [
+            "legacy-video",
+            "dlc-netflix",
+            "live"
+          ],
+          "support": "upstream_with_partial_live_checks",
+          "notes": "netflix.net redirected to Netflix. nflxsearch.net resolved but its HTTPS root failed; retained as an upstream candidate, not live-validated playback.",
+          "traffic_role_hint": "unknown"
+        },
+        {
+          "id": "netflix-branded-cdn",
+          "match": "exact_hostname",
+          "values": [
+            "netflix.com.edgesuite.net"
+          ],
+          "sources": [
+            "dlc-netflix"
+          ],
+          "support": "upstream_routing_list",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ],
+      "inventory_category": "Video streaming"
+    },
+    {
+      "id": "primevideo",
+      "label": "Amazon Prime",
+      "legacy_names": [
+        "Amazon"
+      ],
+      "inventory_name": "Amazon Prime",
+      "enabled_by_default": true,
+      "scope": "Prime Video service family",
+      "rules": [
+        {
+          "id": "primevideo-core",
+          "match": "domain_suffix",
+          "values": [
+            "amazonvideo.com",
+            "primevideo.com",
+            "aiv-cdn.net",
+            "aiv-delivery.net",
+            "pv-cdn.net"
+          ],
+          "sources": [
+            "legacy-video",
+            "dlc-primevideo",
+            "ndpi",
+            "live"
+          ],
+          "support": "upstream_with_partial_live_checks",
+          "notes": "Amazon Prime here means Prime Video, not the whole Amazon shopping or AWS ecosystem.",
+          "traffic_role_hint": "unknown"
+        },
+        {
+          "id": "primevideo-api",
+          "match": "exact_hostname",
+          "values": [
+            "atv-ext.amazon.com",
+            "atv-ps.amazon.com"
+          ],
+          "sources": [
+            "ndpi",
+            "live"
+          ],
+          "support": "upstream_classifier_with_partial_dns_check",
+          "notes": "",
+          "traffic_role_hint": "browsing_or_api"
+        },
+        {
+          "id": "primevideo-cdn",
+          "match": "exact_hostname",
+          "values": [
+            "dmqdd6hw24ucf.cloudfront.net",
+            "d25xi40x97liuc.cloudfront.net"
+          ],
+          "sources": [
+            "dlc-primevideo",
+            "ndpi",
+            "live"
+          ],
+          "support": "two_upstream_lists_with_partial_dns_check",
+          "notes": "The first host was the CNAME target of cf-timedtext.aux.pv-cdn.net. Other CloudFront names remain unknown.",
+          "traffic_role_hint": "unknown"
+        },
+        {
+          "id": "primevideo-legacy-cdn",
+          "match": "exact_hostname",
+          "values": [
+            "avodassets-a.akamaihd.net"
+          ],
+          "sources": [
+            "legacy-video",
+            "live"
+          ],
+          "support": "legacy_rule_with_dns_resolution",
+          "notes": "Retained provisionally from the repository. DNS resolution alone does not establish current exclusive use.",
+          "traffic_role_hint": "static_assets"
+        }
+      ],
+      "inventory_category": "Video streaming"
+    },
+    {
+      "id": "hulu",
+      "label": "Hulu",
+      "legacy_names": [
+        "Hulu"
+      ],
+      "inventory_name": null,
+      "enabled_by_default": false,
+      "scope": "",
+      "rules": [
+        {
+          "id": "hulu-core",
+          "match": "domain_suffix",
+          "values": [
+            "hulu.com",
+            "huluim.com",
+            "hulustream.com",
+            "huluad.com"
+          ],
+          "sources": [
+            "legacy-video",
+            "dlc-hulu",
+            "ndpi"
+          ],
+          "support": "two_upstream_lists",
+          "notes": "Replace the old unbounded hulustream substring with hulustream.com. A www.huluim.com NXDOMAIN result does not disprove other huluim.com subdomains.",
+          "traffic_role_hint": "unknown"
+        },
+        {
+          "id": "hulu-playback",
+          "match": "exact_hostname",
+          "values": [
+            "hulu.playback.edge.bamgrid.com"
+          ],
+          "sources": [
+            "dlc-hulu",
+            "live"
+          ],
+          "support": "upstream_with_dns_resolution",
+          "notes": "Do not label all bamgrid.com as Hulu; the namespace is shared with other Disney services.",
+          "traffic_role_hint": "unknown"
+        },
+        {
+          "id": "hulu-assets",
+          "match": "exact_hostname",
+          "values": [
+            "assetshuluimcom-a.akamaihd.net",
+            "ibhuluimcom-a.akamaihd.net"
+          ],
+          "sources": [
+            "ndpi"
+          ],
+          "support": "upstream_classifier",
+          "notes": "",
+          "traffic_role_hint": "static_assets"
+        },
+        {
+          "id": "hulu-telemetry",
+          "match": "exact_hostname",
+          "values": [
+            "hulu.conviva.com"
+          ],
+          "sources": [
+            "legacy-video",
+            "live"
+          ],
+          "support": "legacy_rule_with_dns_resolution",
+          "notes": "Match the original hostname only, not its shared pulse.conviva.com CNAME target.",
+          "traffic_role_hint": "telemetry"
+        }
+      ],
+      "inventory_category": "Television / OTT"
+    },
+    {
+      "id": "twitch",
+      "label": "Twitch",
+      "legacy_names": [
+        "Twitch"
+      ],
+      "inventory_name": null,
+      "enabled_by_default": false,
+      "scope": "",
+      "rules": [
+        {
+          "id": "twitch-core",
+          "match": "domain_suffix",
+          "values": [
+            "twitch.tv",
+            "ttvnw.net",
+            "twitchcdn.net",
+            "jtvnw.net",
+            "twitchsvc.net"
+          ],
+          "sources": [
+            "legacy-video",
+            "dlc-twitch",
+            "ndpi",
+            "live",
+            "twitch-extensions"
+          ],
+          "support": "vendor_and_upstream_with_partial_live_checks",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        },
+        {
+          "id": "twitch-extensions",
+          "match": "domain_suffix",
+          "values": [
+            "ext-twitch.tv"
+          ],
+          "sources": [
+            "twitch-extensions",
+            "dlc-twitch"
+          ],
+          "support": "vendor_documented",
+          "notes": "",
+          "traffic_role_hint": "unknown"
+        }
+      ],
+      "inventory_category": "Video streaming"
+    },
+    {
+      "id": "zoom",
+      "label": "Zoom",
+      "legacy_names": [
+        "Zoom"
+      ],
+      "inventory_name": "Zoom",
+      "enabled_by_default": true,
+      "scope": "",
+      "rules": [
+        {
+          "id": "zoom-core",
+          "match": "domain_suffix",
+          "values": [
+            "zoom.us",
+            "zoom.com"
+          ],
+          "sources": [
+            "zoom",
+            "legacy-voip",
+            "live-conferencing"
+          ],
+          "support": "vendor_documented",
+          "notes": "Zoom service-family traffic can include web, chat and other Zoom products; not proof of a meeting.",
+          "traffic_role_hint": "unknown"
+        }
+      ],
+      "inventory_category": "Conferencing"
+    },
+    {
+      "id": "teams",
+      "label": "Microsoft Teams",
+      "legacy_names": [
+        "MS Teams"
+      ],
+      "inventory_name": "Microsoft Teams",
+      "enabled_by_default": true,
+      "scope": "",
+      "rules": [
+        {
+          "id": "teams-core",
+          "match": "domain_suffix",
+          "values": [
+            "teams.microsoft.com",
+            "teams.cloud.microsoft"
+          ],
+          "sources": [
+            "microsoft-teams",
+            "live-conferencing"
+          ],
+          "support": "vendor_documented",
+          "notes": "Do not label all lync.com, skype.com, microsoft.com, Microsoft login or Office CDN traffic as Teams.",
+          "traffic_role_hint": "unknown"
+        }
+      ],
+      "inventory_category": "Conferencing"
+    },
+    {
+      "id": "meet",
+      "label": "Google Meet",
+      "legacy_names": [
+        "Hangouts Meet"
+      ],
+      "inventory_name": "Google Meet",
+      "enabled_by_default": true,
+      "scope": "",
+      "rules": [
+        {
+          "id": "meet-web",
+          "match": "domain_suffix",
+          "values": [
+            "meet.google.com"
+          ],
+          "sources": [
+            "google-meet",
+            "live-conferencing"
+          ],
+          "support": "vendor_documented",
+          "notes": "Includes stream.meet.google.com.",
+          "traffic_role_hint": "unknown"
+        },
+        {
+          "id": "meet-api",
+          "match": "exact_hostname",
+          "values": [
+            "meetings.googleapis.com"
+          ],
+          "sources": [
+            "google-meet",
+            "live-conferencing"
+          ],
+          "support": "vendor_documented",
+          "notes": "",
+          "traffic_role_hint": "browsing_or_api"
+        },
+        {
+          "id": "meet-media-sni",
+          "match": "exact_hostname",
+          "values": [
+            "meet.turns.goog"
+          ],
+          "sources": [
+            "google-meet",
+            "live-conferencing"
+          ],
+          "support": "vendor_documented",
+          "notes": "Google explicitly documents this SNI for consumer Meet media. It need not resolve as a public DNS hostname.",
+          "traffic_role_hint": "media_delivery_candidate"
+        }
+      ],
+      "inventory_category": "Conferencing"
+    },
+    {
+      "id": "webex",
+      "label": "Webex",
+      "legacy_names": [
+        "Webex"
+      ],
+      "inventory_name": "WebEx",
+      "enabled_by_default": true,
+      "scope": "",
+      "rules": [
+        {
+          "id": "webex-core",
+          "match": "domain_suffix",
+          "values": [
+            "webex.com",
+            "wbx2.com",
+            "ciscospark.com",
+            "webexapis.com",
+            "webexcontent.com"
+          ],
+          "sources": [
+            "webex",
+            "live-conferencing"
+          ],
+          "support": "vendor_documented",
+          "notes": "Webex suite traffic includes messaging, files and control traffic. Excludes general cisco.com and third-party allowlist dependencies.",
+          "traffic_role_hint": "unknown"
+        }
+      ],
+      "inventory_category": "Conferencing"
+    }
+  ],
+  "activity_policy": {
+    "application_and_activity_are_independent": true,
+    "inventory_category_is_flow_label": false,
+    "hostname_only_traffic_category": "unknown",
+    "browsing": "Search, comments, page navigation and other identified non-media web activity are browsing, even on a video service.",
+    "video": "Reserve video for identified video media payload. Application membership, API traffic, thumbnails, manifests, subtitles, telemetry and transport overhead do not by themselves qualify.",
+    "role_hints_are_labels": false,
+    "role_hints": "DNS/SNI rules can suggest browsing_or_api, static_assets, telemetry, media_delivery_candidate or unknown. Hints are provisional and must not silently become traffic categories.",
+    "uncertainty": "An application can be known while its traffic category remains unknown. Keep those records and their evidence.",
+    "mixed_connections": "If a connection carries multiple activities, retain mixed or uncertain activity rather than marking all bytes video. Do not inherit video from another connection in the same session.",
+    "byte_accounting": "Whole-flow byte totals are not video payload byte totals. Keep video_payload_bytes unset when encrypted or mixed traffic prevents reliable separation; never substitute total flow bytes.",
+    "implementation_status": "Policy and rule hints only. There is no packet, request, stream or payload activity classifier yet."
+  }
+}
