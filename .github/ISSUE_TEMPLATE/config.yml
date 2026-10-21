@@ -1,8 +1,0 @@
-blank_issues_enabled: true
-contact_links:
-  - name: 🗒️  Traffic Refinery README
-    url: https://github.com/traffic-refinery/traffic-refinery#readme
-    about: Consult the Traffic Refinery README first.
-  - name: 📖 Traffic Refinery Usage Information
-    url: https://traffic-refinery.github.io/usage.html
-    about: Learn more about how to use Traffic Refinery here.

@@ -1,7 +1,7 @@
 # Existing application filter review — 2026-10-21
 
 This pass reviews the five video and four conferencing application entries in
-`configs/trconfig_video.json` and `configs/trconfig_voip.json`. It does not add the
+[the original video config](https://github.com/traffic-refinery/traffic-refinery/blob/dcb2eba9464a4a002168478ad5550e845bfc53c3/configs/trconfig_video.json) and [VoIP config](https://github.com/traffic-refinery/traffic-refinery/blob/dcb2eba9464a4a002168478ad5550e845bfc53c3/configs/trconfig_voip.json). It does not add the
 other applications from the Slack inventory. The resulting
 [`existing-applications.json`](../rules/existing-applications.json) is a proposed
 DNS/SNI rule pack, not a release-quality or exhaustive ground-truth classifier.
@@ -32,7 +32,7 @@ leave unobservable video-payload byte counts unset. Do not relabel ACKs, TLS/QUI
 handshakes, manifests, thumbnails, subtitles, comments or telemetry as video media
 merely because they accompany a viewing session.
 
-The 74 offline checks now verify that none of these hostname matches automatically
+The initial 74 hostname examples verify that none of these hostname matches automatically
 outputs a video category. No production activity classifier exists yet.
 
 ## Results
@@ -128,7 +128,7 @@ The offline flow labeler still needs client/TTL/capture-time DNS correlation and
 shared-IP handling. Pure hostname rules cannot identify every flow when its
 application evidence is unavailable.
 
-Run the standard-library-only checks from `pcap-labeler/`:
+Run the standard-library-only checks from the repository root:
 
 ```sh
 python3 scripts/check_rules.py
@@ -148,3 +148,13 @@ sessions on relevant clients/regions and then the university PCAPs when availabl
 - [Webex network requirements](https://help.webex.com/en-us/article/WBX000028782/Network-Requirements-for-Webex-Services)
 - [Twitch extension domains](https://dev.twitch.tv/docs/extensions/)
 - [Amazon IVS network requirements](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/real-time-network-requirements.html)
+
+
+## Current repository layout
+
+The labeling files now live at the repository root. The inherited Traffic Refinery
+implementation was removed from this fork; the baseline configs remain available
+through the pinned upstream links above. Load both current rule packs together:
+the additional pack adds shared-host guards that supersede unique attribution of
+hosts such as `googlevideo.com` and shared BAMTech endpoints in this initial review.
+The aggregate checker now runs 180 hostname examples.

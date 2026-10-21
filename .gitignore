@@ -1,4 +1,6 @@
-build/
-vendor/
+__pycache__/
+*.py[cod]
+.venv/
 .DS_Store
-internal/counters/init_counters.go
+*.pcap
+*.pcapng

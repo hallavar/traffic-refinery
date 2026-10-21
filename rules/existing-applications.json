@@ -21,11 +21,13 @@
   "sources": {
     "legacy-video": {
       "kind": "repository_baseline",
-      "path": "configs/trconfig_video.json"
+      "url": "https://github.com/traffic-refinery/traffic-refinery/blob/dcb2eba9464a4a002168478ad5550e845bfc53c3/configs/trconfig_video.json",
+      "revision": "dcb2eba9464a4a002168478ad5550e845bfc53c3"
     },
     "legacy-voip": {
       "kind": "repository_baseline",
-      "path": "configs/trconfig_voip.json"
+      "url": "https://github.com/traffic-refinery/traffic-refinery/blob/dcb2eba9464a4a002168478ad5550e845bfc53c3/configs/trconfig_voip.json",
+      "revision": "dcb2eba9464a4a002168478ad5550e845bfc53c3"
     },
     "google-youtube": {
       "kind": "vendor_documentation",
